@@ -13,7 +13,7 @@ sections:
   - type: call-to-action.html
     section_id: about
     background_style: bg-primary
-    title: ¡Tú eres primero!
+    title: ¡Tú Eres Primero!
     text: ¡Obtén la evaluación de tu caso sin costo! Disponible tanto en nuestro servicio de búsqueda de información como en el de recuperación de datos 
    
 
@@ -70,7 +70,7 @@ sections:
 
   - type: aside.html
     section_id: aside
-    title: ¡Agenda tu cita!
+    title: ¡Agenda Tu Cita!
     actions:
       - title: RESERVAR AHORA
         url: '#contacts'
@@ -91,40 +91,40 @@ sections:
     section_id: timeline
     title: Nuestra Historia
     background_style: bg-dark text-primary
-    
+    last_image: assets/img/portfolio/thumbnails/recovery-2.jpg
+
     actions:
       - image: assets/img/portfolio/thumbnails/primerFraude.jpg
         title: >+
-          2023
-          **El primer fraude investigado**
+          2023 - **El primer fraude investigado**
         text: >-
           Un familiar solicita ayuda con un fraude por más de 50 mil pesos. A raíz de ello se redacta y publica una guía express ([Ver guía](https://www.reddit.com/r/MexicoFinanciero/comments/1992uf8/qué_hacer_antes_de_introducir_tu_dinero_en_una/)) para la validación de sitios web y aplicaciones financieras, alcanzando más de 15 mil visualizaciones. 
       - image: assets/img/portfolio/thumbnails/HackerAcademy.png
         title: >+
-          Enero 2025
+          Enero 2025 -
           **Memorias en Ciberseguridad**
         text: >-
           Aceptado en la Hackers Academy de Hackmetrix, completando una formación intensiva de 6 meses en ciberseguridad ofensiva.
       - image: assets/img/portfolio/thumbnails/HackerAcademy.png
       
         title: >+
-          Junio 2025
-          **Despido**
+          Junio 2025 - **Despido**
         text: >-
           Despedido de un puesto como Backend Engineer, donde se desarrollaban servicios transaccionales para Fintechs.  
       - image: assets/img/portfolio/thumbnails/Despido.jpg
         title: >+
-          Agosto 2025
-          **Necesidad**
+          Agosto 2025 - **Necesidad**
         text: >-
           Se daña una memoria USB con información personal. Sin servicios de recuperación cerca, decido fundar mi propio servicio y ofrecerlo a otros.
       - image: assets/img/Recovery.jpg
+        title: >+
+            Hoy
         text: >-
           La formación y preparación continúan para ofrecer un servicio de excelencia...
 
   - type: contact.html
     section_id: contacts
-    title: ¡Contáctanos y agenda tu cita!
+    title: ¡Contáctanos & Agenda Tu Cita!
     text: >-
       Nuestro horario de atención: 8 AM - 6 PM de lunes a viernes
     actions:
