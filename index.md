@@ -3,10 +3,9 @@ layout: home
 header:
   title: TU MEJOR ALIADO EN LA BÚSQUEDA O RECUPERACIÓN DE INFORMACIÓN
   text: >
-    Start Bootstrap can help you build better websites using the Bootstrap
-    framework! Just download a theme and start customizing, no strings attached!
+    Recuperación de información por fallas lógicas en las unidades más comunes (USB, Micro SD, HDD, SSD) e investigación y análisis de información de fuentes abiertas (OSINT) para la identificación de posibles fraudes digitales, validación de información y apoyo en la toma de decisiones. 
   action: # action button is optional
-    label: Find Out More
+    label: VER MÁS
     url: '#about'
 
 
@@ -14,17 +13,14 @@ sections:
   - type: call-to-action.html
     section_id: about
     background_style: bg-primary
-    title: We've got what you need!
-    text: Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!
-    actions:
-      - title: Get Started!
-        url: '#page-top'
-        class: btn-light
+    title: ¡Tú eres primero!
+    text: Recibe una evaluación gratis. Tanto en nuestro servicio de búsqueda como en nuestro servicio de recuperación de información. 
+   
 
   - type: services.html
     section_id: services
     #background_style: bg-info
-    title: At Your Service
+    title: A su servicio
     services:
       - title: Sturdy Templates
         text: Our templates are updated regularly so they don't break.
