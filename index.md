@@ -14,7 +14,7 @@ sections:
     section_id: about
     background_style: bg-primary
     title: ¡Tú Eres Primero!
-    text: ¡Obtén la evaluación de tu caso sin costo! Disponible tanto en nuestro servicio de búsqueda de información como en el de recuperación de datos 
+    text: ¡Obtén la evaluación de tu caso sin costo! Disponible tanto en nuestro servicio de búsqueda de información como en el de recuperación de datos.
    
 
   - type: services.html
@@ -111,12 +111,12 @@ sections:
           Junio 2025 - **Despido**
         text: >-
           Despedido de un puesto como Backend Engineer, donde se desarrollaban servicios transaccionales para Fintechs.  
-      - image: assets/img/portfolio/thumbnails/recovery-2.jpg
+      - image: assets/img/usb.jpg
         title: >+
           Agosto 2025 - **Necesidad**
         text: >-
           Se daña una memoria USB con información personal. Sin servicios de recuperación cerca, decido fundar mi propio servicio y ofrecerlo a otros.
-      - image: assets/img/usb.jpg
+      - image: assets/img/portfolio/thumbnails/recovery-2.jpg
         title: >+
             Hoy
         text: >-
