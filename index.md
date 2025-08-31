@@ -91,9 +91,7 @@ sections:
     section_id: timeline
     title: Nuestra Historia
     background_style: bg-dark text-primary
-    last_image: assets/img/Recovery.jpg
-    text: >-
-      La formación y preparación continúan para ofrecer un servicio de excelencia...
+    
     actions:
       - image: assets/img/portfolio/thumbnails/primerFraude.jpg
         title: >+
@@ -114,12 +112,15 @@ sections:
           **Despido**
         text: >-
           Despedido de un puesto como Backend Engineer, donde se desarrollaban servicios transaccionales para Fintechs.  
-      - image: assets/img/portfolio/thumbnails/Despedido.jpg
+      - image: assets/img/portfolio/thumbnails/Despido.jpg
         title: >+
           Agosto 2025
           **Necesidad**
         text: >-
           Se daña una memoria USB con información personal. Sin servicios de recuperación cerca, decido fundar mi propio servicio y ofrecerlo a otros.
+      - image: assets/img/Recovery.jpg
+        text: >-
+          La formación y preparación continúan para ofrecer un servicio de excelencia...
 
   - type: contact.html
     section_id: contacts
