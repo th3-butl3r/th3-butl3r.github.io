@@ -30,7 +30,7 @@ sections:
         icon: bi-usb-drive-fill
       - title: Recuperación de información en disco duro HDD
         text: Fallas lógicas, dispositivo no detectado por la BIOS, borrado accidental, etc.
-        icon: bi-hdd-fill
+        icon: bi-device-hdd-fill
       - title: Recuperación de información en disco duro SSD
         text: Fallas lógicas, dispositivo no detectado por la BIOS, borrado accidental, etc.
         icon: bi-device-ssd-fill
