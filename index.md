@@ -33,7 +33,7 @@ sections:
         icon: bi-hdd-fill
       - title: Recuperación de información en disco duro SSD
         text: Fallas lógicas, dispositivo no detectado por la BIOS, borrado accidental, etc.
-        icon: bi-hdd-fill
+        icon: bi-device-ssd-fill
 
   - type: portfolio.html
     # this section has always ID 'portfolio'
