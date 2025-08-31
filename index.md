@@ -25,9 +25,9 @@ sections:
       - title: Investigación de fuentes abiertas (OSINT)
         text: La seguridad es primero, por ello te ayudamos con la identificación de posibles fraudes digitales, validación de información y apoyo en la toma de decisiones.
         icon: bi-search
-      - title: Ready to Ship
-        text: You can use this theme as is, or you can make changes!
-        icon: bi-usb
+      - title: Recuperación de información de USB
+        text: USB no detectada, borrado accidental, Ruptura del conector, etc.
+        icon: usb-drive-fill
       - title: Up to Date
         text: We update dependencies to keep things fresh.
         icon: bi-hdd
