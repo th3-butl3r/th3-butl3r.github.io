@@ -3,7 +3,7 @@ layout: home
 header:
   title: TU MEJOR ALIADO EN LA BÚSQUEDA O RECUPERACIÓN DE INFORMACIÓN
   text: >
-    Recuperación de información por fallas lógicas en las unidades más comunes (USB, Micro SD, HDD, SSD) e investigación y análisis de información de fuentes abiertas (OSINT) para la identificación de posibles fraudes digitales, validación de información y apoyo en la toma de decisiones. 
+    Recuperación de información ante fallas lógicas en dispositivos comunes (USB, Micro SD, HDD, SSD), así como investigación y análisis de fuentes abiertas (OSINT) para la detección de posibles fraudes digitales, validación de datos y apoyo estratégico en la toma de decisiones. 
   action: # action button is optional
     label: VER MÁS
     url: '#about'
@@ -14,33 +14,32 @@ sections:
     section_id: about
     background_style: bg-primary
     title: ¡Tú eres primero!
-    text: Recibe una evaluación gratis. Tanto en nuestro servicio de búsqueda como en nuestro servicio de recuperación de información. 
+    text: ¡Obtén la evaluación de tu caso sin costo! Disponible tanto en nuestro servicio de búsqueda de información como en el de recuperación de datos 
    
 
   - type: services.html
     section_id: services
     #background_style: bg-info
-    title: A su servicio
+    title: Nuestros servicios
     services:
-      - title: Sturdy Templates
-        text: Our templates are updated regularly so they don't break.
-        icon: bi-gem text-info
-        url: https://startbootstrap.com/
+      - title: Investigación de fuentes abiertas (OSINT)
+        text: La seguridad es primero, por ello te ayudamos con la identificación de posibles fraudes digitales, validación de información y apoyo en la toma de decisiones.
+        icon: bi-search
       - title: Ready to Ship
         text: You can use this theme as is, or you can make changes!
-        icon: bi-rocket-takeoff
+        icon: bi-usb
       - title: Up to Date
         text: We update dependencies to keep things fresh.
-        icon: bi-activity
+        icon: bi-hdd
       - title: Made with Love
         text: You have to make your websites with love these days!
-        icon: bi-heart-fill
+        icon: bi-hdd-fill
       - title: Other 1
         text: Some not-so long text here.
-        icon: bi-emoji-heart-eyes
+        icon: bi-ssd
       - title: Other 2
         text: Some not-so long text here.
-        icon: bi-emoji-sunglasses-fill
+        icon: bi-sd-card
 
   - type: portfolio.html
     # this section has always ID 'portfolio'
