@@ -1,7 +1,7 @@
 ---
 layout: home
 header:
-  title: TU MEJOR ALIADO EN LA BÚSQUEDA O RECUPERACIÓN DE INFORMACIÓN
+  title: TU MEJOR ALIADO EN LA BÚSQUEDA Y RECUPERACIÓN DE INFORMACIÓN
   text: >
     Recuperación de información ante fallas lógicas en dispositivos comunes (USB, Micro SD, HDD, SSD), así como investigación y análisis de fuentes abiertas (OSINT) para la detección de posibles fraudes digitales, validación de datos y apoyo estratégico en la toma de decisiones. 
   action: # action button is optional
@@ -20,26 +20,20 @@ sections:
   - type: services.html
     section_id: services
     #background_style: bg-info
-    title: Nuestros servicios
+    title: Nuestros Servicios
     services:
       - title: Investigación de fuentes abiertas (OSINT)
         text: La seguridad es primero, por ello te ayudamos con la identificación de posibles fraudes digitales, validación de información y apoyo en la toma de decisiones.
         icon: bi-search
-      - title: Recuperación de información de USB
-        text: USB no detectada, borrado accidental, Ruptura del conector, etc.
-        icon: usb-drive-fill
-      - title: Up to Date
-        text: We update dependencies to keep things fresh.
-        icon: bi-hdd
-      - title: Made with Love
-        text: You have to make your websites with love these days!
+      - title: Recuperación de información en USB
+        text: USB no detectada, borrado accidental, ruptura del conector, etc.
+        icon: bi-usb-drive-fill
+      - title: Recuperación de información en disco duro HDD
+        text: Fallas lógicas, dispositivo no detectado por la BIOS, borrado accidental, etc.
         icon: bi-hdd-fill
-      - title: Other 1
-        text: Some not-so long text here.
-        icon: bi-ssd
-      - title: Other 2
-        text: Some not-so long text here.
-        icon: bi-sd-card
+      - title: Recuperación de información en disco duro SSD
+        text: Fallas lógicas, dispositivo no detectado por la BIOS, borrado accidental, etc.
+        icon: bi-hdd-fill
 
   - type: portfolio.html
     # this section has always ID 'portfolio'
@@ -76,62 +70,41 @@ sections:
 
   - type: aside.html
     section_id: aside
-    title: Free Download at Start Bootstrap!
+    title: ¡Agenda tu cita!
     actions:
-      - title: Download Now!
-        url: https://startbootstrap.com/themes/creative/
+      - title: RESERVAR AHORA
+        url: '#contacts'
         class: btn-light
 
   - type: members.html
     section_id: members
-    title: Our Crew!
+    title: ¡Nuestro Equipo!
     background_style: bg-info text-white
     members:
-      - title: Christina M. Aponte
-        text: Singer and Songwriter
-        image: assets/img/members/person1.jpg
+      - title: Vidale C.
+        text: Ingeniero & Fundador
+        image: assets/img/members/CEO.jpeg
         url: '#'
-      - title: Gary D. Stevens
-        text: Bass guitar.
-        image: assets/img/members/person2.jpg
-        url: '#'
-      - title: Devon J. Fletcher
-        text: Lead guitar.
-        image: assets/img/members/person3.jpg
-        url: '#'
-      - title: Todd E. Anderson
-        text: Drums, percussion.
-        image: assets/img/members/person5.jpg
-        url: '#'
-      - title: Daniel T. Riley
-        text: Musician, songwriter, producer.
-        image: assets/img/members/person6.jpg
-        url: '#'
-      - title: Ella P. Walter
-        text: PR.
-        image: assets/img/members/person7.jpg
-        url: '#'
+      
 
   - type: timeline.html
     section_id: timeline
-    title: Major Achievements!
+    title: Nuestra Historia
     background_style: bg-dark text-primary
     last_image: assets/img/timeline-end.png
     actions:
-      - image: assets/img/portfolio/thumbnails/1.jpg
+      - image: assets/img/portfolio/thumbnails/primerFraude.jpg
         title: >+
-          2017-2018
-          **Humble Beginnings**
+          2024
+          **El primer fraude investigado**
         text: >-
-          We begun with small group of people willing to work hard and make our
-          teaching skills worth , in front of all others!
-      - image: assets/img/portfolio/thumbnails/2.jpg
+          Se redacta y publica una guía express para la validación de sitios web y aplicaciones financieras, alcanzando a más de 15 mil usuarios.
+      - image: assets/img/portfolio/thumbnails/HackerAcademy.png
         title: >+
-          November 2019
-          An Coaching started
+          2025
+          **Maquetando la idea**
         text: >-
-          We started to gather like minded people and started our stategies
-          and future plans to them. As a result , interested people joined us!
+          Aceptado en la Hackers Academy de Hackmetrix, completando una formación intensiva de 6 meses en ciberseguridad ofensiva.
 
   - type: contact.html
     section_id: contacts
