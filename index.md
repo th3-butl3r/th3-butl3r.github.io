@@ -91,7 +91,7 @@ sections:
     section_id: timeline
     title: Nuestra Historia
     background_style: bg-dark text-primary
-    last_image: assets/img/portfolio/thumbnails/recovery-2.jpg
+    last_image: assets/img/Lab.jpg
 
     actions:
       - image: assets/img/portfolio/thumbnails/primerFraude.jpg
@@ -105,7 +105,7 @@ sections:
           **Memorias en Ciberseguridad**
         text: >-
           Aceptado en la Hackers Academy de Hackmetrix, completando una formación intensiva de 6 meses en ciberseguridad ofensiva.
-      - image: assets/img/portfolio/thumbnails/HackerAcademy.png
+      - image: assets/img/portfolio/thumbnails/Despido.jpg
       
         title: >+
           Junio 2025 - **Despido**
@@ -116,7 +116,7 @@ sections:
           Agosto 2025 - **Necesidad**
         text: >-
           Se daña una memoria USB con información personal. Sin servicios de recuperación cerca, decido fundar mi propio servicio y ofrecerlo a otros.
-      - image: assets/img/Recovery.jpg
+      - image: assets/img/portfolio/thumbnails/recovery-2.jpg
         title: >+
             Hoy
         text: >-
