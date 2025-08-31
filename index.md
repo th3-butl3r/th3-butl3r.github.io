@@ -111,12 +111,12 @@ sections:
           Junio 2025 - **Despido**
         text: >-
           Despedido de un puesto como Backend Engineer, donde se desarrollaban servicios transaccionales para Fintechs.  
-      - image: assets/img/portfolio/thumbnails/Despido.jpg
+      - image: assets/img/portfolio/thumbnails/recovery-2.jpg
         title: >+
           Agosto 2025 - **Necesidad**
         text: >-
           Se daña una memoria USB con información personal. Sin servicios de recuperación cerca, decido fundar mi propio servicio y ofrecerlo a otros.
-      - image: assets/img/portfolio/thumbnails/recovery-2.jpg
+      - image: assets/img/usb.jpg
         title: >+
             Hoy
         text: >-
