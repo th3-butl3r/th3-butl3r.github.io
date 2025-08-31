@@ -82,7 +82,7 @@ sections:
     background_style: bg-info text-white
     members:
       - title: Vidale C.
-        text: Ingeniero & Fundador
+        text: Ingeniero Backend, Analista OSINT Y Fundador.
         image: assets/img/members/CEO.jpeg
         url: '#'
       
@@ -91,38 +91,49 @@ sections:
     section_id: timeline
     title: Nuestra Historia
     background_style: bg-dark text-primary
-    last_image: assets/img/timeline-end.png
+    last_image: assets/img/Recovery.jpg
+    text: >-
+      La formación y preparación continúan para ofrecer un servicio de excelencia...
     actions:
       - image: assets/img/portfolio/thumbnails/primerFraude.jpg
         title: >+
-          2024
+          2023
           **El primer fraude investigado**
         text: >-
-          Se redacta y publica una guía express para la validación de sitios web y aplicaciones financieras, alcanzando a más de 15 mil usuarios.
+          Un familiar solicita ayuda con un fraude por más de 50 mil pesos. A raíz de ello se redacta y publica una guía express ([Ver guía](https://www.reddit.com/r/MexicoFinanciero/comments/1992uf8/qué_hacer_antes_de_introducir_tu_dinero_en_una/)) para la validación de sitios web y aplicaciones financieras, alcanzando más de 15 mil visualizaciones. 
       - image: assets/img/portfolio/thumbnails/HackerAcademy.png
         title: >+
-          2025
-          **Maquetando la idea**
+          Enero 2025
+          **Memorias en Ciberseguridad**
         text: >-
           Aceptado en la Hackers Academy de Hackmetrix, completando una formación intensiva de 6 meses en ciberseguridad ofensiva.
+      - image: assets/img/portfolio/thumbnails/HackerAcademy.png
+      
+        title: >+
+          Junio 2025
+          **Despido**
+        text: >-
+          Despedido de un puesto como Backend Engineer, donde se desarrollaban servicios transaccionales para Fintechs.  
+      - image: assets/img/portfolio/thumbnails/Despedido.jpg
+        title: >+
+          Agosto 2025
+          **Necesidad**
+        text: >-
+          Se daña una memoria USB con información personal. Sin servicios de recuperación cerca, decido fundar mi propio servicio y ofrecerlo a otros.
 
   - type: contact.html
     section_id: contacts
-    title: Let's Get In Touch!
+    title: ¡Contáctanos y agenda tu cita!
     text: >-
-      Ready to start your next project with us? Give us a call or send us an email
-      and we will get back to you as soon as possible!
+      Nuestro horario de atención: 8 AM - 6 PM de lunes a viernes
     actions:
-    - title: +1 (202) 555-014
+    - title: Por definir
       icon: bi-telephone-fill
-    - title: E-Mail
+    - title: Por definir
       icon: bi-envelope-fill
       url: mailto:contact@yourwebsite.com
-    - title: Twitter
-      icon: bi-twitter
-      url: '#'
-    - title: Facebook
-      icon: bi-facebook
-      url: '#'
+    - title: LinkedIn
+      icon: bi-linkedin
+      url: 'https://www.linkedin.com/in/cvidale/'
 
 ---
