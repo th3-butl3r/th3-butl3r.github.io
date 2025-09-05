@@ -3,7 +3,7 @@ layout: home
 header:
   title: TU MEJOR ALIADO EN LA BÚSQUEDA Y RECUPERACIÓN DE INFORMACIÓN
   text: >
-    Recuperación de información ante fallas lógicas en dispositivos comunes (USB, Micro SD, HDD, SSD), así como investigación y análisis de fuentes abiertas (OSINT) para la detección de posibles fraudes digitales, validación de datos y apoyo estratégico en la toma de decisiones. 
+    Recuperación de información ante fallas lógicas en dispositivos comunes (USB, Micro SD, HDD, SSD), así como investigación y análisis de fuentes abiertas (OSINT) para la detección de posibles fraudes digitales, validación de datos y apoyo estratégico en la toma de decisiones. 
   action: # action button is optional
     label: VER MÁS
     url: '#about'
@@ -23,22 +23,19 @@ sections:
     title: Nuestros Servicios
     services:
       - title: Investigación online (OSINT)
-        text: Identificación de posibles fraudes digitales, Validación de información, Recopilación de información
-        
+        text: Identificación de fraudes digitales, validación y recopilación de información digital
         icon: bi-search
       - title: Recuperación de información en USB
-        text: USB no detectada, Borrado accidental, Ruptura del conector.
+        text: USB no detectada, borrado accidental, ruptura del conector, etc.
         icon: bi-usb-drive-fill
       - title: Recuperación de información en disco duro HDD
-        text: Fallas lógicas, Dispositivo no detectado, Borrado accidental
+        text: Fallas lógicas, dispositivo no detectado por la BIOS, borrado accidental, etc.
         icon: bi-device-hdd-fill
       - title: Recuperación de información en disco duro SSD
-        text: Fallas lógicas, Dispositivo no detectado, Borrado accidental
+        text: Fallas lógicas, dispositivo no detectado por la BIOS, borrado accidental, etc.
         icon: bi-device-ssd-fill
       - title: Recuperación de información en memorías Micro SD y SD (proximamente)
-        text: > 
-        - Memoria no detectada
-        - Borrado accidental
+        text: Memoria no detectada, borrado accidental
         icon: bi-sd-card-fill
 
   - type: portfolio.html
@@ -46,22 +43,33 @@ sections:
     #section_id: portfolio
     #background_style: bg-dark
     projects:
-      - title: OSINT - Investigación de fraude
-        text: Rastreamos una transferencia que nos llevá a descubrir un fraude bajo el nombre de Megacable. 
+      - title: Project 1
+        text: This is a very short project description.
         # the images are located in:
         # img/portfolio/fullsize
         # img/portfolio/thumbnails
         icon: 1.jpg
         url: '#'
-      - title: OSINT - Validación de información
-        text: Recopilamos y validamos la información de una empresa para garantizar que el puesto y la empresa eran reales.
+      - title: Project 2
+        text: This is a very short project description.
         icon: 2.jpg
         url: '#'
       - title: Project 3
         text: This is a very short project description.
         icon: 3.jpg
         url: '#'
-
+      - title: Project 4
+        text: This is a very short project description.
+        icon: 4.jpg
+        url: '#'
+      - title: Project 5
+        text: This is a very short project description.
+        icon: 5.jpg
+        url: '#'
+      - title: Project 6
+        text: This is a very short project description.
+        icon: 6.jpg
+        url: '#'
 
   - type: aside.html
     section_id: aside
