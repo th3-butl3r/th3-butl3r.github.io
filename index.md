@@ -36,7 +36,7 @@ sections:
         icon: bi-device-ssd-fill
       - title: Revisión de seguridad en páginas web
         text: Reconocimiento, análisis de superficie de ataque, pruebas de vulnerabilidades comunes y reporte.
-        icon: bi-display-horizontal
+        icon: bi-pc-display
       - title: Recuperación de información en memorías Micro SD y SD (proximamente)
         icon: bi-sd-card-fill
 
