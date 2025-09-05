@@ -23,34 +23,21 @@ sections:
     title: Nuestros Servicios
     services:
       - title: Investigación online (OSINT)
-        text: > 
-        - Identificación de posibles fraudes digitales
-        - Validación de información 
-        - Recopilación de información
+        text: Identificación de posibles fraudes digitales, Validación de información, Recopilación de información
         
         icon: bi-search
       - title: Recuperación de información en USB
-        text: > 
-        - USB no detectada
-        - Borrado accidental
-        - Ruptura del conector.
+        text: USB no detectada, Borrado accidental, Ruptura del conector.
         icon: bi-usb-drive-fill
       - title: Recuperación de información en disco duro HDD
-        text: >
-        - Fallas lógicas
-        - Dispositivo no detectado
-        - Borrado accidental
+        text: Fallas lógicas, Dispositivo no detectado, Borrado accidental
         icon: bi-device-hdd-fill
       - title: Recuperación de información en disco duro SSD
-        text: >
-        - Fallas lógicas
-        - Dispositivo no detectado
-        - Borrado accidental
+        text: Fallas lógicas, Dispositivo no detectado, Borrado accidental
         icon: bi-device-ssd-fill
       - title: Recuperación de información en memorías Micro SD y SD (proximamente)
-        text: >
-        - Memoria no detectada
-        - Borrado accidental
+        text: Memoria no detectada
+        text: Borrado accidental
         icon: bi-sd-card-fill
 
   - type: portfolio.html
