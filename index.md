@@ -23,7 +23,7 @@ sections:
     title: Nuestros Servicios
     services:
       - title: Investigación online (OSINT)
-        text: Identificación de fraudes digitales, validación y recopilación de información digital
+        text: Identificación de fraudes digitales, validación y recopilación de información digital.
         icon: bi-search
       - title: Recuperación de información en USB
         text: USB no detectada, borrado accidental, ruptura del conector, etc.
@@ -35,7 +35,7 @@ sections:
         text: Fallas lógicas, dispositivo no detectado por la BIOS, borrado accidental, etc.
         icon: bi-device-ssd-fill
       - title: Recuperación de información en memorías Micro SD y SD (proximamente)
-        text: Memoria no detectada, borrado accidental
+        text: Memoria no detectada, borrado accidental.
         icon: bi-sd-card-fill
 
   - type: portfolio.html
