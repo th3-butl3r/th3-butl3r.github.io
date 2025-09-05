@@ -22,51 +22,58 @@ sections:
     #background_style: bg-info
     title: Nuestros Servicios
     services:
-      - title: Investigación de fuentes abiertas (OSINT)
-        text: La seguridad es primero, por ello te ayudamos con la identificación de posibles fraudes digitales, validación de información y apoyo en la toma de decisiones.
+      - title: Investigación online (OSINT)
+        text: > 
+        - Identificación de posibles fraudes digitales
+        - Validación de información 
+        - Recopilación de información
+        
         icon: bi-search
       - title: Recuperación de información en USB
-        text: USB no detectada, borrado accidental, ruptura del conector, etc.
+        text: > 
+        - USB no detectada
+        - Borrado accidental
+        - Ruptura del conector.
         icon: bi-usb-drive-fill
       - title: Recuperación de información en disco duro HDD
-        text: Fallas lógicas, dispositivo no detectado por la BIOS, borrado accidental, etc.
+        text: >
+        - Fallas lógicas
+        - Dispositivo no detectado
+        - Borrado accidental
         icon: bi-device-hdd-fill
       - title: Recuperación de información en disco duro SSD
-        text: Fallas lógicas, dispositivo no detectado por la BIOS, borrado accidental, etc.
+        text: >
+        - Fallas lógicas
+        - Dispositivo no detectado
+        - Borrado accidental
         icon: bi-device-ssd-fill
+      - title: Recuperación de información en memorías Micro SD y SD (proximamente)
+        text: >
+        - Memoria no detectada
+        - Borrado accidental
+        icon: bi-sd-card-fill
 
   - type: portfolio.html
     # this section has always ID 'portfolio'
     #section_id: portfolio
     #background_style: bg-dark
     projects:
-      - title: Project 1
-        text: This is a very short project description.
+      - title: OSINT: Investigación de fraude
+        text: Rastreamos una transferencia que nos llevá a descubrir un fraude bajo el nombre de Megacable. 
         # the images are located in:
         # img/portfolio/fullsize
         # img/portfolio/thumbnails
         icon: 1.jpg
         url: '#'
-      - title: Project 2
-        text: This is a very short project description.
+      - title: OSINT: Validación de información
+        text: Recopilamos y validamos la información de una empresa para garantizar que el puesto y la empresa eran reales.
         icon: 2.jpg
         url: '#'
       - title: Project 3
         text: This is a very short project description.
         icon: 3.jpg
         url: '#'
-      - title: Project 4
-        text: This is a very short project description.
-        icon: 4.jpg
-        url: '#'
-      - title: Project 5
-        text: This is a very short project description.
-        icon: 5.jpg
-        url: '#'
-      - title: Project 6
-        text: This is a very short project description.
-        icon: 6.jpg
-        url: '#'
+
 
   - type: aside.html
     section_id: aside
