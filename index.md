@@ -29,13 +29,15 @@ sections:
         text: USB no detectada, borrado accidental, ruptura del conector, etc.
         icon: bi-usb-drive-fill
       - title: Recuperación de información en disco duro HDD
-        text: Fallas lógicas, dispositivo no detectado por la BIOS, borrado accidental, etc.
+        text: Fallas lógicas, dispositivo no detectado, borrado accidental, etc.
         icon: bi-device-hdd-fill
       - title: Recuperación de información en disco duro SSD
-        text: Fallas lógicas, dispositivo no detectado por la BIOS, borrado accidental, etc.
+        text: Fallas lógicas, dispositivo no detectado, borrado accidental, etc.
         icon: bi-device-ssd-fill
+      - title: Revisión de seguridad en páginas web
+        text: Reconocimiento, análisis de superficie de ataque, pruebas de vulnerabilidades comunes y reporte.
+        icon: bi-display-horizontal
       - title: Recuperación de información en memorías Micro SD y SD (proximamente)
-        text: Memoria no detectada, borrado accidental.
         icon: bi-sd-card-fill
 
   - type: portfolio.html
@@ -43,18 +45,18 @@ sections:
     #section_id: portfolio
     #background_style: bg-dark
     projects:
-      - title: Project 1
+      - title: OSINT 1
         text: This is a very short project description.
         # the images are located in:
         # img/portfolio/fullsize
         # img/portfolio/thumbnails
         icon: 1.jpg
         url: '#'
-      - title: Project 2
+      - title: OSINT 2
         text: This is a very short project description.
         icon: 2.jpg
         url: '#'
-      - title: Project 3
+      - title: OSINT 3
         text: This is a very short project description.
         icon: 3.jpg
         url: '#'
@@ -102,23 +104,26 @@ sections:
           2023 - **El primer fraude investigado**
         text: >-
           Un familiar solicita ayuda con un fraude por más de 50 mil pesos. A raíz de ello se redacta y publica una guía express ([Ver guía](https://www.reddit.com/r/MexicoFinanciero/comments/1992uf8/qué_hacer_antes_de_introducir_tu_dinero_en_una/)) para la validación de sitios web y aplicaciones financieras, alcanzando más de 15 mil visualizaciones. 
+      
       - image: assets/img/portfolio/thumbnails/HackerAcademy.png
         title: >+
           Enero 2025 -
           **Memorias en Ciberseguridad**
         text: >-
           Aceptado en la Hackers Academy de Hackmetrix, completando una formación intensiva de 6 meses en ciberseguridad ofensiva.
-      - image: assets/img/portfolio/thumbnails/Despido.jpg
       
+      - image: assets/img/portfolio/thumbnails/Despido.jpg
         title: >+
           Junio 2025 - **Despido**
         text: >-
           Despedido de un puesto como Backend Engineer, donde se desarrollaban servicios transaccionales para Fintechs.  
+      
       - image: assets/img/usb.jpg
         title: >+
           Agosto 2025 - **Necesidad**
         text: >-
           Se daña una memoria USB con información personal. Sin servicios de recuperación cerca, decido fundar mi propio servicio y ofrecerlo a otros.
+      
       - image: assets/img/portfolio/thumbnails/recovery-2.jpg
         title: >+
             Hoy
