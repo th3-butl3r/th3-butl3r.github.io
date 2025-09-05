@@ -44,19 +44,31 @@ sections:
     #background_style: bg-dark
     projects:
       - title: OSINT: Investigación de fraude
-        text: Short description .
+        text: "Rastreamos una transferencia que nos llevá a descubrir un fraude bajo el nombre de Megacable." 
         # the images are located in:
         # img/portfolio/fullsize
         # img/portfolio/thumbnails
         icon: 1.jpg
         url: '#'
       - title: OSINT: Validación de información
-        text: Short description.
+        text: Recopilamos y validamos la información de una empresa para garantizar que el puesto y la empresa eran reales.
         icon: 2.jpg
         url: '#'
       - title: Project 3
         text: This is a very short project description.
         icon: 3.jpg
+        url: '#'
+      - title: Project 4
+        text: This is a very short project description.
+        icon: 4.jpg
+        url: '#'
+      - title: Project 5
+        text: This is a very short project description.
+        icon: 5.jpg
+        url: '#'
+      - title: Project 6
+        text: This is a very short project description.
+        icon: 6.jpg
         url: '#'
 
   - type: aside.html
