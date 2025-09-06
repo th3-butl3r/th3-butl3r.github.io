@@ -14,7 +14,7 @@ sections:
     section_id: about
     background_style: bg-primary
     title: ¡Tú Eres Primero!
-    text: >
+    text: |
     - ¡Obtén la evaluación de tu caso sin costo! Disponible en nuestro servicio de recuperación de datos.
     - Si no recuperamos tus datos, no pagas. 
     - Diagnostico y Recuperación en Video (evidencia)
