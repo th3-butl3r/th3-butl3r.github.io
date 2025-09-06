@@ -16,9 +16,9 @@ sections:
     title: ¡Tú Eres Primero!
     text: |
       <ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
-        <li>¡Obtén la evaluación de tu caso sin costo! Disponible en nuestro servicio de recuperación de datos</li>
+        <li>Obtén la evaluación de tu caso sin costo ( disponible solo en nuestros servicios de recuperación)</li>
         <li>Si no recuperamos tus datos, no pagas</li>
-        <li>Diagnóstico y recuperación en video (evidencia)</li>
+        <li>Diagnóstico y recuperación en video (transparencia)</li>
       </ul>
    
 
@@ -40,7 +40,6 @@ sections:
           <ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
             <li>Reconocimiento</li>
             <li>Análisis de superficie de ataque</li>
-            <li>Ruptura del conecto</li>
             <li>Pruebas de vulnerabilidades comunes y reporte</li>
           </ul> 
         icon: bi-pc-display
