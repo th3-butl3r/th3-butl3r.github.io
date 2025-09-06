@@ -28,23 +28,48 @@ sections:
     title: Nuestros Servicios
     services:
       - title: Investigación online (OSINT)
-        text: Identificación de fraudes digitales, validación y recopilación de información digital.
+        text: |
+          <ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
+            <li>Identificación de fraudes digitales</li>
+            <li>Validación y recopilación de información digital</li>
+          </ul>
         icon: bi-search
       
       - title: Revisión de seguridad en páginas web
-        text: Reconocimiento, análisis de superficie de ataque, pruebas de vulnerabilidades comunes y reporte.
+        text: |
+          <ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
+            <li>Reconocimiento</li>
+            <li>Análisis de superficie de ataque</li>
+            <li>Ruptura del conecto</li>
+            <li>Pruebas de vulnerabilidades comunes y reporte</li>
+          </ul> 
         icon: bi-pc-display
 
       - title: Recuperación de información en USB
-        text: USB no detectada, borrado accidental, ruptura del conector, etc.
+        text: |
+          <ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
+            <li>USB no detectada</li>
+            <li>Borrado accidental</li>
+            <li>Ruptura del conector</li>
+          </ul> 
         icon: bi-usb-drive-fill
 
       - title: Recuperación de información en disco duro HDD
-        text: Fallas lógicas, dispositivo no detectado, borrado accidental, etc.
+        text: |
+          <ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
+            <li>Dispositivo no detectado</li>
+            <li>Borrado accidental</li>
+            <li>Fallas lógicas</li>
+          </ul>
         icon: bi-device-hdd-fill
 
       - title: Recuperación de información en disco duro SSD
-        text: Fallas lógicas, dispositivo no detectado, borrado accidental, etc.
+        text: |
+          <ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
+            <li>Dispositivo no detectado</li>
+            <li>Borrado accidental</li>
+            <li>Fallas lógicas</li>
+          </ul>
         icon: bi-device-ssd-fill
 
       - title: Recuperación de información en memorías Micro SD y SD (próximamente)
