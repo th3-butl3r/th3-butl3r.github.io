@@ -174,6 +174,6 @@ sections:
       url: mailto:bitseguromx.retrieval735@passinbox.com
     #- title: Instagram
     #  icon: bi-instagram
-    #  url: 'https://www.linkedin.com/in/cvidale/'
+    #  url: 'https://www.instagram.com/bitseguro/'
 
 ---
