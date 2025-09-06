@@ -168,7 +168,7 @@ sections:
       Nuestro horario de atención: 8 AM - 6 PM de lunes a viernes
     actions:
     - title: 753-121-0815
-      icon: bi-telephone-fill
+      icon: bi-phone-fill
     - title: bitseguromx.retrieval735@passinbox.com
       icon: bi-envelope-fill
       url: mailto:bitseguromx.retrieval735@passinbox.com
