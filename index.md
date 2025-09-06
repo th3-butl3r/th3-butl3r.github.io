@@ -25,19 +25,24 @@ sections:
       - title: Investigación online (OSINT)
         text: Identificación de fraudes digitales, validación y recopilación de información digital.
         icon: bi-search
+
       - title: Recuperación de información en USB
         text: USB no detectada, borrado accidental, ruptura del conector, etc.
         icon: bi-usb-drive-fill
+
       - title: Recuperación de información en disco duro HDD
         text: Fallas lógicas, dispositivo no detectado, borrado accidental, etc.
         icon: bi-device-hdd-fill
+
       - title: Recuperación de información en disco duro SSD
         text: Fallas lógicas, dispositivo no detectado, borrado accidental, etc.
         icon: bi-device-ssd-fill
+
       - title: Revisión de seguridad en páginas web
         text: Reconocimiento, análisis de superficie de ataque, pruebas de vulnerabilidades comunes y reporte.
         icon: bi-pc-display
-      - title: Recuperación de información en memorías Micro SD y SD (proximamente)
+        
+      - title: Recuperación de información en memorías Micro SD y SD (próximamente)
         icon: bi-sd-card-fill
 
   - type: portfolio.html
