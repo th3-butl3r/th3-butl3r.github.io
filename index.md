@@ -12,7 +12,7 @@ header:
 sections:
   - type: call-to-action.html
     section_id: about
-    background_style: bg-primary
+    background_style: bg-dark text-primary
     title: ¡Tú Eres Primero!
     text: |
       <ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
@@ -108,7 +108,7 @@ sections:
   - type: members.html
     section_id: members
     title: ¡Nuestro Equipo!
-    #background_style: bg-info text-white
+    background_style: text-black
     members:
       - title: Vidale C.
         text: Lic. en TI | Backend Engineer | Analista OSINT & Ciberseguridad | Fundador
