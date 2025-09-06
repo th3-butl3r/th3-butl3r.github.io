@@ -32,7 +32,7 @@ sections:
           <ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
             <li>Identificación de fraudes digitales</li>
             <li>Validación y recopilación de información digital</li>
-            <li>Servicio disponible a distancia</li>
+            <li><strong>Servicio disponible a distancia</strong></li>
           </ul>
         icon: bi-search
       
@@ -42,7 +42,7 @@ sections:
             <li>Reconocimiento</li>
             <li>Análisis de superficie de ataque</li>
             <li>Pruebas de vulnerabilidades comunes y reporte</li>
-            <li>Servicio disponible a distancia</li>
+            <li><strong>Servicio disponible a distancia</strong></li>
           </ul> 
         icon: bi-pc-display
 
@@ -52,7 +52,7 @@ sections:
             <li>USB no detectada</li>
             <li>Borrado accidental</li>
             <li>Ruptura del conector</li>
-            <li>Servicio NO disponible a distancia</li>
+            <li><strong>Servicio NO disponible a distancia</strong></li>
           </ul> 
         icon: bi-usb-drive-fill
 
@@ -62,7 +62,7 @@ sections:
             <li>Dispositivo no detectado</li>
             <li>Borrado accidental</li>
             <li>Fallas lógicas</li>
-            <li>Servicio NO disponible a distancia</li>
+            <li><strong>Servicio NO disponible a distancia</strong></li>
           </ul>
         icon: bi-device-hdd-fill
 
@@ -72,7 +72,7 @@ sections:
             <li>Dispositivo no detectado</li>
             <li>Borrado accidental</li>
             <li>Fallas lógicas</li>
-            <li>Servicio NO disponible a distancia</li>
+            <li><strong>Servicio NO disponible a distancia</strong></li>
           </ul>
         icon: bi-device-ssd-fill
 
@@ -172,8 +172,8 @@ sections:
     - title: bitseguromx.retrieval735@passinbox.com
       icon: bi-envelope-fill
       url: mailto:bitseguromx.retrieval735@passinbox.com
-    - title: LinkedIn
-      icon: bi-linkedin
-      url: 'https://www.linkedin.com/in/cvidale/'
+    #- title: Instagram
+    #  icon: bi-instagram
+    #  url: 'https://www.linkedin.com/in/cvidale/'
 
 ---
