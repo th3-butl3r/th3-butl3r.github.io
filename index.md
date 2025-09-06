@@ -15,7 +15,7 @@ sections:
     background_style: bg-primary
     title: ¡Tú Eres Primero!
     text: |
-      <ul>
+      <ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
         <li>¡Obtén la evaluación de tu caso sin costo! Disponible en nuestro servicio de recuperación de datos.</li>
         <li>Si no recuperamos tus datos, no pagas.</li>
         <li>Diagnóstico y recuperación en video (evidencia).</li>
