@@ -169,9 +169,9 @@ sections:
     actions:
     - title: 753-121-0815
       icon: bi-telephone-fill
-    - title: Por definir
+    - title: bitseguromx.retrieval735@passinbox.com
       icon: bi-envelope-fill
-      url: mailto:contact@yourwebsite.com
+      url: mailto:bitseguromx.retrieval735@passinbox.com
     - title: LinkedIn
       icon: bi-linkedin
       url: 'https://www.linkedin.com/in/cvidale/'
