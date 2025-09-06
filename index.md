@@ -46,27 +46,23 @@ sections:
         icon: bi-sd-card-fill
 
   - type: portfolio.html
+    title: Certificaciones
     # this section has always ID 'portfolio'
     #section_id: portfolio
     #background_style: bg-dark
     projects:
-      - title: OSINT 1
-        text: This is a very short project description.
+      - title: Ciberseguridad
+        text: Egresado de la Academia de Ciberseguridad de Hackmetrix.
         # the images are located in:
         # img/portfolio/fullsize
         # img/portfolio/thumbnails
-        icon: 1.jpg
+        icon: assets/img/portfolio/thumbnails/HackerAcademy.png
         url: '#'
-      - title: OSINT 2
-        text: This is a very short project description.
-        icon: 2.jpg
-        url: '#'
-      - title: OSINT 3
-        text: This is a very short project description.
-        icon: 3.jpg
+      - title: Computación 
+        text: Egresado de la carrera de TI en la Universidad Nacional Autónoma de México.
+        icon: assets/img/portfolio/thumbnails/EscudoUnam.jpg
         url: '#'
         
-
   - type: aside.html
     section_id: aside
     title: ¡Agenda Tu Cita!
@@ -81,7 +77,7 @@ sections:
     background_style: bg-info text-white
     members:
       - title: Vidale C.
-        text: Ingeniero Backend, Analista OSINT Y Fundador.
+        text: Lic. en TI | Backend Engineer | Analista OSINT & Ciberseguridad
         image: assets/img/members/CEO.jpeg
         url: '#'
       
