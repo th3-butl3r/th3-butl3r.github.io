@@ -98,34 +98,28 @@ sections:
       - image: assets/img/portfolio/thumbnails/ISO27001.jpg
         title: >+
           2024 - 
-          **Estudio de ciberseguridad**
+          **Primeros pasos en ciberseguridad**
         text: >-
           Durante una capacitación sobre la norma ISO 27001 en mi lugar de trabajo, se presentó un caso de interceptación de información en una página web. Esta experiencia despertó en mí el interés por profundizar en el estudio de la ciberseguridad web.. 
 
       - image: assets/img/portfolio/thumbnails/HackerAcademy.png
         title: >+
-          Enero 2025 -
-          **Memorias en ciberseguridad**
+          2025 -
+          **La primer certificación en ciberseguridad**
         text: >-
           Aceptado en la Hackers Academy de Hackmetrix, completando una formación intensiva de 6 meses en ciberseguridad ofensiva.
       
-      - image: assets/img/portfolio/thumbnails/Despido.jpg
-        title: >+
-          Junio 2025 - **Despido**
-        text: >-
-          Despedido de un puesto como Backend Engineer, donde se desarrollaban servicios transaccionales para Fintechs.  
-      
       - image: assets/img/usb.jpg
         title: >+
-          Agosto 2025 - **Necesidad**
+          Agosto 2025 - **Un suceso inesperado**
         text: >-
-          Se daña una memoria USB con información personal. Sin servicios de recuperación cerca, decido fundar mi propio servicio y ofrecerlo a otros.
+          Se daña una memoria USB con información personal. La necesidad de recuperar esa información me lleva a estudiar sobre la recuperación de la información y combinarlo con la seguridad de la misma.
       
       - image: assets/img/portfolio/thumbnails/recovery-2.jpg
         title: >+
             Hoy
         text: >-
-          La formación y preparación continúan para ofrecer un servicio de excelencia...
+          La formación y preparación continúan para ofrecer un servicio de excelencia en la recuperación y seguridad de la información...
 
   - type: contact.html
     section_id: contacts
