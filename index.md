@@ -1,9 +1,9 @@
 ---
 layout: home
 header:
-  title: TU MEJOR ALIADO EN LA BÚSQUEDA Y RECUPERACIÓN DE INFORMACIÓN
+  title: TU RESPALDO PARA ENCONTRAR, RECUPERAR Y ASEGURAR TU INFORMACIÓN.
   text: >
-    Recuperación de información ante fallas lógicas en dispositivos comunes (USB, Micro SD, HDD, SSD), así como investigación y análisis de fuentes abiertas (OSINT) para la detección de posibles fraudes digitales, validación de datos y apoyo estratégico en la toma de decisiones. 
+    Investigación y análisis de fuentes abiertas (OSINT) para la detección de fraudes digitales, validación de datos y apoyo estratégico en la toma de decisiones. Revisión de seguridad en sitios web. Recuperación de información ante fallas lógicas en dispositivos comunes (USB, Micro SD, HDD, SSD).
   action: # action button is optional
     label: VER MÁS
     url: '#about'
@@ -14,7 +14,10 @@ sections:
     section_id: about
     background_style: bg-primary
     title: ¡Tú Eres Primero!
-    text: ¡Obtén la evaluación de tu caso sin costo! Disponible tanto en nuestro servicio de búsqueda de información como en el de recuperación de datos.
+    text: >
+    - ¡Obtén la evaluación de tu caso sin costo! Disponible en nuestro servicio de recuperación de datos.
+    - Si no recuperamos tus datos, no pagas. 
+    - Diagnostico y Recuperación en Video (evidencia)
    
 
   - type: services.html
@@ -25,6 +28,10 @@ sections:
       - title: Investigación online (OSINT)
         text: Identificación de fraudes digitales, validación y recopilación de información digital.
         icon: bi-search
+      
+      - title: Revisión de seguridad en páginas web
+        text: Reconocimiento, análisis de superficie de ataque, pruebas de vulnerabilidades comunes y reporte.
+        icon: bi-pc-display
 
       - title: Recuperación de información en USB
         text: USB no detectada, borrado accidental, ruptura del conector, etc.
@@ -37,10 +44,6 @@ sections:
       - title: Recuperación de información en disco duro SSD
         text: Fallas lógicas, dispositivo no detectado, borrado accidental, etc.
         icon: bi-device-ssd-fill
-
-      - title: Revisión de seguridad en páginas web
-        text: Reconocimiento, análisis de superficie de ataque, pruebas de vulnerabilidades comunes y reporte.
-        icon: bi-pc-display
 
       - title: Recuperación de información en memorías Micro SD y SD (próximamente)
         icon: bi-sd-card-fill
@@ -113,7 +116,7 @@ sections:
         title: >+
           Agosto 2025 - **La estafa que me hizo ofrecer mis servicios de manera formal**
         text: >-
-          Un cliente me pidió ayuda para ver si podía rastrear y recuperar su dinero. Si bien no me fue posible recuperar su dinero, pude encontrar una estafa que llevaba varios años en operación y con la información recopilada, elaboré un reporte y lo envié al departamento de Ciberseguridad de Megacable, ya que la estafa partía del uso del nombre de Megacable y del aprovechamiento del registro en Google Maps de una de sus ubicaciones.
+          Un cliente solicita ayuda para ver si podía rastrear y recuperar su dinero. Si bien no me fue posible recuperar su dinero, pude encontrar una estafa que llevaba varios años en operación y con la información recopilada, elaboré un reporte y lo envié al departamento de Ciberseguridad de Megacable, ya que la estafa partía del uso del nombre de Megacable y del aprovechamiento del registro en Google Maps de una de sus ubicaciones.
       
       - image: assets/img/usb.jpg
         title: >+
