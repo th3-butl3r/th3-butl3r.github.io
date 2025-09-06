@@ -56,11 +56,11 @@ sections:
         # the images are located in:
         # img/portfolio/fullsize
         # img/portfolio/thumbnails
-        icon: HackerAcademy1.png
+        icon: HackerAcademy.png
         url: '#'
       - title: Computación 
         text: Egresado de la carrera de TI en la Universidad Nacional Autónoma de México.
-        icon: EscudoUnam1.jpg
+        icon: EscudoUnam.jpg
         url: '#'
         
   - type: aside.html
@@ -95,10 +95,17 @@ sections:
         text: >-
           Un familiar solicita ayuda con un fraude por más de 50 mil pesos. A raíz de ello se redacta y publica una guía express ([Ver guía](https://www.reddit.com/r/MexicoFinanciero/comments/1992uf8/qué_hacer_antes_de_introducir_tu_dinero_en_una/)) para la validación de sitios web y aplicaciones financieras, alcanzando más de 15 mil visualizaciones. 
       
+      - image: assets/img/portfolio/thumbnails/ISO27001.jpg
+        title: >+
+          2024 - 
+          **Estudio de ciberseguridad**
+        text: >-
+          Durante una capacitación sobre la norma ISO 27001 en mi lugar de trabajo, se presentó un caso de interceptación de información en una página web. Esta experiencia despertó en mí el interés por profundizar en el estudio de la ciberseguridad web.. 
+
       - image: assets/img/portfolio/thumbnails/HackerAcademy.png
         title: >+
           Enero 2025 -
-          **Memorias en Ciberseguridad**
+          **Memorias en ciberseguridad**
         text: >-
           Aceptado en la Hackers Academy de Hackmetrix, completando una formación intensiva de 6 meses en ciberseguridad ofensiva.
       
