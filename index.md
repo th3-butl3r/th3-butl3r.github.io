@@ -3,7 +3,7 @@ layout: home
 header:
   title: TU RESPALDO PARA ENCONTRAR, RECUPERAR Y ASEGURAR TU INFORMACIÓN
   text: >
-    Investigación y análisis de fuentes abiertas (OSINT) para la detección de fraudes digitales, validación de datos y apoyo estratégico en la toma de decisiones. Revisión de seguridad en sitios web. Recuperación de información ante fallas lógicas en dispositivos comunes (USB, Micro SD, HDD, SSD).
+    Investigación y análisis de fuentes abiertas (OSINT) para la detección de fraudes digitales, validación de datos y apoyo estratégico en la toma de decisiones. Revisión de seguridad de páginas web. Recuperación de información ante fallas lógicas en dispositivos comunes (USB, Micro SD, HDD, SSD).
   action: # action button is optional
     label: VER MÁS
     url: '#about'
@@ -36,7 +36,7 @@ sections:
           </ul>
         icon: bi-search
       
-      - title: Revisión de seguridad en páginas web
+      - title: Revisión de seguridad de páginas web
         text: |
           <ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
             <li>Reconocimiento</li>
@@ -141,7 +141,7 @@ sections:
           Junio 2025 -
           **La primer certificación en ciberseguridad**
         text: >-
-          Aceptado en la Hackers Academy de Hackmetrix, completando una formación intensiva de 6 meses en ciberseguridad ofensiva.
+          Aceptado en la Hackers Academy de Hackmetrix, completando una formación intensiva de 6 meses en ciberseguridad ofensiva enfocada en páginas web.
         
       - image: assets/img/portfolio/thumbnails/primerFraude.jpg
         title: >+
