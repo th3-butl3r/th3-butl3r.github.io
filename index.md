@@ -16,7 +16,7 @@ sections:
     title: ¡Tú Eres Primero!
     text: |
       <ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
-        <li>Obtén la evaluación de tu caso sin costo ( disponible solo en nuestros servicios de recuperación)</li>
+        <li>Obtén la evaluación de tu caso sin costo (disponible solo en nuestros servicios de recuperación)</li>
         <li>Si no recuperamos tus datos, no pagas</li>
         <li>Diagnóstico y recuperación en video (transparencia)</li>
       </ul>
