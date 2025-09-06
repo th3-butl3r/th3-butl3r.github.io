@@ -56,11 +56,11 @@ sections:
         # the images are located in:
         # img/portfolio/fullsize
         # img/portfolio/thumbnails
-        icon: HackerAcademy.png
+        icon: HackerAcademy1.png
         url: '#'
       - title: Computación 
         text: Egresado de la carrera de TI en la Universidad Nacional Autónoma de México.
-        icon: EscudoUnam.jpg
+        icon: EscudoUnam1.jpg
         url: '#'
         
   - type: aside.html
