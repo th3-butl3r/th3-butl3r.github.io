@@ -60,7 +60,7 @@ sections:
         url: '#'
       - title: Computación 
         text: Egresado de la carrera de TI en la Universidad Nacional Autónoma de México.
-        icon: EscudoUnam.jpg
+        icon: LogoUNAM.jpg
         url: '#'
         
   - type: aside.html
