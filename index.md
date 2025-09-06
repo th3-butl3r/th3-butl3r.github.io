@@ -108,10 +108,10 @@ sections:
   - type: members.html
     section_id: members
     title: ¡Nuestro Equipo!
-    background_style: text-black
+    #background_style: text-black
     members:
-      - title: Vidale C.
-        text: Lic. en TI | Backend Engineer | Analista OSINT & Ciberseguridad | Fundador
+      - title: Vidale C. |
+          Lic. en TI | Backend Engineer | Analista OSINT & Ciberseguridad | Fundador
         image: assets/img/members/CEO.jpeg
         url: '#'
       
