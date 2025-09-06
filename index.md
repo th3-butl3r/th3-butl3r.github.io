@@ -32,6 +32,7 @@ sections:
           <ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
             <li>Identificación de fraudes digitales</li>
             <li>Validación y recopilación de información digital</li>
+            <li>Servicio disponible a distancia</li>
           </ul>
         icon: bi-search
       
@@ -41,6 +42,7 @@ sections:
             <li>Reconocimiento</li>
             <li>Análisis de superficie de ataque</li>
             <li>Pruebas de vulnerabilidades comunes y reporte</li>
+            <li>Servicio disponible a distancia</li>
           </ul> 
         icon: bi-pc-display
 
@@ -50,6 +52,7 @@ sections:
             <li>USB no detectada</li>
             <li>Borrado accidental</li>
             <li>Ruptura del conector</li>
+            <li>Servicio NO disponible a distancia</li>
           </ul> 
         icon: bi-usb-drive-fill
 
@@ -59,6 +62,7 @@ sections:
             <li>Dispositivo no detectado</li>
             <li>Borrado accidental</li>
             <li>Fallas lógicas</li>
+            <li>Servicio NO disponible a distancia</li>
           </ul>
         icon: bi-device-hdd-fill
 
@@ -68,6 +72,7 @@ sections:
             <li>Dispositivo no detectado</li>
             <li>Borrado accidental</li>
             <li>Fallas lógicas</li>
+            <li>Servicio NO disponible a distancia</li>
           </ul>
         icon: bi-device-ssd-fill
 
@@ -162,7 +167,7 @@ sections:
     text: >-
       Nuestro horario de atención: 8 AM - 6 PM de lunes a viernes
     actions:
-    - title: Por definir
+    - title: 753-121-0815
       icon: bi-telephone-fill
     - title: Por definir
       icon: bi-envelope-fill
