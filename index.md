@@ -29,7 +29,7 @@ sections:
     services:
       - title: Investigación online (OSINT)
         text: |
-          <ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
+          <ul style="text-align: left; list-style-type: disc; padding-left: 20px; color: black;">
             <li>Identificación de fraudes digitales</li>
             <li>Validación y recopilación de información digital</li>
             <li><strong>Servicio disponible a distancia</strong></li>
@@ -38,7 +38,7 @@ sections:
       
       - title: Revisión de seguridad de páginas web
         text: |
-          <ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
+          <ul style="text-align: left; list-style-type: disc; padding-left: 20px; color: black;">
             <li>Reconocimiento</li>
             <li>Análisis de superficie de ataque</li>
             <li>Pruebas de vulnerabilidades comunes y reporte</li>
@@ -48,7 +48,7 @@ sections:
 
       - title: Recuperación de información en USB
         text: |
-          <ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
+          <ul style="text-align: left; list-style-type: disc; padding-left: 20px; color: black;">
             <li>USB no detectada</li>
             <li>Borrado accidental</li>
             <li>Ruptura del conector</li>
@@ -58,7 +58,7 @@ sections:
 
       - title: Recuperación de información en disco duro HDD
         text: |
-          <ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
+          <ul style="text-align: left; list-style-type: disc; padding-left: 20px; color: black;">
             <li>Dispositivo no detectado</li>
             <li>Borrado accidental</li>
             <li>Fallas lógicas</li>
@@ -68,7 +68,7 @@ sections:
 
       - title: Recuperación de información en disco duro SSD
         text: |
-          <ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
+          <ul style="text-align: left; list-style-type: disc; padding-left: 20px; color: black;">
             <li>Dispositivo no detectado</li>
             <li>Borrado accidental</li>
             <li>Fallas lógicas</li>
