@@ -41,7 +41,7 @@ sections:
       - title: Revisión de seguridad en páginas web
         text: Reconocimiento, análisis de superficie de ataque, pruebas de vulnerabilidades comunes y reporte.
         icon: bi-pc-display
-        
+
       - title: Recuperación de información en memorías Micro SD y SD (próximamente)
         icon: bi-sd-card-fill
 
@@ -65,18 +65,7 @@ sections:
         text: This is a very short project description.
         icon: 3.jpg
         url: '#'
-      - title: Project 4
-        text: This is a very short project description.
-        icon: 4.jpg
-        url: '#'
-      - title: Project 5
-        text: This is a very short project description.
-        icon: 5.jpg
-        url: '#'
-      - title: Project 6
-        text: This is a very short project description.
-        icon: 6.jpg
-        url: '#'
+        
 
   - type: aside.html
     section_id: aside
