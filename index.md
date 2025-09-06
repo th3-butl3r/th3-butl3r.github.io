@@ -77,7 +77,7 @@ sections:
     background_style: bg-info text-white
     members:
       - title: Vidale C.
-        text: Lic. en TI | Backend Engineer | Analista OSINT & Ciberseguridad
+        text: Lic. en TI | Backend Engineer | Analista OSINT & Ciberseguridad | Fundador
         image: assets/img/members/CEO.jpeg
         url: '#'
       
@@ -91,9 +91,9 @@ sections:
     actions:
       - image: assets/img/portfolio/thumbnails/primerFraude.jpg
         title: >+
-          2023 - **El primer fraude investigado**
+          2023 - **La primer estafa investigada**
         text: >-
-          Un familiar solicita ayuda con un fraude por más de 50 mil pesos. A raíz de ello se redacta y publica una guía express ([Ver guía](https://www.reddit.com/r/MexicoFinanciero/comments/1992uf8/qué_hacer_antes_de_introducir_tu_dinero_en_una/)) para la validación de sitios web y aplicaciones financieras, alcanzando más de 15 mil visualizaciones. 
+          Un familiar solicita ayuda con una estafa por más de 50 mil pesos. A raíz de ello se redacta y publica una guía express ([Ver guía](https://www.reddit.com/r/MexicoFinanciero/comments/1992uf8/qué_hacer_antes_de_introducir_tu_dinero_en_una/)) para la validación de sitios web y aplicaciones financieras, alcanzando más de 15 mil visualizaciones. 
       
       - image: assets/img/portfolio/thumbnails/ISO27001.jpg
         title: >+
@@ -104,10 +104,16 @@ sections:
 
       - image: assets/img/portfolio/thumbnails/HackerAcademy.png
         title: >+
-          2025 -
+          Junio 2025 -
           **La primer certificación en ciberseguridad**
         text: >-
           Aceptado en la Hackers Academy de Hackmetrix, completando una formación intensiva de 6 meses en ciberseguridad ofensiva.
+        
+      - image: assets/img/portfolio/thumbnails/primerFraude.jpg
+        title: >+
+          Agosto 2025 - **La estafa que me hizo ofrecer mis servicios de manera formal**
+        text: >-
+          Un cliente me pidió ayuda para ver si podía rastrear y recuperar su dinero. Si bien no me fue posible recuperar su dinero, pude encontrar una estafa que llevaba varios años en operación y con la información recopilada, elaboré un reporte y lo envié al departamento de Ciberseguridad de Megacable, ya que la estafa partía del uso del nombre de Megacable y del aprovechamiento del registro en Google Maps de una de sus ubicaciones.
       
       - image: assets/img/usb.jpg
         title: >+
