@@ -16,9 +16,9 @@ sections:
     title: ¡Tú Eres Primero!
     text: |
       <ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
-        <li>¡Obtén la evaluación de tu caso sin costo! Disponible en nuestro servicio de recuperación de datos.</li>
-        <li>Si no recuperamos tus datos, no pagas.</li>
-        <li>Diagnóstico y recuperación en video (evidencia).</li>
+        <li>¡Obtén la evaluación de tu caso sin costo! Disponible en nuestro servicio de recuperación de datos</li>
+        <li>Si no recuperamos tus datos, no pagas</li>
+        <li>Diagnóstico y recuperación en video (evidencia)</li>
       </ul>
    
 
@@ -130,7 +130,7 @@ sections:
           2024 - 
           **Primeros pasos en ciberseguridad**
         text: >-
-          Durante una capacitación sobre la norma ISO 27001 en mi lugar de trabajo, se presentó un caso de interceptación de información en una página web. Esta experiencia despertó en mí el interés por profundizar en el estudio de la ciberseguridad web.. 
+          Durante una capacitación sobre la norma ISO 27001 en mi lugar de trabajo, se presentó un caso de interceptación de información en una página web. Esta experiencia despertó en mí el interés por profundizar en el estudio de la ciberseguridad web.
 
       - image: assets/img/portfolio/thumbnails/HackerAcademy.png
         title: >+
