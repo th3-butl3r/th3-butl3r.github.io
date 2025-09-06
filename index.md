@@ -86,7 +86,7 @@ sections:
     #background_style: bg-dark
     projects:
       - title: Ciberseguridad
-        text: Egresado de la Academia de Ciberseguridad de Hackmetrix.
+        text: Egresado de la Academia de Ciberseguridad en Hackmetrix.
         # the images are located in:
         # img/portfolio/fullsize
         # img/portfolio/thumbnails
