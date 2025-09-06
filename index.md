@@ -15,7 +15,7 @@ sections:
     background_style: bg-dark text-primary
     title: ¡Tú Eres Primero!
     text: |
-      <ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
+      <ul style="text-align: left; list-style-type: disc; padding-left: 20px; color: white;">
         <li>Obtén la evaluación de tu caso sin costo (disponible solo en nuestros servicios de recuperación)</li>
         <li>Si no recuperamos tus datos, no pagas</li>
         <li>Diagnóstico y recuperación en video (transparencia)</li>
@@ -110,7 +110,7 @@ sections:
     title: ¡Nuestro Equipo!
     #background_style: text-black
     members:
-      - title: Vidale C. |
+      - title: Vidale C. <br>
           Lic. en TI | Backend Engineer | Analista OSINT & Ciberseguridad | Fundador
         image: assets/img/members/CEO.jpeg
         url: '#'
