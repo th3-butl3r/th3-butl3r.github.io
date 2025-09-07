@@ -169,7 +169,7 @@ sections:
     actions:
     - title: 753-121-0815
       icon: bi-phone-fill
-    - title: bitseguromx.retrieval735@passinbox.com
+    - title: bitsecurity.attention942@slmail.me
       icon: bi-envelope-fill
       url: mailto:bitseguromx.retrieval735@passinbox.com
     #- title: Instagram
