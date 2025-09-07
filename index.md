@@ -172,8 +172,8 @@ sections:
     - title: bitsecurity.attention942@slmail.me
       icon: bi-envelope-fill
       url: mailto:bitseguromx.retrieval735@passinbox.com
-    #- title: Instagram
-    #  icon: bi-instagram
-    #  url: 'https://www.instagram.com/bitseguro/'
+    - title: Instagram
+      icon: bi-instagram
+      url: 'https://www.instagram.com/_bitsecurity'
 
 ---
