@@ -96,7 +96,11 @@ sections:
         text: Egresado de la carrera de TI en la Universidad Nacional Autónoma de México.
         icon: LogoUNAM.jpg
         url: '#'
-        
+      - title: Data Recovery
+        text: Reparación de discos duros y recuperación de datos.
+        icon: data_recovery_certified.jpg
+        url: '#'
+
   - type: aside.html
     section_id: aside
     title: ¡Agenda Tu Cita!
