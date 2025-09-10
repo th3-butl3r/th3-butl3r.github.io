@@ -3,7 +3,7 @@ layout: home
 header:
   title: TU RESPALDO PARA ENCONTRAR, RECUPERAR Y ASEGURAR TU INFORMACIÓN
   text: >
-    Investigación y análisis de fuentes abiertas (OSINT) para la detección de fraudes digitales, validación de datos y apoyo estratégico en la toma de decisiones. Revisión de seguridad de páginas web. Recuperación de información ante fallas lógicas en dispositivos comunes (USB, Micro SD, HDD, SSD).
+    Investigación y análisis de fuentes abiertas (OSINT) para detección de fraudes digitales, validación de datos y apoyo estratégico en la toma de decisiones. Evaluación de seguridad en sitios web y recuperación de información ante fallas lógicas en dispositivos de almacenamiento (USB, MicroSD, HDD, SSD).
   action: # action button is optional
     label: VER MÁS
     url: '#about'
@@ -16,7 +16,7 @@ sections:
     title: ¡Tú Eres Primero!
     text: |
       <ul style="text-align: left; list-style-type: disc; padding-left: 20px; color: white;">
-        <li>Obtén la evaluación de tu caso sin costo (disponible solo en nuestros servicios de recuperación)</li>
+        <li>Obtén la evaluación de tu caso sin costo</li>
         <li>Si no recuperamos tus datos, no pagas</li>
         <li>Diagnóstico y recuperación en video (transparencia)</li>
       </ul>
