@@ -151,13 +151,13 @@ sections:
         title: >+
           Agosto 2025 - **La estafa que me hizo ofrecer mis servicios de manera formal**
         text: >-
-          Un cliente solicita ayuda para ver si podía rastrear y recuperar su dinero. Si bien no me fue posible recuperar su dinero, pude encontrar una estafa que llevaba varios años en operación y con la información recopilada, elaboré un reporte y lo envié al departamento de Ciberseguridad de Megacable, ya que la estafa partía del uso del nombre de Megacable y del aprovechamiento del registro en Google Maps de una de sus ubicaciones.
+          Un cliente solicita ayuda para rastrear y recuperar su dinero. Si bien no me fue posible recuperar su dinero, sí fue posible encontrar una estafa que llevaba varios años en operación y con la información recopilada, fue elaborado un reporte que fue enviado al departamento de Ciberseguridad de Megacable, ya que la estafa partía del uso del nombre de Megacable y del aprovechamiento del registro en Google Maps de una de sus ubicaciones.
       
       - image: assets/img/usb.jpg
         title: >+
           Agosto 2025 - **Un suceso inesperado**
         text: >-
-          Se daña una memoria USB con información personal. La necesidad de recuperar esa información me lleva a estudiar sobre la recuperación de la información y combinarlo con la seguridad de la misma.
+          Se daña una memoria USB con información personal. La necesidad de recuperar esa información me lleva a estudiar sobre la recuperación de la información y combinar este conocimiento con la ciberseguridad.
       
       - image: assets/img/portfolio/thumbnails/recovery-2.jpg
         title: >+
@@ -169,7 +169,7 @@ sections:
     section_id: contacts
     title: ¡Contáctanos & Agenda Tu Cita!
     text: >-
-      Nuestro horario de atención: 8 AM - 6 PM de lunes a viernes
+      Nuestro horario de atención: 8 AM - 6 PM de lunes a viernes<br>Actualmente, nuestros servicios presenciales solo se ofrecen en Lázaro Cárdenas, Mich.
     actions:
     - title: 753-121-0815
       icon: bi-phone-fill
