@@ -103,9 +103,9 @@ sections:
 
   - type: aside.html
     section_id: aside
-    title: ¡Agenda Tu Cita!
+    title: ¡Envíanos Tu Caso!
     actions:
-      - title: RESERVAR AHORA
+      - title: ENVIAR CASO
         url: '#contacts'
         class: btn-light
 
@@ -115,7 +115,7 @@ sections:
     #background_style: text-black
     members:
       - title: Vidale C. <br>
-        text: '<span style="color:black;">Lic. en TI | Backend Engineer | Analista OSINT & Ciberseguridad | Fundador</span>'
+        text: '<span style="color:black;">Lic. en TI | Backend Engineer <br> Analista OSINT & Ciberseguridad <br> Fundador</span>'
         image: assets/img/members/CEO.jpeg
         url: '#'
       
@@ -167,7 +167,7 @@ sections:
 
   - type: contact.html
     section_id: contacts
-    title: ¡Contáctanos & Agenda Tu Cita!
+    title: ¡Contáctanos & Envíanos Tu Caso!
     text: >-
       Nuestro horario de atención: 8 AM - 6 PM de lunes a viernes<br>Actualmente, nuestros servicios presenciales solo se ofrecen en Lázaro Cárdenas, Mich.
     actions:
