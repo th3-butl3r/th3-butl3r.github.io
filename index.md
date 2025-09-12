@@ -15,7 +15,7 @@ sections:
     background_style: bg-dark text-primary
     title: ¡Tú Eres Primero!
     text: |
-      <ul style="text-align: left; list-style-type: disc; padding-left: 20px; color: white;">
+      <ul style="list-style-position: inside; text-align: center; padding-left: 0; margin: auto; color: white;">
         <li>Obtén la evaluación de tu caso sin costo</li>
         <li>Si no recuperamos tus datos, no pagas</li>
         <li>Diagnóstico y recuperación en video (transparencia)</li>
@@ -29,7 +29,7 @@ sections:
     services:
       - title: Investigación online (OSINT)
         text: |
-          <ul style="text-align: left; list-style-type: disc; padding-left: 20px; color: black;">
+          <ul style="list-style-position: inside; text-align: center; list-style-type: disc; padding-left: 0; margin: auto; color: black;">
             <li>Identificación de fraudes digitales</li>
             <li>Validación y recopilación de información digital</li>
             <li><strong>Servicio disponible a distancia</strong></li>
@@ -38,7 +38,7 @@ sections:
       
       - title: Revisión de seguridad de páginas web
         text: |
-          <ul style="text-align: left; list-style-type: disc; padding-left: 20px; color: black;">
+          <ul style="list-style-position: inside; text-align: center; list-style-type: disc; padding-left: 0; margin: auto; color: black;">
             <li>Reconocimiento</li>
             <li>Análisis de superficie de ataque</li>
             <li>Pruebas de vulnerabilidades comunes y reporte</li>
@@ -46,9 +46,9 @@ sections:
           </ul> 
         icon: bi-pc-display
 
-      - title: Recuperación de información en USB
+      - title: Recuperación de datos en USB
         text: |
-          <ul style="text-align: left; list-style-type: disc; padding-left: 20px; color: black;">
+          <ul style="list-style-position: inside; text-align: center; list-style-type: disc; padding-left: 0; margin: auto; color: black;">
             <li>USB no detectada</li>
             <li>Borrado accidental</li>
             <li>Ruptura del conector</li>
@@ -56,9 +56,9 @@ sections:
           </ul> 
         icon: bi-usb-drive-fill
 
-      - title: Recuperación de información en disco duro HDD
+      - title: Recuperación de datos en disco duro HDD
         text: |
-          <ul style="text-align: left; list-style-type: disc; padding-left: 20px; color: black;">
+          <ul style="list-style-position: inside; text-align: center; list-style-type: disc; padding-left: 0; margin: auto; color: black;">
             <li>Dispositivo no detectado</li>
             <li>Borrado accidental</li>
             <li>Fallas lógicas</li>
@@ -66,9 +66,9 @@ sections:
           </ul>
         icon: bi-device-hdd-fill
 
-      - title: Recuperación de información en disco duro SSD
+      - title: Recuperación de datos en disco duro SSD
         text: |
-          <ul style="text-align: left; list-style-type: disc; padding-left: 20px; color: black;">
+          <ul style="list-style-position: inside; text-align: center; list-style-type: disc; padding-left: 0; margin: auto; color: black;">
             <li>Dispositivo no detectado</li>
             <li>Borrado accidental</li>
             <li>Fallas lógicas</li>
@@ -76,7 +76,7 @@ sections:
           </ul>
         icon: bi-device-ssd-fill
 
-      - title: Recuperación de información en memorías Micro SD y SD (próximamente)
+      - title: Recuperación de datos en memorías Micro SD y SD (próximamente)
         icon: bi-sd-card-fill
 
   - type: portfolio.html
@@ -123,7 +123,7 @@ sections:
   - type: timeline.html
     section_id: timeline
     title: Nuestra Historia
-    background_style: bg-dark text-primary
+    #background_style: bg-dark text-primary
     last_image: assets/img/Lab.jpg
 
     actions:
@@ -147,7 +147,7 @@ sections:
         text: >-
           Aceptado en la Hackers Academy de Hackmetrix, completando una formación intensiva de 6 meses en ciberseguridad ofensiva enfocada en páginas web.
         
-      - image: assets/img/portfolio/thumbnails/primerFraude.jpg
+      - image: assets/img/Logo.png
         title: >+
           Agosto 2025 - **La estafa que me hizo ofrecer mis servicios de manera formal**
         text: >-
@@ -159,12 +159,13 @@ sections:
         text: >-
           Se daña una memoria USB con información personal. La necesidad de recuperar esa información me lleva a estudiar sobre la recuperación de la información y combinar este conocimiento con la ciberseguridad.
       
-      - image: assets/img/portfolio/thumbnails/recovery-2.jpg
+      - image: assets/img/recovery-2.jpg
         title: >+
             Hoy
         text: >-
           La formación y preparación continúan para ofrecer un servicio de excelencia en la recuperación y seguridad de la información...
 
+  
   - type: contact.html
     section_id: contacts
     title: ¡Contáctanos & Envíanos Tu Caso!
@@ -178,6 +179,6 @@ sections:
       url: mailto:bitseguromx.retrieval735@passinbox.com
     - title: Instagram
       icon: bi-instagram
-      url: 'https://www.instagram.com/_bitsecurity'
+      url: 'https://www.instagram.com/bastionlab.mx'
 
 ---
