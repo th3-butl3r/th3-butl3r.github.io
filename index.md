@@ -3,7 +3,8 @@ layout: home
 header:
   title: TU RESPALDO PARA ENCONTRAR, RECUPERAR Y ASEGURAR TU INFORMACIÓN
   text: >
-    Investigación y análisis de fuentes abiertas (OSINT) para detección de fraudes digitales, validación de datos y apoyo estratégico en la toma de decisiones. Evaluación de seguridad en sitios web y recuperación de información ante fallas lógicas en dispositivos de almacenamiento (USB, MicroSD, HDD, SSD).
+    Recuperación de información ante fallas lógicas en dispositivos de almacenamiento. Evaluación de seguridad en sitios web para microempresas
+    e investigación y análisis online para la prevención de estafas digitales.
   action: # action button is optional
     label: VER MÁS
     url: '#about'
@@ -20,19 +21,61 @@ sections:
         <li>Si no recuperamos tus datos, no pagas</li>
         <li>Diagnóstico y recuperación en video (transparencia)</li>
       </ul>
+    actions:
+      - title: ENVIAR CASO
+        url: '#contacts'
+        class: btn-light
    
 
   - type: services.html
     section_id: services
     #background_style: bg-info
-    title: Nuestros Servicios
+    title: Servicios De Recuperación De Datos 
     services:
-      - title: Investigación online (OSINT)
+      - title: Memorias
         text: |
           <ul style="list-style-position: inside; text-align: center; list-style-type: disc; padding-left: 0; margin: auto; color: black;">
-            <li>Identificación de fraudes digitales</li>
-            <li>Validación y recopilación de información digital</li>
-            <li><strong>Servicio disponible a distancia</strong></li>
+            <li>USB</li>
+            <li>No detectada</li>
+            <li>Borrado accidental</li>
+            <li>Ruptura del conector</li>
+            <li><strong>NO disponible a distancia</strong></li>
+          </ul> 
+        icon: bi-usb-drive-fill
+
+      - title: Discos Duros (mecánicos)
+        text: |
+          <ul style="list-style-position: inside; text-align: center; list-style-type: disc; padding-left: 0; margin: auto; color: black;">
+            <li>Dispositivo no detectado</li>
+            <li>Borrado accidental</li>
+            <li><strong>NO disponible a distancia</strong></li>
+          </ul>
+        icon: bi-device-hdd-fill
+
+      - title: Discos Duros (sólidos)
+        text: |
+          <ul style="list-style-position: inside; text-align: center; list-style-type: disc; padding-left: 0; margin: auto; color: black;">
+            <li>Dispositivo no detectado</li>
+            <li>Borrado accidental</li>
+            <li><strong>NO disponible a distancia</strong></li>
+          </ul>
+        icon: bi-device-ssd-fill
+
+      #- title: Recuperación de datos en memorías Micro SD y SD (próximamente)
+      #  icon: bi-sd-card-fill
+  
+  - type: services.html
+    section_id: services
+    #background_style: bg-info
+    title: Servicios De Ciberseguridad
+    services:
+      - title: Investigación Online
+        text: |
+          <ul style="list-style-position: inside; text-align: center; list-style-type: disc; padding-left: 0; margin: auto; color: black;">
+            <li>Prevención de fraudes digitales</li>
+            <li>Validación de información digital</li>
+            <li>Recopilación de información digital</li>
+            <li><strong>Disponible a distancia</strong></li>
           </ul>
         icon: bi-search
       
@@ -41,43 +84,11 @@ sections:
           <ul style="list-style-position: inside; text-align: center; list-style-type: disc; padding-left: 0; margin: auto; color: black;">
             <li>Reconocimiento</li>
             <li>Análisis de superficie de ataque</li>
-            <li>Pruebas de vulnerabilidades comunes y reporte</li>
-            <li><strong>Servicio disponible a distancia</strong></li>
+            <li>Pruebas de vulnerabilidades</li>
+            <li>Reporte</li>
+            <li><strong>Disponible a distancia</strong></li>
           </ul> 
         icon: bi-pc-display
-
-      - title: Recuperación de datos en USB
-        text: |
-          <ul style="list-style-position: inside; text-align: center; list-style-type: disc; padding-left: 0; margin: auto; color: black;">
-            <li>USB no detectada</li>
-            <li>Borrado accidental</li>
-            <li>Ruptura del conector</li>
-            <li><strong>Servicio NO disponible a distancia</strong></li>
-          </ul> 
-        icon: bi-usb-drive-fill
-
-      - title: Recuperación de datos en disco duro HDD
-        text: |
-          <ul style="list-style-position: inside; text-align: center; list-style-type: disc; padding-left: 0; margin: auto; color: black;">
-            <li>Dispositivo no detectado</li>
-            <li>Borrado accidental</li>
-            <li>Fallas lógicas</li>
-            <li><strong>Servicio NO disponible a distancia</strong></li>
-          </ul>
-        icon: bi-device-hdd-fill
-
-      - title: Recuperación de datos en disco duro SSD
-        text: |
-          <ul style="list-style-position: inside; text-align: center; list-style-type: disc; padding-left: 0; margin: auto; color: black;">
-            <li>Dispositivo no detectado</li>
-            <li>Borrado accidental</li>
-            <li>Fallas lógicas</li>
-            <li><strong>Servicio NO disponible a distancia</strong></li>
-          </ul>
-        icon: bi-device-ssd-fill
-
-      - title: Recuperación de datos en memorías Micro SD y SD (próximamente)
-        icon: bi-sd-card-fill
 
   - type: portfolio.html
     title: Certificaciones
@@ -90,24 +101,17 @@ sections:
         # the images are located in:
         # img/portfolio/fullsize
         # img/portfolio/thumbnails
-        icon: HackerAcademy.png
+        icon: CertificadoHackmetrix.webp
         url: '#'
       - title: Computación 
         text: Egresado de la carrera de TI en la Universidad Nacional Autónoma de México.
-        icon: LogoUNAM.jpg
+        icon: CertificadoUNAM.webp
         url: '#'
       - title: Data Recovery
         text: Reparación de discos duros y recuperación de datos.
-        icon: data_recovery_certified.jpg
+        icon: CertificadoUdemy.webp
         url: '#'
 
-  - type: aside.html
-    section_id: aside
-    title: ¡Envíanos Tu Caso!
-    actions:
-      - title: ENVIAR CASO
-        url: '#contacts'
-        class: btn-light
 
   - type: members.html
     section_id: members
