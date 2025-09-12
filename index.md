@@ -142,9 +142,9 @@ sections:
           2024 - 
           **Primeros pasos en ciberseguridad**
         text: >-
-          Durante una capacitación sobre la norma ISO 27001 en mi lugar de trabajo, se presentó un caso de interceptación de información en una página web. Esta experiencia despertó en mí el interés por profundizar en el estudio de la ciberseguridad web.
+          Durante una capacitación sobre la norma ISO 27001 en mi trabajo, se presentó un caso de interceptación de información en una página web. Esta experiencia despertó en mí el interés por profundizar en el estudio de la ciberseguridad web.
 
-      - image: assets/img/portfolio/thumbnails/HackerAcademy.png
+      - image: assets/img/portfolio/thumbnails/CertificadoHackmetrix.webp
         title: >+
           Junio 2025 -
           **La primer certificación en ciberseguridad**
@@ -155,7 +155,7 @@ sections:
         title: >+
           Agosto 2025 - **La estafa que me hizo ofrecer mis servicios de manera formal**
         text: >-
-          Un cliente solicita ayuda para rastrear y recuperar su dinero. Si bien no me fue posible recuperar su dinero, sí fue posible encontrar una estafa que llevaba varios años en operación y con la información recopilada, fue elaborado un reporte que fue enviado al departamento de Ciberseguridad de Megacable, ya que la estafa partía del uso del nombre de Megacable y del aprovechamiento del registro en Google Maps de una de sus ubicaciones.
+          Un cliente solicita ayuda para rastrear y recuperar su dinero. Si bien no fue posible recuperar su dinero, pudimos encontrar una estafa que llevaba varios años en operación. Con la información recopilada, fue elaborado un reporte que fue enviado al departamento de Ciberseguridad de Megacable, ya que la estafa partía del uso del nombre de Megacable y del aprovechamiento del registro en Google Maps de una de sus ubicaciones.
       
       - image: assets/img/usb.jpg
         title: >+
