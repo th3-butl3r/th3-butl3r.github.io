@@ -128,16 +128,16 @@ sections:
     section_id: timeline
     title: Nuestra Historia
     #background_style: bg-dark text-primary
-    last_image: assets/img/Lab.jpg
+    last_image: assets/img/Lab.webp
 
     actions:
-      - image: assets/img/portfolio/thumbnails/primerFraude.jpg
+      - image: assets/img/portfolio/thumbnails/primerFraude.webp
         title: >+
           2023 - **La primer estafa investigada**
         text: >-
           Un familiar solicita ayuda con una estafa por más de 50 mil pesos. A raíz de ello se redacta y publica una guía express ([Ver guía](https://www.reddit.com/r/MexicoFinanciero/comments/1992uf8/qué_hacer_antes_de_introducir_tu_dinero_en_una/)) para la validación de sitios web y aplicaciones financieras, alcanzando más de 15 mil visualizaciones. 
       
-      - image: assets/img/portfolio/thumbnails/ISO27001.jpg
+      - image: assets/img/ISO-27001.webp
         title: >+
           2024 - 
           **Primeros pasos en ciberseguridad**
@@ -178,11 +178,12 @@ sections:
     actions:
     - title: 753-121-0815
       icon: bi-phone-fill
-    - title: bitsecurity.attention942@slmail.me
-      icon: bi-envelope-fill
-      url: mailto:bitseguromx.retrieval735@passinbox.com
     - title: Instagram
       icon: bi-instagram
       url: 'https://www.instagram.com/bastionlab.mx'
+    - title: contacto@bastionlab.com.mx
+      icon: bi-envelope-fill
+      url: mailto:contacto@bastionlab.com.mx
+    
 
 ---
