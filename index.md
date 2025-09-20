@@ -26,19 +26,41 @@ sections:
         url: '#contacts'
         class: btn-light
    
-
+  - type: services.html
+    section_id: services
+    #background_style: bg-info
+    title: Servicios De Ciberseguridad
+    services:
+      - title: Investigación Online
+        text: |
+          <ul style="list-style-position: inside; text-align: center; list-style-type: disc; padding-left: 0; margin: auto; color: black;">
+            <li>Revisión de exposición digital</li>
+            <li>Prevención de fraudes digitales</li>
+            <li>Validación de información</li>
+            <li>Recopilación de información</li>
+            <li><strong>Disponible a distancia</strong></li>
+          </ul>
+        icon: bi-search
+      
+      - title: Revisión de seguridad de páginas web
+        text: |
+          <ul style="list-style-position: inside; text-align: center; list-style-type: disc; padding-left: 0; margin: auto; color: black;">
+            <li>Reconocimiento de riesgos</li>
+            <li>Pruebas de vulnerabilidades</li>
+            <li>Reporte con soluciones</li>
+            <li><strong>Disponible a distancia</strong></li>
+          </ul> 
+        icon: bi-pc-display
   - type: services.html
     section_id: services
     #background_style: bg-info
     title: Servicios De Recuperación De Datos 
     services:
-      - title: Memorias
+      - title: Memorias<br>(USB, SD, Micro SD)
         text: |
           <ul style="list-style-position: inside; text-align: center; list-style-type: disc; padding-left: 0; margin: auto; color: black;">
-            <li>USB</li>
-            <li>No detectada</li>
+            <li>Dispositivo no detectado</li>
             <li>Borrado accidental</li>
-            <li>Ruptura del conector</li>
             <li><strong>NO disponible a distancia</strong></li>
           </ul> 
         icon: bi-usb-drive-fill
@@ -64,31 +86,7 @@ sections:
       #- title: Recuperación de datos en memorías Micro SD y SD (próximamente)
       #  icon: bi-sd-card-fill
   
-  - type: services.html
-    section_id: services
-    #background_style: bg-info
-    title: Servicios De Ciberseguridad
-    services:
-      - title: Investigación Online
-        text: |
-          <ul style="list-style-position: inside; text-align: center; list-style-type: disc; padding-left: 0; margin: auto; color: black;">
-            <li>Prevención de fraudes digitales</li>
-            <li>Validación de información digital</li>
-            <li>Recopilación de información digital</li>
-            <li><strong>Disponible a distancia</strong></li>
-          </ul>
-        icon: bi-search
-      
-      - title: Revisión de seguridad de páginas web
-        text: |
-          <ul style="list-style-position: inside; text-align: center; list-style-type: disc; padding-left: 0; margin: auto; color: black;">
-            <li>Reconocimiento</li>
-            <li>Análisis de superficie de ataque</li>
-            <li>Pruebas de vulnerabilidades</li>
-            <li>Reporte</li>
-            <li><strong>Disponible a distancia</strong></li>
-          </ul> 
-        icon: bi-pc-display
+  
 
   - type: portfolio.html
     title: Certificaciones
