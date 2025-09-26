@@ -6,8 +6,8 @@ const Team = () => {
   const teamMembers = [
     {
       name: "Vidale C.",
-      role: "Lic. en Tecnologías de la Información | Analista OSINT | Founder",
-      specialties: ["OSINT", "Digital Forensic", "Web App Security"],
+      role: "Lic. en Tecnologías de la Información",
+      specialties: ["OSINT", "Web App Security", "Digital Forensic"],
       bio: "4+ años como Backend Engineer, Técnico en recuperación de datos y egresado de la Hackmetrix Academy.",
       social: { linkedin: "https://www.linkedin.com/in/cvidale/", twitter: "#", github: "#" }
     },
@@ -21,8 +21,7 @@ const Team = () => {
             NUESTRO <span className="text-cyber-green">EQUIPO</span>
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-            Un equipo multidisciplinario de expertos en ciberseguridad con experiencia
-            comprobada en los sectores más exigentes.
+            Las personas detrás cuentan con una trayectoria considerable en tecnología y formación constante.
           </p>
         </div>
 
