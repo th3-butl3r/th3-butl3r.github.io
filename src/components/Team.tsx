@@ -21,7 +21,7 @@ const Team = () => {
             NUESTRO <span className="text-cyber-green">EQUIPO</span>
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-            Las personas detrás cuentan con una trayectoria considerable en tecnología y formación constante.
+            Las personas detrás cuentan con una trayectoria considerable en tecnología.
           </p>
         </div>
 
