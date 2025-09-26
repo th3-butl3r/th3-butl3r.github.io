@@ -13,10 +13,10 @@ header:
 sections:
   - type: call-to-action.html
     section_id: about
-    background_style: bg-dark text-primary
+    #background_style: bg-dark text-primary
     title: ¡Tú Eres Primero!
     text: |
-      <ul style="list-style-position: inside; text-align: center; padding-left: 0; margin: auto; color: white;">
+      <ul style="list-style-position: inside; text-align: center; padding-left: 0; margin: auto; color: black;">
         <li>Obtén la evaluación de tu caso sin costo</li>
         <li>Si no recuperamos tus datos, no pagas</li>
         <li>Diagnóstico y recuperación en video (transparencia)</li>
@@ -24,7 +24,7 @@ sections:
     actions:
       - title: ENVIAR CASO
         url: '#contacts'
-        class: btn-light
+        #class: btn-light
    
   - type: services.html
     section_id: services
@@ -154,7 +154,7 @@ sections:
         title: >+
           Agosto 2025 - **La estafa que me hizo ofrecer mis servicios de manera formal**
         text: >-
-          Un cliente solicita ayuda para rastrear y recuperar su dinero. Si bien no fue posible recuperar su dinero, pudimos encontrar una estafa que llevaba varios años en operación. Con la información recopilada, fue elaborado un reporte que fue enviado al departamento de Ciberseguridad de Megacable, ya que la estafa partía del uso del nombre de Megacable y del aprovechamiento del registro en Google Maps de una de sus ubicaciones.
+          Una persona nos solicita ayuda para rastrear y recuperar su dinero, ofreciéndose desde un inicio pagar por el servicio. Si bien no fue posible recuperar su dinero, pudimos encontrar una estafa que llevaba varios años en operación. Con la información recopilada, fue elaborado un reporte que fue enviado al departamento de Ciberseguridad de Megacable, ya que la estafa partía del uso del nombre de Megacable y del aprovechamiento del registro en Google Maps de una de sus ubicaciones.
       
       - image: assets/img/usb.jpg
         title: >+
