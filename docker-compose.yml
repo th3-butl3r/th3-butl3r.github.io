@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  cyberforge-dev:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm run dev -- --host 0.0.0.0
+    restart: unless-stopped
+
+  cyberforge-prod:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    command: |
+      sh -c "npm run build && 
+             npm install -g serve && 
+             serve -s dist -l 3000"
+    restart: unless-stopped
