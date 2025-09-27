@@ -1,6 +1,6 @@
 import { Shield, Search, HardDrive } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroCyberImage from "@/assets/data_recovery.jpg";
+import heroCyberImage from "@/assets/data_recovery.webp";
 
 const Hero = () => {
   return (
