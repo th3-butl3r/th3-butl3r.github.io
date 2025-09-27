@@ -1,6 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useEffect, useState, useRef } from "react";
 
 const Timeline = () => {
+  const [visibleEvents, setVisibleEvents] = useState<number[]>([]);
+  const eventRefs = useRef<(HTMLDivElement | null)[]>([]);
+
   const events = [
     {
     year: "2023",
@@ -47,6 +51,26 @@ const Timeline = () => {
     }
   ];
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const index = parseInt(entry.target.getAttribute('data-index') || '0');
+          if (entry.isIntersecting) {
+            setVisibleEvents(prev => [...new Set([...prev, index])]);
+          }
+        });
+      },
+      { threshold: 0.3, rootMargin: '50px' }
+    );
+
+    eventRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section id="timeline" className="py-16 sm:py-20 lg:py-24">
       <div className="container mx-auto px-4 sm:px-6">
@@ -65,7 +89,20 @@ const Timeline = () => {
 
           <div className="space-y-8 lg:space-y-12">
             {events.map((event, index) => (
-              <div key={index} className={`flex flex-col lg:flex-row items-center ${index % 2 === 0 ? 'lg:justify-start' : 'lg:justify-end'}`}>
+              <div 
+                key={index} 
+                ref={(el) => eventRefs.current[index] = el}
+                data-index={index}
+                className={`flex flex-col lg:flex-row items-center ${index % 2 === 0 ? 'lg:justify-start' : 'lg:justify-end'} 
+                  transform transition-all duration-1000 ease-out ${
+                    visibleEvents.includes(index) 
+                      ? 'translate-y-0 opacity-100' 
+                      : 'translate-y-12 opacity-0'
+                  }`}
+                  style={{
+                    transitionDelay: `${index * 200}ms`, // Retraso dinámico basado en el índice
+                  }}
+              >
                 <div className={`w-full lg:w-5/12 ${index % 2 === 0 ? 'lg:pr-8 lg:text-right' : 'lg:pl-8 lg:text-left'}`}>
                   <Card className="bg-gradient-card border-border/50 hover:shadow-cyber transition-all duration-300 group">
                     <CardHeader className="pb-4">
@@ -82,7 +119,7 @@ const Timeline = () => {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                      <p className="text-sm sm:text-base text-muted-foreground leading-relaxed text-justify">
                         {event.description}
                       </p>
                     </CardContent>
@@ -104,8 +141,10 @@ const Timeline = () => {
               <h3 className="text-xl font-bold text-foreground">Presente & Futuro</h3>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground leading-relaxed">
-                La formación y preparación continúan para ofrecer un servicio de excelencia en la recuperación y seguridad de la información...
+              <p className="text-muted-foreground leading-relaxed text-justify">
+                Nuestro laboratorio de recuperación de datos está en desarrollo. Seguimos avanzando en formación y preparación
+                 para ofrecer un servicio de excelencia en la recuperación y protección de la información, brindando soluciones seguras 
+                 y confiables a cada uno de nuestros clientes.
               </p>
             </CardContent>
           </Card>
