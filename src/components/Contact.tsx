@@ -1,33 +1,70 @@
-import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    nombre: "",
-    apellido: "",
-    email: "",
-    empresa: "",
-    telefono: "",
-    mensaje: "",
+    name: '',
+    phone: '',
+    email: '',
+    description: ''
   });
+  const { toast } = useToast();
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSend = () => {
-    // Limpia el formulario después de enviar
-    setFormData({
-      nombre: "",
-      apellido: "",
-      email: "",
-      empresa: "",
-      telefono: "",
-      mensaje: "",
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Validación básica
+    if (!formData.name.trim() || !formData.email.trim() || !formData.description.trim()) {
+      toast({
+        title: "Error",
+        description: "Por favor completa todos los campos obligatorios.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Validación de email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      toast({
+        title: "Error",
+        description: "Por favor ingresa un email válido.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Crear el mailto con los datos del formulario
+    const subject = `Consulta Bastion Lab - ${formData.name}`;
+    const body = `
+Nombre: ${formData.name}
+Email: ${formData.email}
+${formData.phone ? `Teléfono: ${formData.phone}` : ''}
+
+Descripción de la situación:
+${formData.description}
+    `.trim();
+
+    const mailtoUrl = `mailto:contact@cyberforge.security?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Abrir el cliente de correo
+    window.location.href = mailtoUrl;
+    
+    // Limpiar el formulario
+    setFormData({ name: '', phone: '', email: '', description: '' });
+    
+    toast({
+      title: "Consulta preparada",
+      description: "Se ha abierto tu cliente de correo con la consulta lista para enviar.",
     });
   };
 
@@ -52,61 +89,48 @@ const Contact = () => {
                 Descríbenos tu caso
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <Input
-                  name="nombre"
-                  placeholder="Nombre"
-                  className="bg-background/50"
-                  value={formData.nombre}
-                  onChange={handleChange}
+            <CardContent>
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <Input 
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  placeholder="Nombre *" 
+                  className="bg-background/50" 
+                  required
                 />
-                <Input
-                  name="apellido"
-                  placeholder="Apellido"
-                  className="bg-background/50"
-                  value={formData.apellido}
-                  onChange={handleChange}
+                <Input 
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleInputChange}
+                  placeholder="Teléfono (opcional)" 
+                  className="bg-background/50" 
+                  type="tel"
                 />
-              </div>
-              <Input
-                name="email"
-                placeholder="Email"
-                type="email"
-                className="bg-background/50"
-                value={formData.email}
-                onChange={handleChange}
-              />
-              <Input
-                name="empresa"
-                placeholder="Empresa"
-                className="bg-background/50"
-                value={formData.empresa}
-                onChange={handleChange}
-              />
-              <Input
-                name="telefono"
-                placeholder="Teléfono"
-                className="bg-background/50"
-                value={formData.telefono}
-                onChange={handleChange}
-              />
-              <Textarea
-                name="mensaje"
-                placeholder="Describe tu situación o necesidades de seguridad..."
-                className="bg-background/50 min-h-32"
-                value={formData.mensaje}
-                onChange={handleChange}
-              />
-              <a
-                className="w-full bg-gradient-accent text-primary-foreground hover:shadow-cyber transition-all duration-300 flex items-center justify-center py-3 rounded-md"
-                href={`mailto:contacto@bastionlab.com.mx?subject=Consulta%20Confidencial&body=Nombre:%20${formData.nombre}%20${formData.apellido}%0AEmail:%20${formData.email}%0AEmpresa:%20${formData.empresa}%0ATeléfono:%20${formData.telefono}%0AMensaje:%20${encodeURIComponent(
-                  formData.mensaje
-                )}`}
-                onClick={handleSend} // Limpia el formulario al hacer clic
-              >
-                <strong>Enviar Consulta</strong>
-              </a>
+                <Input 
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  placeholder="Email *" 
+                  type="email" 
+                  className="bg-background/50" 
+                  required
+                />
+                <Textarea 
+                  name="description"
+                  value={formData.description}
+                  onChange={handleInputChange}
+                  placeholder="Describe tu caso con el mayor detalle posible... *"
+                  className="bg-background/50 min-h-32"
+                  required
+                />
+                <Button 
+                  type="submit"
+                  className="w-full bg-gradient-accent text-primary-foreground hover:shadow-cyber transition-all duration-300"
+                >
+                  <strong>Enviar Consulta</strong>
+                </Button>
+              </form>
             </CardContent>
           </Card>
 
@@ -125,7 +149,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-semibold text-foreground">Email</div>
-                    <div className="text-muted-foreground"><a href="mailto:contacto@bastionlab.com.mx" className="hover:underline">contacto@bastionlab.com.mx</a></div>
+                                        <div className="text-muted-foreground"><a href="mailto:contacto@bastionlab.com.mx" className="hover:underline">contacto@bastionlab.com.mx</a></div>
                   </div>
                 </div>
                 
@@ -160,7 +184,7 @@ const Contact = () => {
                 </div>
               </CardContent>
             </Card>
-            
+
             <Card className="bg-gradient-card border-border/50">
               <CardHeader>
                 <CardTitle className="text-xl font-bold text-foreground">
@@ -171,7 +195,7 @@ const Contact = () => {
                 <p className="text-muted-foreground mb-4">
                   Para incidentes de recuperación de datos urgentes, contáctanos inmediatamente:
                 </p>
-                <Button variant="destructive" className="w-full">
+                <Button disabled variant="destructive" className="w-full">
                   <strong>DISPONIBLE PRÓXIMAMENTE</strong>
                 </Button>
               </CardContent>
