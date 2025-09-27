@@ -36,7 +36,7 @@ const Contact = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-4 sm:mb-6">
-            <span className="text-cyber-blue">CONTACTO</span> PROFESIONAL
+            <span className="text-cyber-blue">MEDIOS</span> DE CONTACTO
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
             ¿Necesitas una consulta de seguridad digital o recuperación de datos?
@@ -125,7 +125,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-semibold text-foreground">Email</div>
-                    <div className="text-muted-foreground">contacto@bastionlab.com.mx</div>
+                    <div className="text-muted-foreground"><a href="mailto:contacto@bastionlab.com.mx" className="hover:underline">contacto@bastionlab.com.mx</a></div>
                   </div>
                 </div>
                 
