@@ -18,11 +18,11 @@ const Hero = () => {
         {/* Company Name */}
         <div className="mb-6 sm:mb-8">
           <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-black tracking-tight mb-2 sm:mb-4">
-            <span className="text-foreground">| </span>
+            <span className="text-foreground">- </span>
             <span className="text-cyber-white">Bastion</span>
             <span className="text-foreground"> </span>
             <span className="text-cyber-white">Lab</span>
-            <span className="text-foreground"> |</span>
+            <span className="text-foreground"> -</span>
           </h1>
           <div className="text-right text-sm sm:text-lg md:text-xl font-bold text-muted-foreground">
             EST. 2021
