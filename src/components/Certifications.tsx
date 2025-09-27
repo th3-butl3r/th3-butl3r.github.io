@@ -4,10 +4,10 @@ import { Badge } from "@/components/ui/badge";
 const Certifications = () => {
   const certifications = [
     {
-      category: "Web Pentesting",
+      category: "Pentesting Web",
       color: "cyber-blue",
       certs: [
-        { name: "Web Pentesting", org: "Hackmetrix", year: "2025" },
+        { name: "Pentesting Web", org: "Hackmetrix", year: "2025" },
         { name: "Pentesting con Metasploit", org: "Platzi", year: "2024" },
         { name: "OWASP TOP 10", org: "Platzi", year: "2024" },
         { name: "Pishing Expert", org: "LetsDefend", year: "2025" },
