@@ -12,7 +12,7 @@ const Services = () => {
     },
     {
       icon: Shield,
-      title: "Web Pentesting para microempresas",
+      title: "Pentesting Web",
       subtitle: "Revisión de seguridad en páginas web para microempresas",
       description: "Evaluación completa de la seguridad de tu página web, identificando vulnerabilidades críticas.",
       features: ["Reconocimiento de riesgos", "Pruebas de vulnerabilidad", "Reporte con soluciones", "DISPONIBLE A DISTANCIA"]
