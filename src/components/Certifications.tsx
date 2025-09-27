@@ -1,7 +1,31 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+
+
+import { useState } from "react";
+
+
+import certUdemyDataRecovery from "@/assets/CertificadoUdemy.webp";
+import certHackmetrix from "@/assets/CertificadoHackmetrix.webp";
+import certUnam from "@/assets/CertificadoUNAM.webp";
+import certOwasp from "@/assets/CertificadoOWASP10.webp";
+import certPlatziMetasploit from "@/assets/CertificadoMetasploit.webp";
+import certPhishing from "@/assets/CertificadoPhishing.webp";
+import certSecureDev from "@/assets/CertificadoDesarrolloSeguro.webp";
+
 
 const Certifications = () => {
+    const [selectedCert, setSelectedCert] = useState<{ name: string; image: string } | null>(null);
+    const certImages: Record<string, string> = {
+      "Reparación de discos duros y recuperación de datos": certUdemyDataRecovery,
+      "Pentesting Web": certHackmetrix,
+      "Lic. Tecnologías de la Información en Ciencias": certUnam,
+      "OWASP TOP 10": certOwasp,
+      "Pentesting con Metasploit": certPlatziMetasploit,
+      "Pishing Expert": certPhishing,
+      "Desarrollo Seguro": certSecureDev,
+    };
   const certifications = [
     {
       category: "Pentesting Web",
@@ -37,7 +61,12 @@ const Certifications = () => {
       ]
     }
   ];
-
+  const handleCertClick = (certName: string) => {
+    const image = certImages[certName];
+    if (image) {
+      setSelectedCert({ name: certName, image });
+    }
+  };
   return (
     <section id="certifications" className="py-16 sm:py-20 lg:py-24">
       <div className="container mx-auto px-4 sm:px-6">
@@ -63,7 +92,10 @@ const Certifications = () => {
               <CardContent className="space-y-4">
                 {category.certs.map((cert, idx) => (
                   <div key={idx} className="border-l-2 border-cyber-blue/30 pl-4 group-hover:border-cyber-blue/60 transition-colors duration-300">
-                    <h4 className="font-bold text-foreground">{cert.name}</h4>
+                    <h4 className={`font-bold text-foreground ${certImages[cert.name] ? 'cursor-pointer hover:text-cyber-blue transition-colors' : ''}`}
+                      onClick={() => handleCertClick(cert.name)}>
+                      {cert.name}
+                    </h4>
                     <p className="text-sm text-muted-foreground">{cert.org}</p>
                     <Badge variant="outline" className="mt-1 text-xs">
                       {cert.year}
@@ -90,6 +122,25 @@ const Certifications = () => {
             <div className="text-sm sm:text-base text-muted-foreground">Certificaciones Vigentes</div>
           </div>
         </div>
+         {/* Certification Dialog */}
+        <Dialog open={!!selectedCert} onOpenChange={() => setSelectedCert(null)}>
+          <DialogContent className="max-w-4xl">
+            <DialogHeader>
+              <DialogTitle className="text-center text-xl font-bold">
+                Certificación {selectedCert?.name}
+              </DialogTitle>
+            </DialogHeader>
+            {selectedCert && (
+              <div className="flex justify-center">
+                <img 
+                  src={selectedCert.image} 
+                  alt={`Certificación ${selectedCert.name}`}
+                  className="max-w-full h-auto rounded-lg shadow-lg"
+                />
+              </div>
+            )}
+          </DialogContent>
+        </Dialog>
       </div>
     </section>
   );
