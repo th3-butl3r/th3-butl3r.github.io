@@ -6,11 +6,12 @@ const Team = () => {
   const teamMembers = [
     {
       name: "Vidale C.",
-      role: "Lic. en Tecnologías de la Información",
+      role: "Lic. en Tecnologías para la Información en Ciencias",
       specialties: ["OSINT", "Web App Security", "Data Recovery"],
       bio: "4+ años como Backend Engineer, Técnico en recuperación de datos y egresado de la Hackmetrix Academy.",
       social: { linkedin: "https://www.linkedin.com/in/cvidale/", twitter: "#", github: "#" }
     },
+  
   ];
 
   return (
@@ -25,7 +26,9 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="flex justify-center">
+          {/*<div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 max-w-2xl"> para cuando son más de dos miembros */}
+          <div className="grid grid-cols-1 gap-6 lg:gap-8 max-w-sm">
           {teamMembers.map((member, index) => (
             <Card key={index} className="bg-gradient-card border-border/50 group hover:shadow-cyber transition-all duration-300">
               <CardHeader className="text-center pb-4">
@@ -57,6 +60,7 @@ const Team = () => {
               </CardContent>
             </Card>
           ))}
+          </div>
         </div>
       </div>
     </section>
