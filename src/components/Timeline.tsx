@@ -46,7 +46,7 @@ const Timeline = () => {
     {
       year: "Agosto 2025",
       title: "Recuperación de datos",
-      description: "Se daña una memoria USB con información personal. La necesidad de recuperar esa información me lleva a estudiar sobre la recuperación de la información y combinar este conocimiento con la ciberseguridad.",
+      description: "Una memoria USB con información personal es dañada. La necesidad de recuperar esa información me lleva a estudiar sobre la recuperación de la información y combinar este conocimiento con la ciberseguridad.",
       milestone: "Diversificación"
     }
   ];
@@ -142,9 +142,10 @@ const Timeline = () => {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground leading-relaxed text-justify">
-                Nuestro laboratorio de recuperación de datos está en desarrollo. Seguimos avanzando en formación y preparación
-                 para ofrecer un servicio de excelencia en la recuperación y protección de la información, brindando soluciones seguras 
-                 y confiables a cada uno de nuestros clientes.
+                Estamos consolidando nuestro laboratorio de recuperación de datos.
+                 Poco a poco lo equipamos con la tecnología y las herramientas necesarias para ofrecer
+                  un servicio de excelencia en la recuperación de la información, garantizando una solución confiable
+                  para nuestros clientes.
               </p>
             </CardContent>
           </Card>
