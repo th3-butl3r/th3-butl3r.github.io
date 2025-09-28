@@ -54,7 +54,7 @@ Descripción de la situación:
 ${formData.description}
     `.trim();
 
-    const mailtoUrl = `mailto:contact@cyberforge.security?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoUrl = `mailto:contacto@bastionlab.com.mx?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
     // Abrir el cliente de correo
     window.location.href = mailtoUrl;

@@ -40,7 +40,7 @@ const Team = () => {
                 <p className="text-cyber-blue font-medium text-sm">{member.role}</p>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-sm text-muted-foreground leading-relaxed text-justify">
                   {member.bio}
                 </p>
                 

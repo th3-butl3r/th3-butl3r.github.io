@@ -56,7 +56,7 @@ const Services = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-muted-foreground mb-6 leading-relaxed text-justify">
                   {service.description}
                 </p>
                 <ul className="space-y-2">
