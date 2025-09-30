@@ -43,14 +43,15 @@ const Certifications = () => {
       color: "cyber-purple",
       certs: [
         { name: "Reparación de discos duros y recuperación de datos", org: "Udemy", year: "2025" },
-        { name: "Experto en Recuperación de datos (en progreso...)", org: "Whop", year: "2025" },
+        { name: "Experto en Recuperación de datos (en curso...)", org: "Whop", year: "2025" },
       ]
     },
     {
       category: "OSINT & Investigación",
       color: "cyber-green",
       certs: [
-        { name: "OSINT: Open-Source Intelligence (en progreso...)", org: "Udemy", year: "2025" },
+        { name: "OSINT: Open-Source Intelligence (en curso...)", org: "Udemy", year: "2025" },
+        { name: "Rastreo de acosadores y ciberdelincuentes (en curso...)", org: "Udemy", year: "2025" },
       ]
     },
     {
