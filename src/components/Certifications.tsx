@@ -13,6 +13,7 @@ import certOwasp from "@/assets/CertificadoOWASP10.webp";
 import certPlatziMetasploit from "@/assets/CertificadoMetasploit.webp";
 import certPhishing from "@/assets/CertificadoPhishing.webp";
 import certSecureDev from "@/assets/CertificadoDesarrolloSeguro.webp";
+import certOSINT from "@/assets/CertificadoOSINT.webp";
 
 
 const Certifications = () => {
@@ -25,6 +26,7 @@ const Certifications = () => {
       "Pentesting con Metasploit": certPlatziMetasploit,
       "Pishing Expert": certPhishing,
       "Desarrollo Seguro": certSecureDev,
+      "OSINT: Open-Source Intelligence": certOSINT,
     };
   const certifications = [
     {
@@ -50,7 +52,7 @@ const Certifications = () => {
       category: "OSINT & Investigación",
       color: "cyber-green",
       certs: [
-        { name: "OSINT: Open-Source Intelligence (en curso...)", org: "Udemy", year: "2025" },
+        { name: "OSINT: Open-Source Intelligence", org: "Udemy", year: "2025" },
         { name: "Rastreo de acosadores y ciberdelincuentes (en curso...)", org: "Udemy", year: "2025" },
       ]
     },
