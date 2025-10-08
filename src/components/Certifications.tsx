@@ -12,7 +12,6 @@ import certUnam from "@/assets/CertificadoUNAM.webp";
 import certOwasp from "@/assets/CertificadoOWASP10.webp";
 import certPlatziMetasploit from "@/assets/CertificadoMetasploit.webp";
 import certPhishing from "@/assets/CertificadoPhishing.webp";
-import certSecureDev from "@/assets/CertificadoDesarrolloSeguro.webp";
 import certOSINT from "@/assets/CertificadoOSINT.webp";
 
 
@@ -25,7 +24,6 @@ const Certifications = () => {
       "OWASP TOP 10": certOwasp,
       "Pentesting con Metasploit": certPlatziMetasploit,
       "Pishing Expert": certPhishing,
-      "Desarrollo Seguro": certSecureDev,
       "OSINT: Open-Source Intelligence": certOSINT,
     };
   const certifications = [
@@ -36,8 +34,7 @@ const Certifications = () => {
         { name: "Pentesting Web", org: "Hackmetrix", year: "2025" },
         { name: "Pentesting con Metasploit", org: "Platzi", year: "2024" },
         { name: "OWASP TOP 10", org: "Platzi", year: "2024" },
-        { name: "Pishing Expert", org: "LetsDefend", year: "2025" },
-        { name: "Desarrollo Seguro", org: "Hackmetrix", year: "2025" }
+        { name: "Pishing Expert", org: "LetsDefend", year: "2025" }
       ]
     },
     {
