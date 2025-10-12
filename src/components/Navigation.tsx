@@ -106,7 +106,7 @@ const Navigation = () => {
           <AlertDialogHeader>
             <AlertDialogTitle>Confirmar navegación</AlertDialogTitle>
             <AlertDialogDescription>
-              Saldrás de Bastion Lab y serás redirigido al blog personal del analista. Vidale C.: https://medium.com/@th3-butl3r
+              Saldrás de Bastion Lab y serás redirigido al blog personal del analista Vidale C.: https://medium.com/@th3-butl3r
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
