@@ -33,32 +33,36 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto mb-8 sm:mb-12 px-4">
           <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-foreground leading-relaxed">
             Servicios en{" "}
-            <span className="text-cyber-blue font-semibold">OSINT</span>,{" "}
-            <span className="text-cyber-purple font-semibold">Soporte Técnico</span> y{" "}
+            <span className="text-cyber-purple font-semibold">Soporte Técnico</span>,{" "}
+            <span className="text-cyber-blue font-semibold">OSINT</span> y{" "}
             <span className="text-cyber-green font-semibold">Recuperación de Datos</span>
           </p>
         </div>
 
         {/* Services Icons */}
         <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-8 md:gap-12 mb-12 sm:mb-16">
-          <div className="flex flex-col items-center">
-            <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-cyber-blue/20 flex items-center justify-center mb-3 shadow-glow">
-              <Search className="w-6 h-6 sm:w-8 sm:h-8 text-cyber-blue" />
-            </div>
-            <span className="text-xs sm:text-sm font-medium text-muted-foreground">OSINT</span>
-          </div>
+        
           <div className="flex flex-col items-center">
             <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-cyber-purple/20 flex items-center justify-center mb-3 shadow-glow">
               <Headset className="w-6 h-6 sm:w-8 sm:h-8 text-cyber-purple" />
             </div>
             <span className="text-xs sm:text-sm font-medium text-muted-foreground">Soporte Técnico</span>
           </div>
+          
+          <div className="flex flex-col items-center">
+            <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-cyber-blue/20 flex items-center justify-center mb-3 shadow-glow">
+              <Search className="w-6 h-6 sm:w-8 sm:h-8 text-cyber-blue" />
+            </div>
+            <span className="text-xs sm:text-sm font-medium text-muted-foreground">OSINT</span>
+          </div>
+          
           <div className="flex flex-col items-center">
             <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-cyber-green/20 flex items-center justify-center mb-3 shadow-glow">
               <HardDrive className="w-6 h-6 sm:w-8 sm:h-8 text-cyber-green" />
             </div>
-            <span className="text-xs sm:text-sm font-medium text-muted-foreground">Recuperación de Datos</span>
+            <span className="text-xs sm:text-sm font-medium text-muted-foreground">Data Recovery</span>
           </div>
+
         </div>
 
         {/* CTA */}

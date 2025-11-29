@@ -4,19 +4,21 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const Services = () => {
   const services = [
     {
-      icon: Search,
-      title: "OSINT",
-      subtitle: "Open Source Intelligence",
-      description: "Recopilación y análisis de información de fuentes públicas para investigaciones digitales.",
-      features: ["Análisis de redes sociales", "Revisión de exposición digital", "Geolocalización", "Prevención de estafas digitales", "DISPONIBLE A DISTANCIA"]
-    },
-    {
       icon: Headset,
       title: "Soporte Técnico",
       subtitle: "Instalación y Configuración",
       description: "Servicios técnicos especializados para hogares y pequeños negocios con atención personalizada.",
       features: ["Instalación y configuración de redes LAN", "Instalación de software", "Mantenimiento preventivo", "Configuración de SoftRestaurant", "NO DISPONIBLE A DISTANCIA"]
     },
+    
+    {
+      icon: Search,
+      title: "OSINT",
+      subtitle: "Open Source Intelligence",
+      description: "Recopilación y análisis de información de fuentes públicas para investigaciones digitales.",
+      features: ["Análisis de redes sociales", "Revisión de exposición digital", "Geolocalización", "Prevención de estafas digitales", "DISPONIBLE A DISTANCIA"]
+    },
+    
     {
       icon: HardDrive,
       title: "Recuperación de Datos",
