@@ -7,10 +7,10 @@ import { useState } from "react";
 
 
 import certUdemyDataRecovery from "@/assets/CertificadoUdemy.webp";
-import certHackmetrix from "@/assets/CertificadoHackmetrix.webp";
+import certSupport from "@/assets/CertificadoSupport.webp";
 import certUnam from "@/assets/CertificadoUNAM.webp";
-import certOwasp from "@/assets/CertificadoOWASP10.webp";
-import certPlatziMetasploit from "@/assets/CertificadoMetasploit.webp";
+import certMalware from "@/assets/CertificadoMalware.webp";
+import certCiberPersonal from "@/assets/CertificadoCiberPersonal.webp";
 import certPhishing from "@/assets/CertificadoPhishing.webp";
 import certOSINT from "@/assets/CertificadoOSINT.webp";
 
@@ -19,22 +19,23 @@ const Certifications = () => {
     const [selectedCert, setSelectedCert] = useState<{ name: string; image: string } | null>(null);
     const certImages: Record<string, string> = {
       "Reparación de discos duros y recuperación de datos": certUdemyDataRecovery,
-      "Pentesting Web": certHackmetrix,
+      "Atención al Cliente y Soporte a Usuarios": certSupport,
       "Lic. Tecnologías de la Información en Ciencias": certUnam,
-      "OWASP TOP 10": certOwasp,
-      "Pentesting con Metasploit": certPlatziMetasploit,
+      "Análisis de Malware": certMalware,
+      "Ciberseguridad Personal": certCiberPersonal,
       "Pishing Expert": certPhishing,
       "OSINT: Open-Source Intelligence": certOSINT,
     };
   const certifications = [
     {
-      category: "Pentesting Web",
+      category: "Soporte Técnico",
       color: "cyber-blue",
       certs: [
-        { name: "Pentesting Web", org: "Hackmetrix", year: "2025" },
-        { name: "Pentesting con Metasploit", org: "Platzi", year: "2024" },
-        { name: "OWASP TOP 10", org: "Platzi", year: "2024" },
-        { name: "Pishing Expert", org: "LetsDefend", year: "2025" }
+        { name: "Atención al Cliente y Soporte a Usuarios", org: "Platzi", year: "2025" },
+        { name: "Pishing Expert", org: "LetsDefend", year: "2025" },
+        { name: "Ciberseguridad Personal", org: "Platzi", year: "2025" },
+        { name: "Análisis de Malware", org: "Platzi", year: "2025" },
+        { name: "Redes Informáticas de Internet (en curso...)", org: "Platzi", year: "" },
       ]
     },
     {
@@ -50,7 +51,7 @@ const Certifications = () => {
       color: "cyber-green",
       certs: [
         { name: "OSINT: Open-Source Intelligence", org: "Udemy", year: "2025" },
-        { name: "Rastreo de acosadores y ciberdelincuentes (en curso...)", org: "Udemy", year: "2025" },
+        { name: "Rastreo de acosadores y ciberdelincuentes (en curso...)", org: "Udemy", year: "" },
       ]
     },
     {

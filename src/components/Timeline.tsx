@@ -44,10 +44,16 @@ const Timeline = () => {
       milestone: "Crecimiento"
     },
     {
-      year: "Agosto 2025",
-      title: "Recuperación de datos",
-      description: "Una memoria USB con información personal es dañada. La necesidad de recuperar esa información me lleva a estudiar sobre la recuperación de la información y combinar este conocimiento con la ciberseguridad.",
-      milestone: "Diversificación"
+      year: "Septiembre 2025",
+      title: "Incorporación del servicio de: Recuperación de Datos",
+      description: "La pérdida de datos en una memoria USB con información personal despertó la necesidad de aprender técnicas de recuperación y reforzar conocimientos en el manejo de información en dispositivos de almacenamiento. Gracias a esta experiencia, incorporamos el servicio de recuperación de datos como una solución adicional para nuestros clientes.",
+      milestone: "Ampliación"
+    }, 
+    {
+      year: "Octubre 2025",
+      title: "Incorporación del servicio de: Soporte Técnico",
+      description: "A raíz de los resultados después de apoyar a un pequeño restaurante con la instalación y configuración de su red y software de operación SoftRestaurant, incorporamos oficialmente el servicio de soporte técnico para atender a más clientes.",
+      milestone: "Ampliación"
     }
   ];
 
@@ -79,7 +85,7 @@ const Timeline = () => {
             NUESTRA <span className="text-cyber-red">HISTORIA</span>
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-            Desde nuestros inicios, cuando la necesidad tocó la puerta, hasta lanzar nuestros servicios de manera oficial para ayudar a más personas en seguridad digital.
+            Desde nuestros inicios, cuando la necesidad tocó la puerta, hasta lanzar nuestros servicios de manera oficial para ayudar a las personas.
           </p>
         </div>
 
@@ -137,7 +143,7 @@ const Timeline = () => {
         <div className="mt-20 text-center">
           <Card className="bg-gradient-card border-cyber-blue/50 max-w-2xl mx-auto">
             <CardHeader>
-              <CardTitle className="text-2xl font-bold text-cyber-blue">2025+</CardTitle>
+              <CardTitle className="text-2xl font-bold text-cyber-blue">2026+</CardTitle>
               <h3 className="text-xl font-bold text-foreground">Presente & Futuro</h3>
             </CardHeader>
             <CardContent>
