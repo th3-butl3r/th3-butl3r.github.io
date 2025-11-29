@@ -57,7 +57,7 @@ const Hero = () => {
             <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-cyber-green/20 flex items-center justify-center mb-3 shadow-glow">
               <HardDrive className="w-6 h-6 sm:w-8 sm:h-8 text-cyber-green" />
             </div>
-            <span className="text-xs sm:text-sm font-medium text-muted-foreground">Data Recovery</span>
+            <span className="text-xs sm:text-sm font-medium text-muted-foreground">Recuperación de Datos</span>
           </div>
         </div>
 

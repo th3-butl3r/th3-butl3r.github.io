@@ -19,8 +19,8 @@ const Services = () => {
     },
     {
       icon: HardDrive,
-      title: "Data Recovery",
-      subtitle: "Recuperación de Datos",
+      title: "Recuperación de Datos",
+      subtitle: "Data Recovery",
       description: "Recuperación forense de datos ante fallas lógicas en dispositivos de almacenamiento: USB, SD, Micro SD, HDD, SSD.",
       features: ["Dispositivo no detectado", "Borrado accidental", "Formateo accidental", "Diagnóstico y recuperación en video", "No datos, no pago","NO DISPONIBLE A DISTANCIA"]
     }

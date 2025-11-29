@@ -33,8 +33,8 @@ const Footer = () => {
             <h4 className="font-bold text-foreground mb-4">Servicios</h4>
             <ul className="space-y-2 text-muted-foreground">
               <li><a href="#" className="hover:text-cyber-blue transition-colors">OSINT</a></li>
-              <li><a href="#" className="hover:text-cyber-blue transition-colors">Pentesting Web</a></li>
-              <li><a href="#" className="hover:text-cyber-blue transition-colors">Data Recovery</a></li>
+              <li><a href="#" className="hover:text-cyber-blue transition-colors">Soporte Técnico</a></li>
+              <li><a href="#" className="hover:text-cyber-blue transition-colors">Recuperación de Datos</a></li>
               <li><a href="#" className="hover:text-cyber-blue transition-colors">Consultoría</a></li>
             </ul>
           </div>
