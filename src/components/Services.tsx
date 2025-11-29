@@ -1,4 +1,4 @@
-import { Search, Shield, HardDrive, Eye, Lock, Database } from "lucide-react";
+import { Search, Headset, HardDrive, Eye, Lock, Database } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Services = () => {
@@ -11,11 +11,11 @@ const Services = () => {
       features: ["Análisis de redes sociales", "Revisión de exposición digital", "Geolocalización", "Prevención de estafas digitales", "DISPONIBLE A DISTANCIA"]
     },
     {
-      icon: Shield,
-      title: "Pentesting Web",
-      subtitle: "Revisión de seguridad en páginas web para microempresas",
-      description: "Evaluación completa de la seguridad de tu página web, identificando vulnerabilidades críticas.",
-      features: ["Reconocimiento de riesgos", "Pruebas de vulnerabilidad", "Reporte con soluciones", "DISPONIBLE A DISTANCIA"]
+      icon: Headset,
+      title: "Soporte Técnico",
+      subtitle: "Instalación y Configuración",
+      description: "Servicios técnicos especializados para hogares y pequeños negocios con atención personalizada.",
+      features: ["Instalación y configuración de redes LAN", "Instalación de software", "Mantenimiento preventivo", "Configuración de SoftRestaurant", "NO DISPONIBLE A DISTANCIA"]
     },
     {
       icon: HardDrive,
@@ -34,7 +34,7 @@ const Services = () => {
             NUESTROS <span className="text-cyber-blue">SERVICIOS</span>
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-            Ofrecemos soluciones en recuperación de datos e investigación digital.
+            Ofrecemos soluciones en soporte, recuperación de datos e investigación digital.
           </p>
         </div>
 

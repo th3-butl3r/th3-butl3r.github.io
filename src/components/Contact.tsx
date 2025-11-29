@@ -76,7 +76,7 @@ ${formData.description}
             <span className="text-cyber-blue">MEDIOS</span> DE CONTACTO
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-            ¿Necesitas una consulta de seguridad digital o recuperación de datos?
+            ¿Necesitas una consulta de seguridad digital, soporte técnico o recuperación de datos?
             <br /><strong>¡Nuestro equipo está listo para ayudarte!</strong>
           </p>
         </div>
