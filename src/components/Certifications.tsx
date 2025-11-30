@@ -13,6 +13,7 @@ import certMalware from "@/assets/CertificadoMalware.webp";
 import certCiberPersonal from "@/assets/CertificadoCiberPersonal.webp";
 import certPhishing from "@/assets/CertificadoPhishing.webp";
 import certOSINT from "@/assets/CertificadoOSINT.webp";
+import certRedes from "@/assets/CertificadoRedes.webp";
 
 
 const Certifications = () => {
@@ -25,6 +26,7 @@ const Certifications = () => {
       "Ciberseguridad Personal": certCiberPersonal,
       "Pishing Expert": certPhishing,
       "OSINT: Open-Source Intelligence": certOSINT,
+      "Redes Informáticas de Internet": certRedes,
     };
   const certifications = [
     {
@@ -35,7 +37,7 @@ const Certifications = () => {
         { name: "Pishing Expert", org: "LetsDefend", year: "2025" },
         { name: "Ciberseguridad Personal", org: "Platzi", year: "2025" },
         { name: "Análisis de Malware", org: "Platzi", year: "2025" },
-        { name: "Redes Informáticas de Internet (en curso...)", org: "Platzi", year: "" },
+        { name: "Redes Informáticas de Internet", org: "Platzi", year: "2025" },
       ]
     },
     {
