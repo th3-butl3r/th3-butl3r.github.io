@@ -8,12 +8,16 @@ import { useState } from "react";
 
 import certUdemyDataRecovery from "@/assets/CertificadoUdemy.webp";
 import certSupport from "@/assets/CertificadoSupport.webp";
-import certUnam from "@/assets/CertificadoUNAM.webp";
+import certFundCiber from "@/assets/CertificadoFundamentosCiber.webp";
 import certMalware from "@/assets/CertificadoMalware.webp";
 import certCiberPersonal from "@/assets/CertificadoCiberPersonal.webp";
 import certPhishing from "@/assets/CertificadoPhishing.webp";
 import certOSINT from "@/assets/CertificadoOSINT.webp";
 import certRedes from "@/assets/CertificadoRedes.webp";
+import certMetrix from "@/assets/CertificadoHackmetrix.webp";
+import certOwasp from "@/assets/CertificadoOWASP10.webp";
+import certCiberWhats from "@/assets/CertificadoCiberWhatsApp.webp";
+import certIntroInfoForense from "@/assets/CertificadoIntroInformaticaForense.webp"
 
 
 const Certifications = () => {
@@ -21,46 +25,54 @@ const Certifications = () => {
     const certImages: Record<string, string> = {
       "Reparación de discos duros y recuperación de datos": certUdemyDataRecovery,
       "Atención al Cliente y Soporte a Usuarios": certSupport,
-      "Lic. Tecnologías de la Información en Ciencias": certUnam,
       "Análisis de Malware": certMalware,
       "Ciberseguridad Personal": certCiberPersonal,
-      "Pishing Expert": certPhishing,
+      "Análisis de Pishing en Email": certPhishing,
       "OSINT: Open-Source Intelligence": certOSINT,
       "Redes Informáticas de Internet": certRedes,
+      "Ciberseguridad Web": certMetrix,
+      "Fundamentos de Ciberseguridad": certFundCiber,
+      "OWASP Top 10 Riesgos en Aplicaciones": certOwasp,
+      "Ciberseguridad: Simulador Práctico en WhatsApp": certCiberWhats,
+      "Introducción a Informática Forense": certIntroInfoForense,
     };
   const certifications = [
     {
-      category: "Soporte Técnico",
+      category: "Seguridad Digital y Privacidad",
       color: "cyber-blue",
       certs: [
-        { name: "Atención al Cliente y Soporte a Usuarios", org: "Platzi", year: "2025" },
-        { name: "Pishing Expert", org: "LetsDefend", year: "2025" },
+        { name: "Ciberseguridad Web", org: "Hackmetrix", year: "2025" },
         { name: "Ciberseguridad Personal", org: "Platzi", year: "2025" },
+        { name: "Ciberseguridad: Simulador Práctico en WhatsApp", year: "2026"},
+        { name: "Análisis de Pishing en Email", org: "LetsDefend", year: "2025" },
+        { name: "OWASP Top 10 Riesgos en Aplicaciones", org: "Platzi", year: "2024" },
         { name: "Análisis de Malware", org: "Platzi", year: "2025" },
+        { name: "Fundamentos de Ciberseguridad", org: "Platzi", year: "2026" },
+      ]
+    },
+    {
+      category: "Soporte Técnico",
+      color: "cyber-purple",
+      certs: [
+        { name: "Atención al Cliente y Soporte a Usuarios", org: "Platzi", year: "2025" },
         { name: "Redes Informáticas de Internet", org: "Platzi", year: "2025" },
       ]
     },
     {
       category: "Recuperación de datos",
-      color: "cyber-purple",
+      color: "cyber-green",
       certs: [
         { name: "Reparación de discos duros y recuperación de datos", org: "Udemy", year: "2025" },
+        { name: "Introducción a Informática Forense", org: "Platzi", year: "2025" },
         { name: "Experto en Recuperación de datos (en curso...)", org: "Whop", year: "2025" },
       ]
     },
     {
       category: "OSINT & Investigación",
-      color: "cyber-green",
+      color: "cyber-red",
       certs: [
         { name: "OSINT: Open-Source Intelligence", org: "Udemy", year: "2025" },
         { name: "Rastreo de acosadores y ciberdelincuentes (en curso...)", org: "Udemy", year: "" },
-      ]
-    },
-    {
-      category: "Profesional",
-      color: "cyber-red",
-      certs: [
-        { name: "Lic. Tecnologías de la Información en Ciencias", org: "UNAM", year: "2024" },
       ]
     }
   ];

@@ -6,9 +6,9 @@ const Team = () => {
   const teamMembers = [
     {
       name: "Vidale C.",
-      role: "Lic. en Tecnologías para la Información en Ciencias",
-      specialties: ["OSINT", "Web App Security", "Data Recovery"],
-      bio: "4+ años como Backend Engineer, Técnico en recuperación de datos y egresado de la Hackmetrix Academy.",
+      role: "Lic. en Tecnologías para la Información en Ciencias - UNAM",
+      specialties: ["Backend Engineer", "Digital Security", "Data Recovery"],
+      bio: "Backend Engineer con más de 5 años de experiencia. En paralelo, se especializa en seguridad digital, sistemas de videovigilancia y recuperación de datos.",
       social: { linkedin: "https://www.linkedin.com/in/cvidale/", twitter: "#", github: "#" }
     },
   

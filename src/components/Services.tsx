@@ -1,22 +1,34 @@
-import { Search, Headset, HardDrive, Eye, Lock, Database } from "lucide-react";
+import { Search, Headset, HardDrive, ShieldCheck, Eye, Lock, Database } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Services = () => {
   const services = [
     {
+      icon: ShieldCheck,
+      title: "Seguridad Digital y Privacidad",
+      subtitle: "Digital Security",
+      description: "Revisión y protección de cuentas, dispositivos e información para personas y pequeños negocios, reduciendo riesgos digitales y previniendo fraudes y accesos no autorizados.",
+      features: [
+        "Revisión de seguridad en cuentas y dispositivos",
+        "Configuración de privacidad en redes sociales y mensajería",
+        "Activación de verificación en dos pasos",
+        "Prevención de phishing, fraudes y robo de identidad",
+        "Buenas prácticas de navegación y comunicación segura",
+        "DISPONIBLE A DISTANCIA"
+      ]
+    },
+
+    {
       icon: Headset,
       title: "Soporte Técnico",
       subtitle: "Instalación y Configuración",
       description: "Servicios técnicos especializados para hogares y pequeños negocios con atención personalizada.",
-      features: ["Instalación y configuración de redes LAN", "Instalación de software", "Mantenimiento preventivo", "Configuración de SoftRestaurant", "NO DISPONIBLE A DISTANCIA"]
-    },
-    
-    {
-      icon: Search,
-      title: "OSINT",
-      subtitle: "Open Source Intelligence",
-      description: "Recopilación y análisis de información de fuentes públicas para investigaciones digitales.",
-      features: ["Análisis de redes sociales", "Revisión de exposición digital", "Geolocalización", "Prevención de estafas digitales", "DISPONIBLE A DISTANCIA"]
+      features: [
+        "Instalación y configuración de redes LAN", 
+        "Instalación de software", 
+        "Mantenimiento preventivo de equipos", 
+        "Configuración de SoftRestaurant", 
+        "NO DISPONIBLE A DISTANCIA"]
     },
     
     {
@@ -24,8 +36,27 @@ const Services = () => {
       title: "Recuperación de Datos",
       subtitle: "Data Recovery",
       description: "Recuperación forense de datos ante fallas lógicas en dispositivos de almacenamiento: USB, SD, Micro SD, HDD, SSD.",
-      features: ["Dispositivo no detectado", "Borrado accidental", "Formateo accidental", "Diagnóstico y recuperación en video", "No datos, no pago","NO DISPONIBLE A DISTANCIA"]
-    }
+      features: [
+        "Dispositivo no detectado",
+        "Borrado accidental", 
+        "Formateo accidental", 
+        "Diagnóstico y recuperación en video", 
+        "No datos, no pago",
+        "NO DISPONIBLE A DISTANCIA"]
+    },
+    
+    {
+      icon: Search,
+      title: "OSINT",
+      subtitle: "Open Source Intelligence",
+      description: "Recopilación y análisis de información de fuentes públicas para investigaciones digitales.",
+      features: [
+        "Análisis de redes sociales", 
+        "Revisión de exposición digital", 
+        "Geolocalización", 
+        "Prevención de estafas digitales", 
+        "DISPONIBLE A DISTANCIA"]
+    }    
   ];
 
   return (
@@ -36,7 +67,7 @@ const Services = () => {
             NUESTROS <span className="text-cyber-blue">SERVICIOS</span>
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-            Ofrecemos soluciones en soporte, recuperación de datos e investigación digital.
+            Ofrecemos soluciones en seguridad digital, privacidad, recuperación de datos y soporte técnico.
           </p>
         </div>
 
