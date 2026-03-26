@@ -95,7 +95,7 @@ ${formData.description}
                   name="name"
                   value={formData.name}
                   onChange={handleInputChange}
-                  placeholder="Nombre *" 
+                  placeholder="Tu nombre (sin apellidos)*" 
                   className="bg-background/50" 
                   required
                 />
@@ -103,7 +103,7 @@ ${formData.description}
                   name="phone"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  placeholder="Teléfono (opcional)" 
+                  placeholder="Tu teléfono (opcional)" 
                   className="bg-background/50" 
                   type="tel"
                 />
@@ -111,7 +111,7 @@ ${formData.description}
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  placeholder="Email *" 
+                  placeholder="Tu email*" 
                   type="email" 
                   className="bg-background/50" 
                   required

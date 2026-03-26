@@ -17,7 +17,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Una empresa de recuperación de datos.
+              Una empresa de seguridad digital para todos.
             </p>
             <div className="flex space-x-4">
              
@@ -32,7 +32,7 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-foreground mb-4">Servicios</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#" className="hover:text-cyber-blue transition-colors">OSINT</a></li>
+              <li><a href="#" className="hover:text-cyber-blue transition-colors">Seguridad Digital</a></li>
               <li><a href="#" className="hover:text-cyber-blue transition-colors">Soporte Técnico</a></li>
               <li><a href="#" className="hover:text-cyber-blue transition-colors">Recuperación de Datos</a></li>
               <li><a href="#" className="hover:text-cyber-blue transition-colors">Consultoría</a></li>
