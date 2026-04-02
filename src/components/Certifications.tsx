@@ -18,6 +18,7 @@ import certMetrix from "@/assets/CertificadoHackmetrix.webp";
 import certOwasp from "@/assets/CertificadoOWASP10.webp";
 import certCiberWhats from "@/assets/CertificadoCiberWhatsApp.webp";
 import certIntroInfoForense from "@/assets/CertificadoIntroInformaticaForense.webp"
+import certCiberPreventiva from "@/assets/CertificadoCiberPreventiva.webp"
 
 
 const Certifications = () => {
@@ -35,12 +36,14 @@ const Certifications = () => {
       "OWASP Top 10 Riesgos en Aplicaciones": certOwasp,
       "Ciberseguridad: Simulador Práctico en WhatsApp": certCiberWhats,
       "Introducción a Informática Forense": certIntroInfoForense,
+      "Ciberseguridad Preventiva": certCiberPreventiva,
     };
   const certifications = [
     {
       category: "Seguridad Digital y Privacidad",
       color: "cyber-blue",
       certs: [
+        {name: "Ciberseguridad Preventiva", org: "Platzi", year: "2026"},
         { name: "Ciberseguridad Web", org: "Hackmetrix", year: "2025" },
         { name: "Ciberseguridad Personal", org: "Platzi", year: "2025" },
         { name: "Ciberseguridad: Simulador Práctico en WhatsApp", year: "2026"},
