@@ -148,7 +148,7 @@ const Timeline = () => {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground leading-relaxed text-justify">
-                Continuamos nuestra formación, aprendiendo nuevas tecnologías y actualizándonos mientras consolidamos nuestro laboratorio de investigación y desarrollo de software. Poco a poco lo equipamos con la tecnología y las herramientas necesarias para ofrecer un servicio de excelencia en la vigilancia y la recuperación de la información, garantizando una solución confiable para nuestros clientes.
+                  Continuamos nuestra formación y actualización mientras consolidamos nuestro laboratorio de I+D, equipándolo con la tecnología y las herramientas necesarias para ofrecer un servicio de excelencia en instalación de CCTV, seguridad digital y recuperación de datos, garantizando así una solución confiable y completa para nuestros clientes. 
               </p>
             </CardContent>
           </Card>
