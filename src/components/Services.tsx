@@ -28,6 +28,7 @@ const Services = () => {
         "Instalación de software", 
         "Mantenimiento preventivo de equipos", 
         "Configuración de SoftRestaurant", 
+        "Instalación y configuración de cámaras CCTV (Hikvision, Dahua, Epcom, Hilook, etc.)",
         "NO DISPONIBLE A DISTANCIA"]
     },
     

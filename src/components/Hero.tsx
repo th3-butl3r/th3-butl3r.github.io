@@ -72,7 +72,7 @@ const Hero = () => {
           <Button
           size="lg"
           className="bg-gradient-accent text-primary-foreground hover:shadow-cyber transition-all duration-300 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold">
-            Envíanos tu caso y recibe tu cotización gratis
+            Recibe tu cotización gratis
           </Button>
         </a>
       </div>

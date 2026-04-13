@@ -52,7 +52,7 @@ const Timeline = () => {
     {
       year: "Octubre 2025",
       title: "Incorporación del servicio de: Soporte Técnico",
-      description: "A raíz de los resultados después de apoyar a un pequeño restaurante con la instalación y configuración de su red y software de operación SoftRestaurant, incorporamos oficialmente el servicio de soporte técnico para atender a más clientes.",
+      description: "A raíz de los resultados después de apoyar a un restaurante con la instalación y configuración de su red y software de operación SoftRestaurant, incorporamos oficialmente el servicio de soporte técnico para extender nuestros servicios y atender a más clientes.",
       milestone: "Ampliación"
     }
   ];
@@ -148,10 +148,7 @@ const Timeline = () => {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground leading-relaxed text-justify">
-                Estamos consolidando nuestro laboratorio de recuperación de datos.
-                 Poco a poco lo equipamos con la tecnología y las herramientas necesarias para ofrecer
-                  un servicio de excelencia en la recuperación de la información, garantizando una solución confiable
-                  para nuestros clientes.
+                Continuamos nuestra formación, aprendiendo nuevas tecnologías y actualizándonos mientras consolidamos nuestro laboratorio de investigación y desarrollo de software. Poco a poco lo equipamos con la tecnología y las herramientas necesarias para ofrecer un servicio de excelencia en la vigilancia y la recuperación de la información, garantizando una solución confiable para nuestros clientes.
               </p>
             </CardContent>
           </Card>
