@@ -64,10 +64,12 @@ const Timeline = () => {
           const index = parseInt(entry.target.getAttribute('data-index') || '0');
           if (entry.isIntersecting) {
             setVisibleEvents(prev => [...new Set([...prev, index])]);
+          } else {
+            setVisibleEvents(prev => prev.filter(i => i !== index));
           }
         });
       },
-      { threshold: 0.3, rootMargin: '50px' }
+      { threshold: 0.1, rootMargin: '50px' }
     );
 
     eventRefs.current.forEach((ref) => {
@@ -106,7 +108,7 @@ const Timeline = () => {
                       : 'translate-y-12 opacity-0'
                   }`}
                   style={{
-                    transitionDelay: `${index * 200}ms`, // Retraso dinámico basado en el índice
+                    transitionDelay: `0ms`, // Retraso dinámico basado en el índice
                   }}
               >
                 <div className={`w-full lg:w-5/12 ${index % 2 === 0 ? 'lg:pr-8 lg:text-right' : 'lg:pl-8 lg:text-left'}`}>
