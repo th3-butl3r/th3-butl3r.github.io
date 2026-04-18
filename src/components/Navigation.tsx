@@ -43,7 +43,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="text-2xl font-black">
-            <span className="text-cyber-blue">CF</span>
+            <span className="text-cyber-blue">BL</span>
             <span className="text-muted-foreground">/</span>
           </Link>
 
