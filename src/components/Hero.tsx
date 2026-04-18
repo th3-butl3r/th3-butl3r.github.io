@@ -25,7 +25,7 @@ const Hero = () => {
             <span className="text-foreground"> -</span>
           </h1>
           <div className="text-right text-sm sm:text-lg md:text-xl font-bold text-muted-foreground">
-            EST. 2021
+            EST. 2025
           </div>
         </div>
 
@@ -33,8 +33,8 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto mb-8 sm:mb-12 px-4">
           <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-foreground leading-relaxed">
             Servicios en{" "}
-            <span className="text-cyber-blue font-semibold">Seguridad Digital</span>, {" "}
-            <span className="text-cyber-purple font-semibold">Soporte Técnico</span> y{" "}
+            <span className="text-cyber-purple font-semibold">Soporte Técnico</span>, {" "}
+            <span className="text-cyber-blue font-semibold">Seguridad Digital</span> y{" "}
             <span className="text-cyber-green font-semibold">Recuperación de Datos</span>
           </p>
         </div>
@@ -44,18 +44,20 @@ const Hero = () => {
         
           
           
-          <div className="flex flex-col items-center">
-            <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-cyber-blue/20 flex items-center justify-center mb-3 shadow-glow">
-              <ShieldCheck  className="w-6 h-6 sm:w-8 sm:h-8 text-cyber-blue" />
-            </div>
-            <span className="text-xs sm:text-sm font-medium text-muted-foreground">Seguridad Digital</span>
-          </div>
+          
           
           <div className="flex flex-col items-center">
             <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-cyber-purple/20 flex items-center justify-center mb-3 shadow-glow">
               <Headset className="w-6 h-6 sm:w-8 sm:h-8 text-cyber-purple" />
             </div>
             <span className="text-xs sm:text-sm font-medium text-muted-foreground">Soporte Técnico</span>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-cyber-blue/20 flex items-center justify-center mb-3 shadow-glow">
+              <ShieldCheck  className="w-6 h-6 sm:w-8 sm:h-8 text-cyber-blue" />
+            </div>
+            <span className="text-xs sm:text-sm font-medium text-muted-foreground">Seguridad Digital</span>
           </div>
 
           <div className="flex flex-col items-center">

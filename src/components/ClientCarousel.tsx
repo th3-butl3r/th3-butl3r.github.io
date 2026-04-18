@@ -43,26 +43,6 @@ const clients = [
     logo: restaurant_las_higueras,
     service: "Instalación y configuración de red LAN, así como la configuración del software SoftRestaurant 11 en la estación de trabajo y los equipos de los meseros.",
   },
-  {
-    name: "Bodega Lactigurt",
-    logo: bodega_lactigurt,
-    service: "Limpieza y mantenimiento de equipos de CCTV y configuración de repetidor para ampliación de red.",
-  },
-  {
-    name: "Restaurante Las Higueras",
-    logo: restaurant_las_higueras,
-    service: "Instalación y configuración de red LAN, así como la configuración del software SoftRestaurant 11 en la estación de trabajo y los equipos de los meseros.",
-  },
-  {
-    name: "Bodega Lactigurt",
-    logo: bodega_lactigurt,
-    service: "Limpieza y mantenimiento de equipos de CCTV y configuración de repetidor para ampliación de red.",
-  },
-  {
-    name: "Restaurante Las Higueras",
-    logo: restaurant_las_higueras,
-    service: "Instalación y configuración de red LAN, así como la configuración del software SoftRestaurant 11 en la estación de trabajo y los equipos de los meseros.",
-  },
 ];
 
 const ClientCarousel = () => {
