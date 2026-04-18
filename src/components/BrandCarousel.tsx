@@ -1,14 +1,20 @@
 import { useEffect, useRef } from "react";
 
-const brands = [
-  "Dahua",
-  "Hikvision",
-  "Epcom",
-  "Steren",
-  "HiLook",
-  "SoftRestaurant",
-  "MyBusiness POS",
-  "WhatsApp Business",
+interface Brand {
+  name: string;
+  logo?: string; // optional logo image URL/import
+  showText?: boolean; // optional text label (defaults to true if no logo)
+}
+
+const brands: Brand[] = [
+  { name: "Dahua", showText: true },
+  { name: "Hikvision", showText: true },
+  { name: "Epcom", showText: true },
+  { name: "Steren", showText: true },
+  { name: "HiLook", showText: true },
+  { name: "SoftRestaurant", showText: true },
+  { name: "MyBusiness POS", showText: true },
+  { name: "WhatsApp Business", showText: true },
 ];
 
 const BrandCarousel = () => {
@@ -37,7 +43,7 @@ const BrandCarousel = () => {
     <section className="py-16 sm:py-20">
       <div className="container mx-auto px-4 sm:px-6">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-center mb-10">
-          SOLUCIONES BASADAS EN MARCAS <span className="text-cyber-red">LÍDERES</span>
+          MARCAS QUE <span className="text-cyber-red">MANEJAMOS</span>
         </h2>
         <div
           ref={scrollRef}
@@ -46,11 +52,20 @@ const BrandCarousel = () => {
           {doubled.map((brand, i) => (
             <div
               key={i}
-              className="flex-shrink-0 flex items-center justify-center px-8 py-6 rounded-lg border border-border/50 bg-gradient-card min-w-[180px] hover:shadow-cyber transition-shadow duration-300"
+              className="flex-shrink-0 flex flex-col items-center justify-center gap-2 px-8 py-6 rounded-lg border border-border/50 bg-gradient-card min-w-[180px] hover:shadow-cyber transition-shadow duration-300"
             >
-              <span className="text-lg font-bold text-muted-foreground group-hover:text-foreground transition-colors">
-                {brand}
-              </span>
+              {brand.logo && (
+                <img
+                  src={brand.logo}
+                  alt={brand.name}
+                  className="h-12 w-auto max-w-[140px] object-contain"
+                />
+              )}
+              {(brand.showText || !brand.logo) && (
+                <span className="text-lg font-bold text-muted-foreground">
+                  {brand.name}
+                </span>
+              )}
             </div>
           ))}
         </div>
