@@ -76,7 +76,7 @@ const Services = () => {
             NUESTROS <span className="text-cyber-blue">SERVICIOS</span>
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-            Ofrecemos soluciones en seguridad digital, privacidad, recuperación de datos y soporte técnico.
+            Ofrecemos soluciones en soporte técnico, seguridad digital, privacidad y recuperación de datos.
           </p>
         </div>
 
