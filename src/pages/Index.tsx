@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
-import Certifications from "@/components/Certifications";
+import CertificationsCTA from "@/components/CertificationsCTA";
 import BrandCarousel from "@/components/BrandCarousel";
 import Team from "@/components/Team";
 import Timeline from "@/components/Timeline";
@@ -16,7 +16,7 @@ const Index = () => {
       <Hero />
       <Services />
       <BrandCarousel />
-      <Certifications />
+      <CertificationsCTA />
       <ClientCarousel />
       <Team />
       <Timeline />
