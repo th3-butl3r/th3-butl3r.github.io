@@ -1,4 +1,12 @@
 import { useEffect, useRef } from "react";
+import dahua_icon from "@/assets/tools/dahua-logo.webp";
+import hikvision_icon from "@/assets/tools/hikvision-logo-2.webp";
+import epcom_icon from "@/assets/tools/epcom-logo.webp";
+import steren_icon from "@/assets/tools/steren-logo.webp";
+import hilook_icon from "@/assets/tools/hilook-logo.webp";
+import softrestaurant_icon from "@/assets/tools/softrestaurant-logo2.webp";
+import mybusiness_pos_icon from "@/assets/tools/mybusiness_pos-logo.webp";
+
 
 interface Brand {
   name: string;
@@ -7,13 +15,13 @@ interface Brand {
 }
 
 const brands: Brand[] = [
-  { name: "Dahua", showText: true },
-  { name: "Hikvision", showText: true },
-  { name: "Epcom", showText: true },
-  { name: "Steren", showText: true },
-  { name: "HiLook", showText: true },
-  { name: "SoftRestaurant", showText: true },
-  { name: "MyBusiness POS", showText: true },
+  { name: "Dahua", showText: true, logo: dahua_icon },
+  { name: "Hikvision", showText: true, logo: hikvision_icon },
+  { name: "Epcom", showText: true, logo: epcom_icon },
+  { name: "Steren", showText: true, logo: steren_icon },
+  { name: "HiLook", showText: true, logo: hilook_icon },
+  { name: "Soft Restaurant", showText: true, logo: softrestaurant_icon },
+  { name: "MyBusiness POS", showText: true, logo: mybusiness_pos_icon },
   { name: "WhatsApp Business", showText: true },
 ];
 
@@ -52,17 +60,17 @@ const BrandCarousel = () => {
           {doubled.map((brand, i) => (
             <div
               key={i}
-              className="flex-shrink-0 flex flex-col items-center justify-center gap-2 px-8 py-6 rounded-lg border border-border/50 bg-gradient-card min-w-[180px] hover:shadow-cyber transition-shadow duration-300"
+              className="flex-shrink-0 flex flex-col items-center justify-center gap-3 px-8 py-6 rounded-lg border border-white/80 bg-white min-w-[180px] hover:shadow-cyber transition-shadow duration-300"
             >
               {brand.logo && (
                 <img
                   src={brand.logo}
                   alt={brand.name}
-                  className="h-12 w-auto max-w-[140px] object-contain"
+                  className="h-14 w-auto max-w-[260px] object-contain"
                 />
               )}
               {(brand.showText || !brand.logo) && (
-                <span className="text-lg font-bold text-muted-foreground">
+                <span className="text-lg font-bold text-slate-500">
                   {brand.name}
                 </span>
               )}
