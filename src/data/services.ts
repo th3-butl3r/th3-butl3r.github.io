@@ -34,7 +34,7 @@ export const services: ServiceData[] = [
     features: [
       "Instalación y configuración de redes LAN",
       "Instalación y configuración de videovigilancia",
-      "Instalación de software",
+      "Instalación de software: Soft Restaurant, MyBusiness Pos, etc.",
     ],
     ctaLabel: "Ver más",
     ctaVariant: "primary",

@@ -110,7 +110,7 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "client-marquee": "client-marquee 28s linear infinite",
+        "client-marquee": "client-marquee 40s linear infinite",
       },
     },
   },
