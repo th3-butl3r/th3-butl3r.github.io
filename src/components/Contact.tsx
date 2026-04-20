@@ -76,7 +76,7 @@ ${formData.description}
             <span className="text-cyber-blue">MEDIOS</span> DE CONTACTO
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-            ¿Necesitas una consulta de seguridad digital, soporte técnico o recuperación de datos?
+            ¿Necesitas una consulta de seguridad digital o soporte técnico?
             <br /><strong>¡Nuestro equipo está listo para ayudarte!</strong>
           </p>
         </div>
@@ -188,12 +188,12 @@ ${formData.description}
             <Card className="bg-gradient-card border-border/50">
               <CardHeader>
                 <CardTitle className="text-xl font-bold text-foreground">
-                  Emergencias de Recuperación
+                  Emergencias de seguridad digital
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Para incidentes de recuperación de datos urgentes, contáctanos inmediatamente:
+                  Para incidentes de seguridad digital urgentes, contáctanos inmediatamente:
                 </p>
                 <Button disabled variant="destructive" className="w-full">
                   <strong>DISPONIBLE PRÓXIMAMENTE</strong>

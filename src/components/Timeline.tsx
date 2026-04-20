@@ -43,12 +43,12 @@ const Timeline = () => {
       description: "Una persona solicita ayuda para rastrear y recuperar su dinero, ofreciéndose desde un inicio pagar por el servicio. Si bien no fue posible recuperar su dinero, pudimos encontrar una estafa que llevaba varios años en operación. Con la información recopilada, fue elaborado un reporte que fue enviado al departamento de Ciberseguridad de Megacable, ya que la estafa partía del uso del nombre de Megacable y del aprovechamiento del registro en Google Maps de una de sus ubicaciones.",
       milestone: "Crecimiento"
     },
-    {
+    /*{
       year: "Septiembre 2025",
       title: "Incorporación del servicio de: Recuperación de Datos",
       description: "La pérdida de datos en una memoria USB con información personal despertó la necesidad de aprender técnicas de recuperación y reforzar conocimientos en el manejo de información en dispositivos de almacenamiento. Gracias a esta experiencia, incorporamos el servicio de recuperación de datos como una solución adicional para nuestros clientes.",
       milestone: "Ampliación"
-    }, 
+    },*/
     {
       year: "Octubre 2025",
       title: "Incorporación del servicio de: Soporte Técnico",
@@ -150,7 +150,7 @@ const Timeline = () => {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground leading-relaxed text-justify">
-                  Continuamos nuestra formación y actualización mientras consolidamos nuestro laboratorio de I+D, equipándolo con la tecnología y las herramientas necesarias para ofrecer un servicio de excelencia en instalación de CCTV, seguridad digital y recuperación de datos, garantizando así una solución confiable y completa para nuestros clientes. 
+                  Continuamos nuestra formación y actualización mientras consolidamos nuestro laboratorio de I+D, equipándolo con la tecnología y las herramientas necesarias para ofrecer un servicio de excelencia en instalación de CCTV y seguridad digital, garantizando así una solución confiable y completa para nuestros clientes. 
               </p>
             </CardContent>
           </Card>

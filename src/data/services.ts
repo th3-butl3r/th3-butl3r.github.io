@@ -77,7 +77,7 @@ export const services: ServiceData[] = [
     },
   },
   {
-    slug: "digsec",
+    slug: "seguridad-digital",
     icon: Shield,
     title: "Seguridad Digital",
     subtitle: "Dirigido a particulares, hogares, pequeñas y medianas empresas (PYMES), así como a colectivos y organizaciones orientadas a la justicia social y los derechos humanos",
@@ -112,42 +112,42 @@ export const services: ServiceData[] = [
       ],
     },
   },
-  {
-    slug: "data-recovery",
-    icon: HardDrive,
-    title: "Recuperación de Datos",
-    subtitle: "Dirigido a particulares, hogares y pequeñas/medianas empresas (PYMES)",
-    badge: "Particulares, Hogares & Pymes",
-    shortPitch: "Recuperamos tus archivos eliminados.",
-    description:
-      "Recuperación forense de datos críticos en dispositivos dañados o comprometidos.",
-    features: ["Disco duro, SSD, USB y más", "Diagnóstico sin costo", "No datos, no pago"],
-    ctaLabel: "Ver más",
-    ctaVariant: "primary",
-    whatsappMessage:
-      "Hola, necesito recuperar datos de un dispositivo. ¿Me puedes ayudar?",
-    detail: {
-      intro:
-        "Recuperamos información crítica ante fallas lógicas en dispositivos de almacenamiento: USB, SD, Micro SD, HDD, SSD. Diagnóstico inicial sin costo.",
-      sections: [
-        {
-          title: "Dispositivos compatibles",
-          body: "Trabajamos con prácticamente cualquier medio de almacenamiento de uso común.",
-          bullets: ["Discos duros HDD y SSD", "Memorias USB y tarjetas SD"],
-        },
-        {
-          title: "Tipos de pérdida",
-          body: "Recuperamos datos en distintos escenarios.",
-          bullets: ["Eliminación accidental", "Formateo del dispositivo", "Daño lógico"],
-        },
-        {
-          title: "Proceso forense",
-          body: "Seguimos metodologías y buenas prácticas de análisis digital para garantizar la integridad, trazabilidad y seguridad de la información durante todo el proceso.",
-          bullets: ["Diagnóstico sin costo", "Cotización transparente", "Entrega segura de la información"],
-        },
-      ],
-    },
-  },
+  // {
+  //   slug: "data-recovery",
+  //   icon: HardDrive,
+  //   title: "Recuperación de Datos",
+  //   subtitle: "Dirigido a particulares, hogares y pequeñas/medianas empresas (PYMES)",
+  //   badge: "Particulares, Hogares & Pymes",
+  //   shortPitch: "Recuperamos tus archivos eliminados.",
+  //   description:
+  //     "Recuperación forense de datos críticos en dispositivos dañados o comprometidos.",
+  //   features: ["Disco duro, SSD, USB y más", "Diagnóstico sin costo", "No datos, no pago"],
+  //   ctaLabel: "Ver más",
+  //   ctaVariant: "primary",
+  //   whatsappMessage:
+  //     "Hola, necesito recuperar datos de un dispositivo. ¿Me puedes ayudar?",
+  //   detail: {
+  //     intro:
+  //       "Recuperamos información crítica ante fallas lógicas en dispositivos de almacenamiento: USB, SD, Micro SD, HDD, SSD. Diagnóstico inicial sin costo.",
+  //     sections: [
+  //       {
+  //         title: "Dispositivos compatibles",
+  //         body: "Trabajamos con prácticamente cualquier medio de almacenamiento de uso común.",
+  //         bullets: ["Discos duros HDD y SSD", "Memorias USB y tarjetas SD"],
+  //       },
+  //       {
+  //         title: "Tipos de pérdida",
+  //         body: "Recuperamos datos en distintos escenarios.",
+  //         bullets: ["Eliminación accidental", "Formateo del dispositivo", "Daño lógico"],
+  //       },
+  //       {
+  //         title: "Proceso forense",
+  //         body: "Seguimos metodologías y buenas prácticas de análisis digital para garantizar la integridad, trazabilidad y seguridad de la información durante todo el proceso.",
+  //         bullets: ["Diagnóstico sin costo", "Cotización transparente", "Entrega segura de la información"],
+  //       },
+  //     ],
+  //   },
+  // },
 ];
 
 export const getServiceBySlug = (slug?: string) =>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirigiendo...</title>
+    <script>
+      (function () {
+        const pathname = window.location.pathname.replace(/&/g, "~and~");
+        const search = window.location.search || "";
+        const hash = window.location.hash || "";
+        const target = "/?p=" + encodeURIComponent(pathname) + search + hash;
+
+        window.location.replace(target);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

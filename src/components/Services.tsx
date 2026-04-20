@@ -76,11 +76,11 @@ const Services = () => {
             NUESTROS <span className="text-cyber-blue">SERVICIOS</span>
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-            Ofrecemos soluciones en soporte técnico, seguridad digital, privacidad y recuperación de datos.
+            Ofrecemos soluciones en soporte técnico y seguridad digital.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-6 lg:gap-8 max-w-6xl mx-auto">
           {services.map((service) => {
             const Icon = service.icon;
             const isWhatsApp = service.ctaVariant === "whatsapp";
@@ -91,7 +91,7 @@ const Services = () => {
             return (
               <Card
                 key={service.slug}
-                className="bg-gradient-card border-border/50 hover:shadow-cyber transition-all duration-300 group flex flex-col"
+                className="w-full max-w-sm md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1.34rem)] bg-gradient-card border-border/50 hover:shadow-cyber transition-all duration-300 group flex flex-col"
               >
                 <CardContent className="p-6 flex flex-col flex-1">
                   {/* Badge */}

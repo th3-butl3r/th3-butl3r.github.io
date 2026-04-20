@@ -33,9 +33,9 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto mb-8 sm:mb-12 px-4">
           <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-foreground leading-relaxed">
             Servicios en{" "}
-            <span className="text-cyber-purple font-semibold">Soporte Técnico</span>, {" "}
-            <span className="text-cyber-blue font-semibold">Seguridad Digital</span> y{" "}
-            <span className="text-cyber-green font-semibold">Recuperación de Datos</span>
+            <span className="text-cyber-green font-semibold">Soporte Técnico</span> y{" "}
+            <span className="text-cyber-blue font-semibold">Seguridad Digital</span>
+            {/*<span className="text-cyber-green font-semibold">Recuperación de Datos</span>*/}
           </p>
         </div>
 
@@ -47,8 +47,8 @@ const Hero = () => {
           
           
           <div className="flex flex-col items-center">
-            <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-cyber-purple/20 flex items-center justify-center mb-3 shadow-glow">
-              <Headset className="w-6 h-6 sm:w-8 sm:h-8 text-cyber-purple" />
+            <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-cyber-green/20 flex items-center justify-center mb-3 shadow-glow">
+              <Headset className="w-6 h-6 sm:w-8 sm:h-8 text-cyber-green" />
             </div>
             <span className="text-xs sm:text-sm font-medium text-muted-foreground">Soporte Técnico</span>
           </div>
@@ -60,12 +60,12 @@ const Hero = () => {
             <span className="text-xs sm:text-sm font-medium text-muted-foreground">Seguridad Digital</span>
           </div>
 
-          <div className="flex flex-col items-center">
+          {/*<div className="flex flex-col items-center">
             <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-cyber-green/20 flex items-center justify-center mb-3 shadow-glow">
               <HardDrive className="w-6 h-6 sm:w-8 sm:h-8 text-cyber-green" />
             </div>
             <span className="text-xs sm:text-sm font-medium text-muted-foreground">Data Recovery</span>
-          </div>
+          </div>*/}
 
         </div>
 
