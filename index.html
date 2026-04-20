@@ -3,17 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BastionLab - Recuperación de datos, OSINT y Pentesting web</title>
-    <meta name="description" content="Servicios especializados en OSINT, Pentesting y Recuperación de Datos. Equipo con experiencia en investigación digital." />
+    <script>
+      (function () {
+        const redirect = window.location.search.match(/[?&]p=([^&]+)/);
+
+        if (!redirect) return;
+
+        const pathname = decodeURIComponent(redirect[1]).replace(/~and~/g, "&");
+        const query = window.location.search
+          .replace(/^\?/, "")
+          .split("&")
+          .filter((part) => part && !part.startsWith("p="))
+          .join("&");
+        const hash = window.location.hash || "";
+        const url = pathname + (query ? `?${query}` : "") + hash;
+
+        window.history.replaceState(null, "", url);
+      })();
+    </script>
+    <title>BastionLab - Seguridad Digital y Soporte Técnico</title>
+    <meta name="description" content="Servicios especializados en Soporte Técnico y Seguridad Digital." />
     <meta name="author" content="BastionLab" />
-    <meta name="keywords" content="ciberseguridad, pentesting, OSINT, recuperación datos, forense digital, ethical hacking" />
+    <meta name="keywords" content="ciberseguridad, seguridad digital, OSINT, soporte técnico, cctv, redes, LZC, Lázaro Cardenas, Mich." />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="/public/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <meta property="og:title" content="BastionLab - Recuperación de datos" />
-    <meta property="og:description" content="Servicios de OSINT, Pentesting web y Recuperación de Datos." />
+    <meta property="og:title" content="BastionLab -Seguridad Digital" />
+    <meta property="og:description" content="Servicios especializados en Soporte Técnico y Seguridad Digital." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://cyberforge.security/og-image.jpg" />
 

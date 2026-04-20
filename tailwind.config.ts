@@ -98,10 +98,19 @@ export default {
             height: "0",
           },
         },
+        "client-marquee": {
+          from: {
+            transform: "translate3d(0, 0, 0)",
+          },
+          to: {
+            transform: "translate3d(-50%, 0, 0)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "client-marquee": "client-marquee 28s linear infinite",
       },
     },
   },
