@@ -19,6 +19,7 @@ import certOwasp from "@/assets/CertificadoOWASP10.webp";
 import certCiberWhats from "@/assets/CertificadoCiberWhatsApp.webp";
 import certIntroInfoForense from "@/assets/CertificadoIntroInformaticaForense.webp"
 import certCiberPreventiva from "@/assets/CertificadoCiberPreventiva.webp"
+import certCCTV from "@/assets/cctv-2025.webp"
 
 
 const Certifications = () => {
@@ -37,6 +38,7 @@ const Certifications = () => {
       "Ciberseguridad: Simulador Práctico en WhatsApp": certCiberWhats,
       "Introducción a Informática Forense": certIntroInfoForense,
       "Ciberseguridad Preventiva": certCiberPreventiva,
+      "Instalador Profesional de Cámaras de Seguridad": certCCTV,
     };
   const certifications = [
     {
@@ -59,6 +61,7 @@ const Certifications = () => {
       certs: [
         { name: "Atención al Cliente y Soporte a Usuarios", org: "Platzi", year: "2025" },
         { name: "Redes Informáticas de Internet", org: "Platzi", year: "2025" },
+        { name: "Instalador Profesional de Cámaras de Seguridad", org: "Udemy", year: "2026"}
       ]
     },
     {
