@@ -1,6 +1,8 @@
 import { Headset, HardDrive, ShieldCheck  } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroCyberImage from "@/assets/data_recovery.webp";
+// import heroCyberImage from "@/assets/data_recovery.webp";
+import heroCyberImage from "@/assets/banner.webp";
+
 
 const Hero = () => {
   return (
