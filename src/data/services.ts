@@ -34,7 +34,7 @@ export const services: ServiceData[] = [
     features: [
       "Instalación y configuración de redes LAN",
       "Instalación y configuración de videovigilancia (CCTV)",
-      "Instalación de software para pymes: Soft Restaurant & MyBusiness POS",
+      "Instalación y configuración de software para pymes: Soft Restaurant & MyBusiness POS",
     ],
     ctaLabel: "Ver más",
     ctaVariant: "primary",
@@ -50,7 +50,7 @@ export const services: ServiceData[] = [
           bullets: [
             "Instalación de redes LAN y Wi-Fi",
             "Configuración de routers",
-            "Instalación de software para pymes: Soft Restaurant & MyBusiness POS",
+            "Instalación y configuración de software para pymes: Soft Restaurant & MyBusiness POS",
             "Configuración de impresoras y periféricos",
           ],
         },
