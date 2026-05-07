@@ -33,8 +33,8 @@ export const services: ServiceData[] = [
       "Servicios técnicos especializados para hogares y pequeños negocios con atención personalizada.",
     features: [
       "Instalación y configuración de redes LAN",
-      "Instalación y configuración de videovigilancia",
-      "Instalación de software: Soft Restaurant, MyBusiness Pos, etc.",
+      "Instalación y configuración de videovigilancia (CCTV)",
+      "Instalación de software para pymes: Soft Restaurant & MyBusiness POS",
     ],
     ctaLabel: "Ver más",
     ctaVariant: "primary",
@@ -49,8 +49,8 @@ export const services: ServiceData[] = [
           body: "Configuramos tu red, equipos y software para que todo funcione desde el primer día.",
           bullets: [
             "Instalación de redes LAN y Wi-Fi",
-            "Configuración de routers y switches",
-            "Instalación de software empresarial: Soft Restaurant, MyBusinessPos, etc.",
+            "Configuración de routers",
+            "Instalación de software para pymes: Soft Restaurant & MyBusiness POS",
             "Configuración de impresoras y periféricos",
           ],
         },
