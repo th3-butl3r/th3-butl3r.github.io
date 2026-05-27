@@ -16,10 +16,10 @@ interface Brand {
 
 const brands: Brand[] = [
   { name: "Dahua", showText: true, logo: dahua_icon },
-  { name: "Hikvision", showText: true, logo: hikvision_icon },
+  // { name: "Hikvision", showText: true, logo: hikvision_icon },
   { name: "Epcom", showText: true, logo: epcom_icon },
   { name: "Steren", showText: true, logo: steren_icon },
-  { name: "HiLook", showText: true, logo: hilook_icon },
+  // { name: "HiLook", showText: true, logo: hilook_icon },
   { name: "Soft Restaurant", showText: true, logo: softrestaurant_icon },
   { name: "MyBusiness POS", showText: true, logo: mybusiness_pos_icon },
   { name: "WhatsApp Business", showText: true },
@@ -51,7 +51,7 @@ const BrandCarousel = () => {
     <section className="py-16 sm:py-20">
       <div className="container mx-auto px-4 sm:px-6">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-center mb-10">
-          MARCAS QUE <span className="text-cyber-red">MANEJAMOS</span>
+          MARCAS QUE <span className="text-cyber-red">HE TRABAJADO</span>
         </h2>
         <div
           ref={scrollRef}

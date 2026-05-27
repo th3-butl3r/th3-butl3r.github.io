@@ -96,7 +96,7 @@ const Certifications = () => {
             <span className="text-cyber-purple">CURSOS</span> & CERTIFICACIONES
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-            Nuestro equipo se mantiene en formación y mejora constante para ofrecer un servicio de excelencia.
+            El aprendizaje es de por vida; actualizo mis conocimientos técnicos constantemente. Aquí encontrarás solo los certificados de las áreas relevantes. 
           </p>
         </div>
 

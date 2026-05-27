@@ -18,20 +18,20 @@ const Navigation = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const sectionItems = [
-    // { name: "Servicios", href: "#services" },
-    { name: "Equipo", href: "#team" },
-    { name: "Certificaciones", href: "#certifications" },
-    { name: "Historia", href: "#timeline" },
-    { name: "Contacto", href: "#contact" },
-    { name: "Blog", href: "https://medium.com/@th3-butl3r", target: "_blank", rel: "noopener noreferrer" },  ];
+  // Orden del menú: SERVICIOS (dropdown) → CERTIFICACIONES → CONTACTO → BLOG → ABOUT
+  // { name: "Equipo", href: "#team" },     // oculto
+  // { name: "Historia", href: "#timeline" }, // movido a /about
 
-      const goToSection = (hash: string) => {
+      const goToSection = (href: string) => {
     setIsOpen(false);
+    if (href.startsWith("/")) {
+      navigate(href);
+      return;
+    }
     if (location.pathname !== "/") {
-      navigate("/" + hash);
+      navigate("/" + href);
     } else {
-      const id = hash.replace("#", "");
+      const id = href.replace("#", "");
       document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     }
   };
@@ -91,30 +91,10 @@ const Navigation = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            {sectionItems.slice(0, 3).map((item) => (
-              <button
-                key={item.name}
-                onClick={() => goToSection(item.href)}
-                className="text-sm font-medium text-muted-foreground hover:text-cyber-blue transition-colors duration-200"
-              >
-                {item.name.toUpperCase()}
-              </button>
-            ))}
-
-            {/* Blog con diálogo */}
-            <button
-              onClick={() => setShowBlogDialog(true)}
-              className="text-sm font-medium text-muted-foreground hover:text-cyber-blue transition-colors duration-200"
-            >
-              BLOG
-            </button>
-
-            <button
-              onClick={() => goToSection("#contact")}
-              className="text-sm font-medium text-muted-foreground hover:text-cyber-blue transition-colors duration-200"
-            >
-              CONTACTO
-            </button>
+            <button onClick={() => goToSection("/certificaciones")} className="text-sm font-medium text-muted-foreground hover:text-cyber-blue transition-colors duration-200">CERTIFICACIONES</button>
+            <button onClick={() => goToSection("#contact")} className="text-sm font-medium text-muted-foreground hover:text-cyber-blue transition-colors duration-200">CONTACTO</button>
+            <button onClick={() => setShowBlogDialog(true)} className="text-sm font-medium text-muted-foreground hover:text-cyber-blue transition-colors duration-200">BLOG</button>
+            <button onClick={() => goToSection("/about")} className="text-sm font-medium text-muted-foreground hover:text-cyber-blue transition-colors duration-200">ABOUT</button>
           </div>
 
           {/* Mobile menu button */}
@@ -178,39 +158,10 @@ const Navigation = () => {
                 )}
               </div>
 
-              {sectionItems.slice(0, 3).map((item) => (
-                <button
-                  key={item.name}
-                  onClick={() => {
-                    goToSection(item.href);
-                    setIsOpen(false);
-                  }}
-                  className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-cyber-blue transition-colors"
-                >
-                  {item.name}
-                </button>
-              ))}
-
-              {/* Blog con diálogo en móvil */}
-              <button
-                onClick={() => {
-                  setShowBlogDialog(true);
-                  setIsOpen(false);
-                }}
-                className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-cyber-blue transition-colors"
-              >
-                Blog
-              </button>
-
-              <button
-                onClick={() => {
-                  goToSection("#contact");
-                  setIsOpen(false);
-                }}
-                className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-cyber-blue transition-colors"
-              >
-                Contacto
-              </button>
+              <button onClick={() => { goToSection("/certificaciones"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-cyber-blue transition-colors">Certificaciones</button>
+              <button onClick={() => { goToSection("#contact"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-cyber-blue transition-colors">Contacto</button>
+              <button onClick={() => { setShowBlogDialog(true); setIsOpen(false); }} className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-cyber-blue transition-colors">Blog</button>
+              <button onClick={() => { goToSection("/about"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-cyber-blue transition-colors">About</button>
             </div>
           </div>
         )}
