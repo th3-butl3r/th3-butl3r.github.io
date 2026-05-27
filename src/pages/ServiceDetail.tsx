@@ -98,7 +98,7 @@ const ServiceDetail = () => {
                 ¿Listo para empezar?
               </h3>
               <p className="text-muted-foreground mb-6">
-                Cuéntanos tu caso y te respondemos por WhatsApp.
+                Describe tu caso y te respondemos por WhatsApp.
               </p>
               <Button
                 asChild

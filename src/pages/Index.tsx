@@ -3,11 +3,13 @@ import { useLocation } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
-import CertificationsCTA from "@/components/CertificationsCTA";
+// import CertificationsCTA from "@/components/CertificationsCTA";
 import BrandCarousel from "@/components/BrandCarousel";
-import Team from "@/components/Team";
-import Timeline from "@/components/Timeline";
+// import Team from "@/components/Team";
+// import Timeline from "@/components/Timeline";
 import ClientCarousel from "@/components/ClientCarousel";
+import Projects from "@/components/Projects";
+import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -29,10 +31,12 @@ const Index = () => {
       <Hero />
       <Services />
       <BrandCarousel />
-      <CertificationsCTA />
+      {/* <CertificationsCTA /> */}
       <ClientCarousel />
-      <Team />
-      <Timeline />
+      {/* <Team /> */}
+      {/* <Timeline /> */}
+      <Projects />
+      <Experience />
       <Contact />
       <Footer />
     </div>

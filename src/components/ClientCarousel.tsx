@@ -21,7 +21,7 @@ const ClientCarousel = () => {
     <section className="py-16 sm:py-20">
       <div className="container mx-auto px-4 sm:px-6">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-center mb-10">
-          CLIENTES QUE <span className="text-cyber-red">CONFÍAN EN NOSOTROS</span>
+          CLIENTES QUE HAN <span className="text-cyber-red">CONFIADO EN MI TRABAJO</span>
         </h2>
         <div className="overflow-hidden">
           <div className="flex w-max animate-client-marquee motion-reduce:animate-none">

@@ -26,15 +26,15 @@ export const services: ServiceData[] = [
     slug: "soporte-tecnico",
     icon: Headset,
     title: "Soporte Técnico",
-    subtitle: "Dirigido a particulares, hogares y pequeñas/medianas empresas (PYMES)",
-    badge: "Particulares, Hogares & Pymes",
+    subtitle: "Dirigido a particulares, hogares y pequeñas empresas",
+    badge: "Particulares, Hogares & Pequeñas empresas",
     shortPitch: "Solucionamos problemas técnicos con rapidez.",
     description:
       "Servicios técnicos especializados para hogares y pequeños negocios con atención personalizada.",
     features: [
       "Instalación y configuración de redes LAN",
       "Instalación y configuración de videovigilancia (CCTV)",
-      "Instalación y configuración de software para pymes: Soft Restaurant & MyBusiness POS",
+      "Instalación y configuración de software para empresas: Soft Restaurant & MyBusiness POS",
     ],
     ctaLabel: "Ver más",
     ctaVariant: "primary",
@@ -42,15 +42,15 @@ export const services: ServiceData[] = [
       "Hola, necesito soporte técnico para mi hogar/negocio. ¿Me puedes ayudar?",
     detail: {
       intro:
-        "Brindamos soporte técnico integral para hogares y pequeños/medianos negocios: desde instalación de redes LAN hasta cámaras de seguridad y mantenimiento preventivo de equipos.",
+        "Soporte técnico integral para hogares y pequeños/medianos negocios: desde instalación de redes LAN hasta cámaras de seguridad y mantenimiento preventivo de equipos.",
       sections: [
         {
           title: "Instalación y configuración",
-          body: "Configuramos tu red, equipos y software para que todo funcione desde el primer día.",
+          body: "Configuración de red, equipos y software para que todo funcione desde el primer día.",
           bullets: [
             "Instalación de redes LAN y Wi-Fi",
             "Configuración de routers",
-            "Instalación y configuración de software para pymes: Soft Restaurant & MyBusiness POS",
+            "Instalación y configuración de software para empresas: Soft Restaurant & MyBusiness POS",
             "Configuración de impresoras y periféricos",
           ],
         },
@@ -80,8 +80,8 @@ export const services: ServiceData[] = [
     slug: "seguridad-digital",
     icon: Shield,
     title: "Seguridad Digital",
-    subtitle: "Dirigido a particulares, hogares, pequeñas y medianas empresas (PYMES), así como a colectivos y organizaciones orientadas a la justicia social y los derechos humanos",
-    badge: "Particulares, Hogares, Pymes & Colectivos",
+    subtitle: "Dirigido a particulares, hogares y pequeñas/medianas empresas, así como a colectivos y organizaciones orientadas a la justicia social y los derechos humanos",
+    badge: "Particulares, Hogares, Empresas & Colectivos",
     shortPitch: "Revisión y protección de cuentas, dispositivos e información.",
     description:
       "Recopilación y análisis de información de fuentes públicas para investigaciones digitales profundas.",

@@ -73,10 +73,10 @@ const Services = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-4 sm:mb-6">
-            NUESTROS <span className="text-cyber-blue">SERVICIOS</span>
+            <span className="text-cyber-blue">SERVICIOS</span>
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-            Ofrecemos soluciones en soporte técnico y seguridad digital.
+            Soluciones en soporte técnico y seguridad digital.
           </p>
         </div>
 
@@ -163,7 +163,7 @@ const Services = () => {
           <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-2">
             ¿No sabes qué necesitas?
           </h3>
-          <p className="text-muted-foreground mb-6">Hablemos y resolveremos tu caso.</p>
+          <p className="text-muted-foreground mb-6">Hablemos y revisemos tu caso.</p>
           <Button
             asChild
             size="lg"
