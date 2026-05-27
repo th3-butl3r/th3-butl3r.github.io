@@ -1,8 +1,9 @@
+import { useState } from "react";
 import { Linkedin, Github, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroCyberImage from "@/assets/banner.webp";
-import heroPhoto from "@/assets/clients/LinkedIn.jpg"; // ← reemplazar con la foto real
-//import heroPhoto from "@/assets/clients/LinkedIn - Editada.jpg"; // ← reemplazar con la foto real
+import heroPhoto from "@/assets/clients/LinkedIn_Closed.jpg";
+import heroPhotoHover from "@/assets/clients/LinkedIn.jpg";
 
 const badges = [
   { label: "Backend Engineer",   className: "border-cyber-green/50 text-cyber-green" },
@@ -15,6 +16,8 @@ const badges = [
 ];
 
 const Hero = () => {
+  const [revealed, setRevealed] = useState(false);
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background */}
@@ -59,9 +62,9 @@ const Hero = () => {
             <p className="text-sm sm:text-base text-muted-foreground max-w-md leading-relaxed text-justify">
               Soy Vidale C., Ingeniero backend con 4+ años de experiencia en el desarrollo web, en formación hacia{" "}
               <span className="text-foreground">Cloud Security</span>, con experiencia en soporte técnico y sistemas CCTV.
-              En mi tiempo libre realizo divulgación de seguridad digital en Internet para ayudar a otros. 
+              Dedico parte de mi tiempo a la investigación y divulgación de seguridad digital, compartiendo información y buenas prácticas en Internet para ayudar a otros. 
               <br></br><br></br>
-              Bastion Lab es el espacio donde presento mi trabajo profesional, con el objetivo de conectar con reclutadores y ofrecer mis servicios a personas y pequeñas empresas.
+              Bastion Lab es mi espacio profesional, donde comparto mi experiencia, trayectoria y proyectos con potenciales empleadores y reclutadores, además de ofrecer servicios y soluciones tecnológicas a particulares y pequeñas empresas.
             </p>
 
             {/* Badges */}
@@ -141,25 +144,48 @@ const Hero = () => {
 
           {/* ── Right / Bottom: Photo ── */}
           <div className="flex justify-center lg:justify-end">
-            {/* Tamaño: pequeño en móvil, grande en desktop */}
-            <div
-              className="relative w-52 sm:w-64 lg:w-80 xl:w-96"
-              style={{ aspectRatio: "3/4" }}
-            >
-              <div className="absolute -inset-px rounded-xl border border-cyber-blue/25 shadow-cyber" />
-              <div className="absolute inset-0 rounded-xl bg-card/60 overflow-hidden">
-                {/*
-                  Cuando tengas la foto, reemplaza el placeholder por:
-                  <img src={heroPhoto} alt="Equipo BastionLab" className="w-full h-full object-cover grayscale" />
-                */}
-                <div className="w-full h-full flex flex-col items-center justify-center gap-3 text-muted-foreground/25">
-                  {/*
-                  <ShieldCheck className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24" />
-                  <span className="font-mono text-xs">// foto</span>
-                  */}
-                  <img src={heroPhoto} alt="Equipo BastionLab" className="w-full h-full object-cover grayscale" />
+            <div className="flex flex-col items-center gap-3">
+
+              {/* Card — hover en desktop, tap en móvil */}
+              <div
+                className="relative w-52 sm:w-64 lg:w-80 xl:w-96 cursor-pointer"
+                style={{ aspectRatio: "3/4" }}
+                onMouseEnter={() => setRevealed(true)}
+                onMouseLeave={() => setRevealed(false)}
+                onClick={() => setRevealed((v: boolean) => !v)}
+              >
+                {/* Frame */}
+                <div className={`absolute -inset-px rounded-xl border shadow-cyber transition-colors duration-500 ${revealed ? "border-cyber-purple/40" : "border-cyber-blue/25"}`} />
+
+                <div className="absolute inset-0 rounded-xl bg-card/60 overflow-hidden">
+                  {/* Foto por defecto */}
+                  <img
+                    src={heroPhoto}
+                    alt="Foto de perfil"
+                    className={`absolute inset-0 w-full h-full object-cover grayscale transition-opacity duration-500 ${revealed ? "opacity-0" : "opacity-100"}`}
+                  />
+                  {/* Foto revelada — difuminada */}
+                  <img
+                    src={heroPhotoHover}
+                    alt="Foto de perfil sin editar"
+                    className={`absolute inset-0 w-full h-full object-cover grayscale blur-sm transition-opacity duration-500 ${revealed ? "opacity-60" : "opacity-0"}`}
+                  />
                 </div>
               </div>
+
+              {/* Leyenda */}
+              <p className="max-w-[13rem] sm:max-w-[16rem] lg:max-w-xs text-center text-xs font-mono leading-relaxed transition-all duration-500">
+                {revealed ? (
+                  <span className="text-muted-foreground/70">
+                    <span className="text-cyber-purple">// tip:</span> Una edición sutil como la anterior puede evitar que los algoritmos de IA detecten tu rostro en fotos públicas.
+                  </span>
+                ) : (
+                  <span className="text-muted-foreground/40">
+                    <span className="text-cyber-blue/60">// hint:</span> toca la imagen
+                  </span>
+                )}
+              </p>
+
             </div>
           </div>
 
