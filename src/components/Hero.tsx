@@ -177,7 +177,7 @@ const Hero = () => {
               <p className="max-w-[13rem] sm:max-w-[16rem] lg:max-w-xs text-center text-xs font-mono leading-relaxed transition-all duration-500">
                 {revealed ? (
                   <span className="text-muted-foreground/70">
-                    <span className="text-cyber-purple">// tip:</span> Una edición sutil como la anterior puede evitar que los algoritmos de IA detecten tu rostro en fotos públicas.
+                    <span className="text-cyber-purple">// tip:</span> Una edición sutil como la anterior puede evitar que los algoritmos de IA detecten tu rostro en fotos públicas, aunque no es infalible.
                   </span>
                 ) : (
                   <span className="text-muted-foreground/40">
