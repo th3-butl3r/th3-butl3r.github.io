@@ -150,8 +150,8 @@ const Hero = () => {
               <div
                 className="relative w-52 sm:w-64 lg:w-80 xl:w-96 cursor-pointer"
                 style={{ aspectRatio: "3/4" }}
-                onMouseEnter={() => setRevealed(true)}
-                onMouseLeave={() => setRevealed(false)}
+                onPointerEnter={(e) => { if (e.pointerType !== "touch") setRevealed(true); }}
+                onPointerLeave={(e) => { if (e.pointerType !== "touch") setRevealed(false); }}
                 onClick={() => setRevealed((v: boolean) => !v)}
               >
                 {/* Frame */}

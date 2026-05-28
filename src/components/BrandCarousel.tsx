@@ -1,17 +1,14 @@
 import { useEffect, useRef } from "react";
 import dahua_icon from "@/assets/tools/dahua-logo.webp";
-import hikvision_icon from "@/assets/tools/hikvision-logo-2.webp";
 import epcom_icon from "@/assets/tools/epcom-logo.webp";
 import steren_icon from "@/assets/tools/steren-logo.webp";
-import hilook_icon from "@/assets/tools/hilook-logo.webp";
 import softrestaurant_icon from "@/assets/tools/softrestaurant-logo2.webp";
 import mybusiness_pos_icon from "@/assets/tools/mybusiness_pos-logo.webp";
 
-
 interface Brand {
   name: string;
-  logo?: string; // optional logo image URL/import
-  showText?: boolean; // optional text label (defaults to true if no logo)
+  logo?: string;
+  showText?: boolean;
 }
 
 const brands: Brand[] = [
@@ -31,18 +28,77 @@ const BrandCarousel = () => {
   useEffect(() => {
     const el = scrollRef.current;
     if (!el) return;
+
     let raf: number;
     let pos = 0;
     const speed = 0.5;
+    let paused = false;
+    let dragging = false;
+    let startX = 0;
+    let startScrollLeft = 0;
 
     const step = () => {
-      pos += speed;
-      if (pos >= el.scrollWidth / 2) pos = 0;
-      el.scrollLeft = pos;
+      if (!paused) {
+        pos += speed;
+        if (pos >= el.scrollWidth / 2) pos = 0;
+        el.scrollLeft = pos;
+      }
       raf = requestAnimationFrame(step);
     };
     raf = requestAnimationFrame(step);
-    return () => cancelAnimationFrame(raf);
+
+    const onMouseDown = (e: MouseEvent) => {
+      dragging = true;
+      paused = true;
+      startX = e.clientX;
+      startScrollLeft = el.scrollLeft;
+      el.style.cursor = "grabbing";
+    };
+    const onMouseMove = (e: MouseEvent) => {
+      if (!dragging) return;
+      el.scrollLeft = startScrollLeft - (e.clientX - startX);
+      pos = el.scrollLeft;
+    };
+    const stopDrag = () => {
+      if (!dragging) return;
+      dragging = false;
+      paused = false;
+      pos = el.scrollLeft;
+      el.style.cursor = "";
+    };
+    const onTouchStart = (e: TouchEvent) => {
+      paused = true;
+      startX = e.touches[0].clientX;
+      startScrollLeft = el.scrollLeft;
+    };
+    const onTouchMove = (e: TouchEvent) => {
+      el.scrollLeft = startScrollLeft - (e.touches[0].clientX - startX);
+      pos = el.scrollLeft;
+      e.preventDefault();
+    };
+    const onTouchEnd = () => {
+      paused = false;
+      pos = el.scrollLeft;
+    };
+
+    el.addEventListener("mousedown", onMouseDown);
+    el.addEventListener("mousemove", onMouseMove);
+    el.addEventListener("mouseup", stopDrag);
+    el.addEventListener("mouseleave", stopDrag);
+    el.addEventListener("touchstart", onTouchStart, { passive: true });
+    el.addEventListener("touchmove", onTouchMove, { passive: false });
+    el.addEventListener("touchend", onTouchEnd);
+
+    return () => {
+      cancelAnimationFrame(raf);
+      el.removeEventListener("mousedown", onMouseDown);
+      el.removeEventListener("mousemove", onMouseMove);
+      el.removeEventListener("mouseup", stopDrag);
+      el.removeEventListener("mouseleave", stopDrag);
+      el.removeEventListener("touchstart", onTouchStart);
+      el.removeEventListener("touchmove", onTouchMove);
+      el.removeEventListener("touchend", onTouchEnd);
+    };
   }, []);
 
   const doubled = [...brands, ...brands];
@@ -55,7 +111,7 @@ const BrandCarousel = () => {
         </h2>
         <div
           ref={scrollRef}
-          className="flex gap-10 overflow-hidden whitespace-nowrap"
+          className="flex gap-10 overflow-hidden whitespace-nowrap cursor-grab select-none"
         >
           {doubled.map((brand, i) => (
             <div
