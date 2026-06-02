@@ -84,10 +84,10 @@ const Timeline = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-4 sm:mb-6">
-            NUESTRA <span className="text-cyber-red">HISTORIA</span>
+            LA <span className="text-cyber-red">HISTORIA DETRÁS</span>
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-            Desde nuestros inicios, cuando la necesidad tocó la puerta, hasta lanzar nuestros servicios de manera oficial para ayudar a las personas.
+            Desde los inicios, cuando la necesidad tocó la puerta, hasta lanzar los servicios de manera oficial para ayudar a las personas.
           </p>
         </div>
 

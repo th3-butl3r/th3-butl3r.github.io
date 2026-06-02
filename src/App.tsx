@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import CertificationsPage from "./pages/Certifications";
 import ServiceDetail from "./pages/ServiceDetail";
+import About from "./pages/About";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
           <Route path="/certificaciones" element={<CertificationsPage />} />
           <Route path="/servicios/:slug" element={<ServiceDetail />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
