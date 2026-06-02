@@ -139,6 +139,16 @@ const Hero = () => {
                   Portafolio técnico
                 </Button>
               </a>
+
+              <a href="#blog">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-cyber-green/50 text-cyber-green hover:bg-cyber-green/10 transition-all duration-300 px-6 text-base w-full sm:w-auto"
+                >
+                  Blog personal
+                </Button>
+              </a>
             </div>
           </div>
 

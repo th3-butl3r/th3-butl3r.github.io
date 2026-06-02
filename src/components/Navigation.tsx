@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Menu, X, ChevronDown} from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from "@/components/ui/alert-dialog";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import {
   DropdownMenu,
@@ -13,7 +12,6 @@ import { services } from "@/data/services";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [showBlogDialog, setShowBlogDialog] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
@@ -37,7 +35,6 @@ const Navigation = () => {
   };
 
   return (
-  <>
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
@@ -93,7 +90,7 @@ const Navigation = () => {
 
             <button onClick={() => goToSection("/certificaciones")} className="text-sm font-medium text-muted-foreground hover:text-cyber-blue transition-colors duration-200">CERTIFICACIONES</button>
             <button onClick={() => goToSection("#contact")} className="text-sm font-medium text-muted-foreground hover:text-cyber-blue transition-colors duration-200">CONTACTO</button>
-            <button onClick={() => setShowBlogDialog(true)} className="text-sm font-medium text-muted-foreground hover:text-cyber-blue transition-colors duration-200">BLOG</button>
+            <button onClick={() => goToSection("#blog")} className="text-sm font-medium text-muted-foreground hover:text-cyber-blue transition-colors duration-200">BLOG</button>
             <button onClick={() => goToSection("/about")} className="text-sm font-medium text-muted-foreground hover:text-cyber-blue transition-colors duration-200">ABOUT</button>
           </div>
 
@@ -160,37 +157,13 @@ const Navigation = () => {
 
               <button onClick={() => { goToSection("/certificaciones"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-cyber-blue transition-colors">Certificaciones</button>
               <button onClick={() => { goToSection("#contact"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-cyber-blue transition-colors">Contacto</button>
-              <button onClick={() => { setShowBlogDialog(true); setIsOpen(false); }} className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-cyber-blue transition-colors">Blog</button>
+              <button onClick={() => { goToSection("#blog"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-cyber-blue transition-colors">Blog</button>
               <button onClick={() => { goToSection("/about"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-cyber-blue transition-colors">About</button>
             </div>
           </div>
         )}
       </div>
     </nav>
-    <AlertDialog open={showBlogDialog} onOpenChange={setShowBlogDialog}>
-      <AlertDialogContent>
-        <AlertDialogHeader>
-          <AlertDialogTitle>Confirmar navegación</AlertDialogTitle>
-          <AlertDialogDescription>
-            Saldrás de Bastion Lab y serás redirigido al blog personal del analista
-            Vidale C.: https://medium.com/@th3-butl3r
-          </AlertDialogDescription>
-        </AlertDialogHeader>
-
-        <AlertDialogFooter>
-          <AlertDialogCancel>Cancelar</AlertDialogCancel>
-          <AlertDialogAction
-            onClick={() => {
-              setShowBlogDialog(false);
-              window.open("https://medium.com/@th3-butl3r", "_blank", "noopener,noreferrer");
-            }}
-          >
-            Confirmar
-          </AlertDialogAction>
-        </AlertDialogFooter>
-      </AlertDialogContent>
-    </AlertDialog>
-  </>
   );
 };
 

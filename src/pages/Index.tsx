@@ -10,6 +10,7 @@ import BrandCarousel from "@/components/BrandCarousel";
 import ClientCarousel from "@/components/ClientCarousel";
 import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
+import BlogPreview from "@/components/BlogPreview";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -37,6 +38,7 @@ const Index = () => {
       {/* <Timeline /> */}
       <Projects />
       <Experience />
+      <BlogPreview />
       <Contact />
       <Footer />
     </div>
