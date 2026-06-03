@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
-const MEDIUM_USER = "@th3-butl3r";
-const FEED_URL = `https://medium.com/feed/${MEDIUM_USER}`;
+const FEED_URL = "https://www.medium.com/feed/@th3-butl3r";
 const API_URL = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(FEED_URL)}`;
 
 export interface MediumPost {
@@ -14,7 +13,7 @@ export interface MediumPost {
 }
 
 const stripHtml = (html: string) =>
-  html.replace(/<[^>]*>/g, "").replace(/&[a-z]+;/gi, " ").trim();
+  html.replace(/<[^>]*>/g, "").replace(/&[a-z#0-9]+;/gi, " ").replace(/\s+/g, " ").trim();
 
 export const useMediumFeed = (limit = 3) => {
   const [posts, setPosts] = useState<MediumPost[]>([]);
