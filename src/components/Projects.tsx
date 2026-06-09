@@ -71,6 +71,17 @@ const Projects = () => {
 
                 {/* Links */}
                 <div className="flex items-center gap-3 pt-1">
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-cyber-blue transition-colors"
+                      aria-label="GitHub"
+                    >
+                      <Github className="w-5 h-5" />
+                    </a>
+                  )}
                   {project.blogUrl && (
                     <a
                       href={project.blogUrl}

@@ -1,0 +1,44 @@
+name: Update Blog Feed
+
+on:
+  schedule:
+    - cron: '0 */12 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Fetch RSS feed
+        run: |
+          ENCODED_URL=$(python3 -c "import urllib.parse; print(urllib.parse.quote('https://www.medium.com/feed/@th3-butl3r'))")
+          curl -sf "https://api.rss2json.com/v1/api.json?rss_url=${ENCODED_URL}" -o /tmp/feed.json
+
+          STATUS=$(python3 -c "import json; d=json.load(open('/tmp/feed.json')); print(d.get('status','error'))")
+          if [ "$STATUS" != "ok" ]; then
+            echo "Feed fetch failed with status: $STATUS"
+            exit 1
+          fi
+
+          cp /tmp/feed.json public/blog-feed.json
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/blog-feed.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update blog feed"
+            git push
+          fi

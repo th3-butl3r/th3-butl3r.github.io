@@ -21,6 +21,30 @@ export const projects: ProjectData[] = [
     demoUrl: "https://bastionlab.com.mx",
     tags: ["React", "TypeScript", "Tailwind"],
   },
+
+  {
+    id: "amixtli-website",
+    title: "Amixtli Website",
+    description:
+      "Sitio web para la visualización de tiraderos irregulares en México. Construido con Python, Django, Cloud Storage y Docker. Desplegado en un servidor on-premise.",
+    image: undefined,
+    githubUrl: undefined,
+    blogUrl: undefined,
+    demoUrl: "https://amixtli.lincc.unam.mx/",
+    tags: ["Python", "Django", "Docker"],
+  },
+
+  {
+    id: "cvmatch-website",
+    title: "CV Match",
+    description:
+      "Sitio web para la compatibilidad automática entre una oferta y un CV. Así como la recomendación de optimizaciones a un CV y/o la generación automática de un CV optimizado para la oferta laboral.",
+    image: undefined,
+    githubUrl: "https://github.com/th3-butl3r/CV-Generator",
+    blogUrl: "https://medium.com/@th3-butl3r/road-to-devsecops-pt-1-aprendiendo-a-construir-software-seguro-desde-cero-2178169b0aa7",
+    demoUrl: undefined,
+    tags: ["Python", "Django", "Docker"],
+  },
   
 ];
 
