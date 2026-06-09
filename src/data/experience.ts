@@ -16,11 +16,11 @@ export interface ExperienceCategory {
 export const experience: ExperienceCategory[] = [
   {
     id: "support",
-    title: "Soporte TI",
+    title: "Consultor Independiente - Seguridad Digital & Soporte TI",
     entries: [
       {
-        role: "Técnico",
-        context: "Freelance",
+        role: "Consultor Independiente",
+        context: "Autónomo",
         period: "ago. 2025 - Actualidad",
         did: "Investigué y documenté fraudes digitales. Configuré una red LAN para la operativa de un restaurante, instalé un sistema CCTV de 4 cámaras y di mantenimiento a un sistema de 16 cámaras.",
         offered: "Reporte una estafa financiera a Megacable que se aprovechaba del nombre de la empresa. Mejoré los tiempos de toma de órdenes y emisión de cuentas en el restaurante. Mejoré la seguridad con la videovigilancia.",
@@ -30,7 +30,7 @@ export const experience: ExperienceCategory[] = [
   },
   {
     id: "BackendD",
-    title: "Backend Developer",
+    title: "Backend Developer Mid",
     entries: [
       {
         role: "Bakend Developer",
@@ -47,7 +47,7 @@ export const experience: ExperienceCategory[] = [
     title: "Analista de seguridad web",
     entries: [
       {
-        role: "Trainee en Hackmetrix Academy",
+        role: "Analista de seguridad web en Hackmetrix Academy",
         context: "Hackmetrix",
         period: "ene. 2025 - jun. 2025",
         did: "Programa intensivo de ciberseguridad ofensiva y hacking ético. Implementación de pruebas de penetración y explotación de vulnerabilidades críticas.",
@@ -58,10 +58,10 @@ export const experience: ExperienceCategory[] = [
   },
   {
     id: "BackendE2",
-    title: "Backend Engineer",
+    title: "Backend Engineer Mid L2",
     entries: [
       {
-        role: "Backend Engineer Mid L2",
+        role: "Backend Engineer",
         context: "Fairplay",
         period: "nov. 2021 - jun. 2025",
         did: "Desarrollé microservicios con FastAPI para la conexión con el Banco de México mediante STP para el procesamiento y dispersión de crédito. También realicé la implementación de un microservicio para la transacción con tarjetas virtuales y un microservicio para la creación de tarjetas virtuales. Los servicios mencionados estaban optimizados para retornar una respuesta HTTP en menos de un segundo.",
@@ -72,7 +72,7 @@ export const experience: ExperienceCategory[] = [
   },
   {
     id: "BackendE",
-    title: "Backend Engineer",
+    title: "Backend Engineer Jr",
     entries: [
       {
         role: "Backend Engineer",
