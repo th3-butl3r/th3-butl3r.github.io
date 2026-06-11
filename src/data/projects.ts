@@ -23,18 +23,6 @@ export const projects: ProjectData[] = [
   },
 
   {
-    id: "amixtli-website",
-    title: "Amixtli Website",
-    description:
-      "Sitio web para la visualización de tiraderos irregulares en México. Construido con Python, Django, Cloud Storage y Docker. Desplegado en un servidor on-premise.",
-    image: undefined,
-    githubUrl: undefined,
-    blogUrl: undefined,
-    demoUrl: "https://amixtli.lincc.unam.mx/",
-    tags: ["Python", "Django", "Docker"],
-  },
-
-  {
     id: "cvmatch-website",
     title: "CV Match",
     description:
