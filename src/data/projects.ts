@@ -33,6 +33,18 @@ export const projects: ProjectData[] = [
     demoUrl: undefined,
     tags: ["Python", "Django", "Docker"],
   },
+
+  {
+    id: "nuestroentorno-website",
+    title: "Nuestro Entorno",
+    description:
+      "Plataforma web para la recopilación y visualización geoespacial de reportes ciudadanos sobre acumulación de residuos en México. Los datos generados se destinan al entrenamiento de modelos de IA para detección automática de basura y a la generación de análisis estadísticos disponibles como datos abiertos para gobiernos, investigadores y organizaciones civiles.",
+    image: undefined,
+    githubUrl: undefined,
+    blogUrl: undefined,
+    demoUrl: "https://nuestroentorno.mx",
+    tags: ["Python", "Terraform", "Docker", "Supabase", "AWS"],
+  },
   
 ];
 
