@@ -25,14 +25,14 @@ export const services: ServiceData[] = [
   {
     slug: "soporte-tecnico",
     icon: Headset,
-    title: "Soporte Técnico",
+    title: "Desarrollo de Software & Soporte Técnico",
     subtitle: "Dirigido a particulares, hogares y pequeñas empresas",
     badge: "Particulares, Hogares & Pequeñas empresas",
-    shortPitch: "Solucionamos problemas técnicos con rapidez.",
+    shortPitch: "Solucionamos problemas con rapidez y a la medida.",
     description:
-      "Servicios técnicos especializados para hogares y pequeños negocios con atención personalizada.",
+      "Servicios especializados para hogares y pequeños negocios con atención personalizada.",
     features: [
-      "Instalación y configuración de redes LAN",
+      "Desarrollo de software a la medida",
       "Instalación y configuración de videovigilancia (CCTV)",
       "Instalación y configuración de software para empresas: Soft Restaurant & MyBusiness POS",
     ],
@@ -42,7 +42,7 @@ export const services: ServiceData[] = [
       "Hola, necesito soporte técnico para mi hogar/negocio. ¿Me puedes ayudar?",
     detail: {
       intro:
-        "Soporte técnico integral para hogares y pequeños/medianos negocios: desde instalación de redes LAN hasta cámaras de seguridad y mantenimiento preventivo de equipos.",
+        "Desarrollo de software y soporte integral para hogares y pequeños/medianos negocios: desde instalación de redes LAN hasta cámaras de seguridad y mantenimiento preventivo de equipos.",
       sections: [
         {
           title: "Instalación y configuración",
@@ -50,8 +50,8 @@ export const services: ServiceData[] = [
           bullets: [
             "Instalación de redes LAN y Wi-Fi",
             "Configuración de routers",
-            "Instalación y configuración de software para empresas: Soft Restaurant & MyBusiness POS",
-            "Configuración de impresoras y periféricos",
+            "Instalación y configuración de software para empresas: SoftRestaurant & MyBusiness POS",
+            "Desarrollo de software a la medida",
           ],
         },
         {

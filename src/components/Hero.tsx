@@ -11,7 +11,7 @@ const badges = [
   { label: "Seguridad Digital", className: "border-border text-muted-foreground" },
   { label: "CCTV",              className: "border-border text-muted-foreground" },
   { label: "OSINT",             className: "border-border text-muted-foreground" },
-  { label: "Cloud Security", className: "border-cyber-blue/50 text-cyber-blue" },
+  { label: "DevSecOps", className: "border-cyber-blue/50 text-cyber-blue" },
 
 ];
 
@@ -54,18 +54,26 @@ const Hero = () => {
 
             {/* Description */}
             <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-md leading-relaxed">
-              <span className="text-cyber-green font-semibold">Soporte Técnico</span> y{" "}
+              <span className="text-cyber-green font-semibold">Desarrollo de Software</span> y{" "}
               <span className="text-cyber-blue font-semibold">Seguridad Digital</span>
             </p>
 
             {/* Bio */}
-            <p className="text-sm sm:text-base text-muted-foreground max-w-md leading-relaxed text-justify">
-              Soy Vidale C., Ingeniero backend con 4+ años de experiencia en el desarrollo web, en formación hacia{" "}
-              <span className="text-foreground">Cloud Security</span>, con experiencia en soporte técnico y sistemas CCTV.
-              Dedico parte de mi tiempo a la investigación y divulgación de seguridad digital, compartiendo información y buenas prácticas en Internet para ayudar a otros. 
-              <br></br><br></br>
-              Bastion Lab es mi espacio profesional, donde comparto mi experiencia, trayectoria y proyectos con potenciales empleadores y reclutadores, además de ofrecer servicios y soluciones tecnológicas a particulares y pequeñas empresas.
+          <div className="max-w-md space-y-3 text-justify">
+            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+              Soy Vidale, ingeniero backend con 4+ años de experiencia en desarrollo web y seguridad digital.
+              Me especializo en construir sistemas robustos y en ayudar a individuos y pequeñas empresas
+              a proteger su infraestructura tecnológica.
             </p>
+            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+              Actualmente profundizo en <strong>DevSecOps</strong>, integrando esas prácticas con mi experiencia en backend,
+              soporte y sistemas de videovigilancia.
+            </p>
+            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+              Fuera del trabajo, investigo y divulgo sobre seguridad digital e Internet, porque creo que
+              entender la tecnología que usamos es tan importante como usarla bien.
+            </p>
+          </div>
 
             {/* Badges */}
             <div className="flex flex-wrap gap-2">
