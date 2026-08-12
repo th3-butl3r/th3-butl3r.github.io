@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
+import Stewardship from "@/components/Stewardship";
 import Timeline from "@/components/Timeline";
 import Footer from "@/components/Footer";
 
@@ -22,6 +23,7 @@ const About = () => {
           </Button>
         </Link>
       </div>
+      <Stewardship />
       <Timeline />
       <Footer />
     </div>

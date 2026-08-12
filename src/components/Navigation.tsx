@@ -9,6 +9,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { services } from "@/data/services";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,19 +39,25 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link to="/" className="text-2xl font-black">
-            <span className="text-cyber-blue">BL</span>
-            <span className="text-muted-foreground">/</span>
+          {/* Logo / wordmark */}
+          <Link to="/" className="flex items-baseline gap-2 leading-none">
+            <span className="text-xl font-black tracking-tight text-foreground">
+              El Mayordomo
+            </span>
+            <span className="hidden sm:inline text-xs font-medium text-muted-foreground">
+              — Vidale
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
+            <button onClick={() => goToSection("#experience")} className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200">TRAYECTORIA</button>
+
             {/* Services dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <button
-                  className="flex items-center text-sm font-medium text-muted-foreground hover:text-cyber-blue transition-colors duration-200 focus:outline-none"
+                  className="flex items-center text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none"
                   onClick={(e) => {
                     if (e.detail === 0) return;
                   }}
@@ -79,7 +86,7 @@ const Navigation = () => {
                         to={`/servicios/${s.slug}`}
                         className="flex items-center cursor-pointer"
                       >
-                        <Icon className="w-4 h-4 mr-2 text-cyber-blue" />
+                        <Icon className="w-4 h-4 mr-2 text-primary" />
                         <span>{s.title}</span>
                       </Link>
                     </DropdownMenuItem>
@@ -88,14 +95,17 @@ const Navigation = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <button onClick={() => goToSection("/certificaciones")} className="text-sm font-medium text-muted-foreground hover:text-cyber-blue transition-colors duration-200">CERTIFICACIONES</button>
-            <button onClick={() => goToSection("#contact")} className="text-sm font-medium text-muted-foreground hover:text-cyber-blue transition-colors duration-200">CONTACTO</button>
-            <button onClick={() => goToSection("#blog")} className="text-sm font-medium text-muted-foreground hover:text-cyber-blue transition-colors duration-200">BLOG</button>
-            <button onClick={() => goToSection("/about")} className="text-sm font-medium text-muted-foreground hover:text-cyber-blue transition-colors duration-200">ABOUT</button>
+            <button onClick={() => goToSection("/certificaciones")} className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200">CERTIFICACIONES</button>
+            <button onClick={() => goToSection("#contact")} className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200">CONTACTO</button>
+            <button onClick={() => goToSection("#blog")} className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200">BLOG</button>
+            <button onClick={() => goToSection("/about")} className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200">ABOUT</button>
+
+            <ThemeToggle />
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="flex items-center gap-1 md:hidden">
+            <ThemeToggle />
             <Button
               variant="ghost"
               size="sm"
@@ -108,13 +118,15 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden">
+          <div className="md:hidden animate-in fade-in slide-in-from-top-2 duration-200">
             <div className="px-2 pt-2 pb-3 space-y-1 border-t border-border">
+              <button onClick={() => { goToSection("#experience"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-primary transition-colors">Trayectoria</button>
+
               {/* Services collapsible */}
               <div>
                 <div className="flex items-center justify-between">
                   <button
-                    className="flex-1 text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-cyber-blue transition-colors"
+                    className="flex-1 text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-primary transition-colors"
                     onClick={() => {
                       goToSection("#services");
                       setIsOpen(false);
@@ -142,7 +154,7 @@ const Navigation = () => {
                       <Link
                         key={s.slug}
                         to={`/servicios/${s.slug}`}
-                        className="block px-3 py-2 text-sm text-muted-foreground hover:text-cyber-blue"
+                        className="block px-3 py-2 text-sm text-muted-foreground hover:text-primary"
                         onClick={() => {
                           setIsOpen(false);
                           setMobileServicesOpen(false);
@@ -155,10 +167,10 @@ const Navigation = () => {
                 )}
               </div>
 
-              <button onClick={() => { goToSection("/certificaciones"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-cyber-blue transition-colors">Certificaciones</button>
-              <button onClick={() => { goToSection("#contact"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-cyber-blue transition-colors">Contacto</button>
-              <button onClick={() => { goToSection("#blog"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-cyber-blue transition-colors">Blog</button>
-              <button onClick={() => { goToSection("/about"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-cyber-blue transition-colors">About</button>
+              <button onClick={() => { goToSection("/certificaciones"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-primary transition-colors">Certificaciones</button>
+              <button onClick={() => { goToSection("#contact"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-primary transition-colors">Contacto</button>
+              <button onClick={() => { goToSection("#blog"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-primary transition-colors">Blog</button>
+              <button onClick={() => { goToSection("/about"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-primary transition-colors">About</button>
             </div>
           </div>
         )}

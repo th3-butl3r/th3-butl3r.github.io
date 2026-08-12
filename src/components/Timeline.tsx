@@ -39,7 +39,7 @@ const Timeline = () => {
     },
     {
       year: "Agosto 2025",
-      title: "La estafa que nos hizo ofrecer nuestros servicios de manera formal",
+      title: "La estafa que me hizo ofrecer mis servicios de manera formal",
       description: "Una persona solicita ayuda para rastrear y recuperar su dinero, ofreciéndose desde un inicio pagar por el servicio. Si bien no fue posible recuperar su dinero, pudimos encontrar una estafa que llevaba varios años en operación. Con la información recopilada, fue elaborado un reporte que fue enviado al departamento de Ciberseguridad de Megacable, ya que la estafa partía del uso del nombre de Megacable y del aprovechamiento del registro en Google Maps de una de sus ubicaciones.",
       milestone: "Crecimiento"
     },
@@ -52,7 +52,7 @@ const Timeline = () => {
     {
       year: "Octubre 2025",
       title: "Incorporación del servicio de: Soporte Técnico",
-      description: "A raíz de los resultados después de apoyar a un restaurante con la instalación y configuración de su red y software de operación SoftRestaurant, incorporamos oficialmente el servicio de soporte técnico para extender nuestros servicios y atender a más clientes.",
+      description: "A raíz de los resultados después de apoyar a un restaurante con la instalación y configuración de su red y software de operación SoftRestaurant, incorporé oficialmente el servicio de soporte técnico para extender mis servicios y atender a más clientes.",
       milestone: "Ampliación"
     }
   ];
@@ -84,7 +84,7 @@ const Timeline = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-4 sm:mb-6">
-            LA <span className="text-cyber-red">HISTORIA DETRÁS</span>
+            LA HISTORIA DETRÁS
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
             Desde los inicios, cuando la necesidad tocó la puerta, hasta lanzar los servicios de manera oficial para ayudar a las personas.
@@ -93,7 +93,7 @@ const Timeline = () => {
 
         <div className="relative">
           {/* Timeline line - Hidden on mobile, visible on larger screens */}
-          <div className="hidden lg:block absolute left-1/2 transform -translate-x-0.5 w-0.5 h-full bg-gradient-to-b from-cyber-blue via-cyber-purple to-cyber-red" />
+          <div className="hidden lg:block absolute left-1/2 transform -translate-x-0.5 w-0.5 h-full bg-border" />
 
           <div className="space-y-8 lg:space-y-12">
             {events.map((event, index) => (
@@ -118,7 +118,7 @@ const Timeline = () => {
                         <CardTitle className="text-lg sm:text-xl font-bold text-foreground">
                           {event.title}
                         </CardTitle>
-                        <div className="text-2xl sm:text-3xl font-black text-cyber-blue">
+                        <div className="text-2xl sm:text-3xl font-black text-primary">
                           {event.year}
                         </div>
                       </div>
@@ -143,14 +143,14 @@ const Timeline = () => {
 
         {/* Future Vision */}
         <div className="mt-20 text-center">
-          <Card className="bg-gradient-card border-cyber-blue/50 max-w-2xl mx-auto">
+          <Card className="bg-gradient-card border-primary/50 max-w-2xl mx-auto">
             <CardHeader>
-              <CardTitle className="text-2xl font-bold text-cyber-blue">2026+</CardTitle>
+              <CardTitle className="text-2xl font-bold text-primary">2026+</CardTitle>
               <h3 className="text-xl font-bold text-foreground">Presente & Futuro</h3>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground leading-relaxed text-justify">
-                  Continuamos nuestra formación y actualización mientras consolidamos nuestro laboratorio de I+D, equipándolo con la tecnología y las herramientas necesarias para ofrecer un servicio de excelencia en instalación de CCTV y seguridad digital, garantizando así una solución confiable y completa para nuestros clientes. 
+                  Continúo mi formación y actualización mientras consolido mi laboratorio de I+D, equipándolo con la tecnología y las herramientas necesarias para ofrecer un servicio de excelencia en instalación de CCTV y seguridad digital, garantizando así una solución confiable y completa para mis clientes.
               </p>
             </CardContent>
           </Card>

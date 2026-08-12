@@ -2,9 +2,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { WHATSAPP_BASE } from "@/data/services";
+import { useReveal, revealClass } from "@/hooks/useReveal";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -14,6 +16,12 @@ const Contact = () => {
     description: ''
   });
   const { toast } = useToast();
+  const { ref: headerRef, isVisible: headerVisible } = useReveal<HTMLDivElement>();
+  const { ref: formRef, isVisible: formVisible } = useReveal<HTMLDivElement>();
+  const { ref: infoRef, isVisible: infoVisible } = useReveal<HTMLDivElement>();
+  const whatsappHref = `${WHATSAPP_BASE}?text=${encodeURIComponent(
+    "Hola, quiero platicar sobre mi caso antes de escribir un correo."
+  )}`;
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -44,7 +52,7 @@ const Contact = () => {
     }
 
     // Crear el mailto con los datos del formulario
-    const subject = `Consulta Bastion Lab - ${formData.name}`;
+    const subject = `Consulta — ${formData.name}`;
     const body = `
 Nombre: ${formData.name}
 Email: ${formData.email}
@@ -71,9 +79,9 @@ ${formData.description}
   return (
     <section id="contact" className="py-16 sm:py-20 lg:py-24 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="text-center mb-12 sm:mb-16">
+        <div ref={headerRef} className={`text-center mb-12 sm:mb-16 ${revealClass(headerVisible)}`}>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-4 sm:mb-6">
-            <span className="text-cyber-blue">MEDIOS</span> DE CONTACTO
+            MEDIOS DE CONTACTO
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
             ¿Necesitas una consulta de seguridad digital o soporte técnico?
@@ -83,7 +91,7 @@ ${formData.description}
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact Form */}
-          <Card className="bg-gradient-card border-border/50">
+          <Card ref={formRef} className={`bg-gradient-card border-border/50 ${revealClass(formVisible)}`}>
             <CardHeader>
               <CardTitle className="text-2xl font-bold text-foreground">
                 Describe tu caso
@@ -126,7 +134,7 @@ ${formData.description}
                 />
                 <Button 
                   type="submit"
-                  className="w-full bg-gradient-accent text-primary-foreground hover:shadow-cyber transition-all duration-300"
+                  className="w-full bg-gradient-accent text-primary-foreground hover:shadow-glow transition-all duration-300"
                 >
                   <strong>Enviar Consulta</strong>
                 </Button>
@@ -135,7 +143,7 @@ ${formData.description}
           </Card>
 
           {/* Contact Info */}
-          <div className="space-y-8">
+          <div ref={infoRef} className={`space-y-8 ${revealClass(infoVisible)}`}>
             <Card className="bg-gradient-card border-border/50">
               <CardHeader>
                 <CardTitle className="text-xl font-bold text-foreground">
@@ -169,7 +177,7 @@ ${formData.description}
                   </div>
                   <div>
                     <div className="font-semibold text-foreground">Ubicación</div>
-                    <div className="text-muted-foreground">Lázaro Cárdenas, Mich.</div>
+                    <div className="text-muted-foreground">Michoacán</div>
                   </div>
                 </div>
 
@@ -188,15 +196,21 @@ ${formData.description}
             <Card className="bg-gradient-card border-border/50">
               <CardHeader>
                 <CardTitle className="text-xl font-bold text-foreground">
-                  Emergencias de seguridad digital
+                  ¿Prefieres WhatsApp?
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Para incidentes de seguridad digital urgentes, contacto inmediato:
+                  Escríbeme directamente y te respondo ahí mismo.
                 </p>
-                <Button disabled variant="destructive" className="w-full">
-                  <strong>DISPONIBLE PRÓXIMAMENTE</strong>
+                <Button
+                  asChild
+                  className="w-full bg-cyber-green hover:bg-cyber-green/90 hover:shadow-glow text-white font-semibold transition-all duration-300"
+                >
+                  <a href={whatsappHref} target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="w-4 h-4 mr-2" />
+                    Hablar por WhatsApp
+                  </a>
                 </Button>
               </CardContent>
             </Card>

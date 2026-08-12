@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { Plus, X } from "lucide-react";
 import { experience } from "@/data/experience";
+import { useReveal, revealClass } from "@/hooks/useReveal";
 
 const Experience = () => {
   const [openId, setOpenId] = useState<string | null>(null);
+  const { ref: headerRef, isVisible: headerVisible } = useReveal<HTMLDivElement>();
+  const { ref: listRef, isVisible: listVisible } = useReveal<HTMLDivElement>();
 
   const toggle = (id: string) => setOpenId((prev) => (prev === id ? null : id));
 
@@ -12,9 +15,9 @@ const Experience = () => {
       <div className="container mx-auto px-4 sm:px-6 max-w-4xl">
 
         {/* Title */}
-        <div className="text-center mb-12 sm:mb-16">
+        <div ref={headerRef} className={`text-center mb-12 sm:mb-16 ${revealClass(headerVisible)}`}>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-4 sm:mb-6">
-            EXPERIENCIA <span className="text-cyber-blue">PROFESIONAL</span>
+            EXPERIENCIA PROFESIONAL
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
             Áreas en las que he trabajado y lo que he aportado en cada una.
@@ -22,21 +25,22 @@ const Experience = () => {
         </div>
 
         {/* Accordion */}
-        <div className="space-y-3">
-          {experience.map((category) => {
+        <div ref={listRef} className="space-y-3">
+          {experience.map((category, idx) => {
             const isOpen = openId === category.id;
             return (
               <div
                 key={category.id}
-                className="border border-border rounded-lg overflow-hidden transition-all duration-300"
+                style={{ transitionDelay: listVisible ? `${idx * 70}ms` : "0ms" }}
+                className={`border border-border rounded-lg overflow-hidden ${revealClass(listVisible)}`}
               >
                 {/* Trigger */}
                 <button
                   onClick={() => toggle(category.id)}
                   className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-muted/30 transition-colors duration-200"
                 >
-                  <span className="font-mono text-sm sm:text-base font-semibold text-foreground">
-                    <span className="text-cyber-blue mr-1">~</span>
+                  <span className="text-sm sm:text-base font-semibold text-foreground">
+                    <span className="text-primary mr-1 font-mono">~</span>
                     {category.title}
                   </span>
                   {isOpen ? (

@@ -1,6 +1,8 @@
-import { useState } from "react";
-import { Linkedin, Github, Award } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { Linkedin, Github, Award, HandHeart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import CircuitBackground from "@/components/CircuitBackground";
 import heroCyberImage from "@/assets/banner.webp";
 import heroPhoto from "@/assets/clients/LinkedIn_Closed.jpg";
 import heroPhotoHover from "@/assets/clients/LinkedIn.jpg";
@@ -17,6 +19,12 @@ const badges = [
 
 const Hero = () => {
   const [revealed, setRevealed] = useState(false);
+  const [entered, setEntered] = useState(false);
+
+  useEffect(() => {
+    const t = setTimeout(() => setEntered(true), 60);
+    return () => clearTimeout(t);
+  }, []);
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -26,6 +34,7 @@ const Hero = () => {
         style={{ backgroundImage: `url(${heroCyberImage})` }}
       >
         <div className="absolute inset-0 bg-background/85" />
+        <CircuitBackground />
       </div>
 
       {/* Content */}
@@ -33,24 +42,35 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* ── Left / Top: Text ── */}
-          <div className="space-y-5 sm:space-y-7">
+          <div className={`space-y-5 sm:space-y-7 transition-all duration-700 ease-out ${entered ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
 
             {/* Terminal prompt */}
             <div className="inline-flex items-center gap-1.5 bg-card/70 border border-border/60 rounded px-3 py-1.5 font-mono text-xs sm:text-sm">
-              <span className="text-cyber-green">usuario@bastionlab</span>
+              <span className="text-cyber-green">usuario@elmayordomo</span>
               <span className="text-muted-foreground">:~$</span>
               <span className="text-foreground">whoami</span>
             </div>
-      
-            {/* Company name */}
-            <h1 className="font-black tracking-tight leading-none">
-              <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-foreground">
-                Bastion
-              </span>
-              <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-foreground/35">
-                Lab
-              </span>
-            </h1>
+
+            {/* Name */}
+            <div className="space-y-1">
+              <p className="text-xs sm:text-sm font-semibold tracking-[0.2em] text-muted-foreground uppercase">
+                El Mayordomo
+              </p>
+              <p className="text-xs text-muted-foreground/60 italic">
+                cuidar bien lo que se me confía
+              </p>
+              <Link
+                to="/about"
+                aria-label="Por qué El Mayordomo"
+                title="Por qué El Mayordomo"
+                className="inline-flex w-fit text-primary/70 hover:text-primary transition-colors duration-300"
+              >
+                <HandHeart className="w-4 h-4 motion-safe:animate-pulse-glow" />
+              </Link>
+              <h1 className="font-black tracking-tight leading-[0.95] text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-foreground pt-1">
+                Vidale
+              </h1>
+            </div>
 
             {/* Description */}
             <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-md leading-relaxed">
@@ -121,8 +141,7 @@ const Hero = () => {
               <a href="#contact">
                 <Button
                   size="lg"
-                  variant="outline"
-                  className="border-cyber-yellow/50 text-cyber-yellow hover:bg-cyber-blue/10 transition-all duration-300 px-6 text-base w-full sm:w-auto"
+                  className="bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-glow transition-all duration-300 px-6 text-base w-full sm:w-auto"
                 >
                   Hablemos
                 </Button>
@@ -132,7 +151,7 @@ const Hero = () => {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-cyber-blue/50 text-cyber-blue hover:bg-cyber-blue/10 transition-all duration-300 px-6 text-base w-full sm:w-auto"
+                  className="border-border text-foreground hover:border-primary/50 hover:text-primary hover:bg-primary/5 transition-all duration-300 px-6 text-base w-full sm:w-auto"
                 >
                   Ver servicios
                 </Button>
@@ -142,7 +161,7 @@ const Hero = () => {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-cyber-purple/50 text-cyber-purple hover:bg-cyber-purple/10 transition-all duration-300 px-6 text-base w-full sm:w-auto"
+                  className="border-border text-foreground hover:border-primary/50 hover:text-primary hover:bg-primary/5 transition-all duration-300 px-6 text-base w-full sm:w-auto"
                 >
                   Portafolio técnico
                 </Button>
@@ -152,7 +171,7 @@ const Hero = () => {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-cyber-green/50 text-cyber-green hover:bg-cyber-green/10 transition-all duration-300 px-6 text-base w-full sm:w-auto"
+                  className="border-border text-foreground hover:border-primary/50 hover:text-primary hover:bg-primary/5 transition-all duration-300 px-6 text-base w-full sm:w-auto"
                 >
                   Blog personal
                 </Button>
@@ -161,7 +180,10 @@ const Hero = () => {
           </div>
 
           {/* ── Right / Bottom: Photo ── */}
-          <div className="flex justify-center lg:justify-end">
+          <div
+            style={{ transitionDelay: "150ms" }}
+            className={`flex justify-center lg:justify-end transition-all duration-700 ease-out ${entered ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+          >
             <div className="flex flex-col items-center gap-3">
 
               {/* Card — hover en desktop, tap en móvil */}
@@ -173,7 +195,7 @@ const Hero = () => {
                 onClick={() => setRevealed((v: boolean) => !v)}
               >
                 {/* Frame */}
-                <div className={`absolute -inset-px rounded-xl border shadow-cyber transition-colors duration-500 ${revealed ? "border-cyber-purple/40" : "border-cyber-blue/25"}`} />
+                <div className="absolute -inset-px rounded-xl border border-border shadow-cyber transition-colors duration-500" />
 
                 <div className="absolute inset-0 rounded-xl bg-card/60 overflow-hidden">
                   {/* Foto por defecto */}
