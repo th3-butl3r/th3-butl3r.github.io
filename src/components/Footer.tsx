@@ -1,4 +1,5 @@
-import { Github, Linkedin, Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Github, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
           <div className="col-span-1 sm:col-span-2 lg:col-span-2">
             <div className="mb-4 flex items-baseline gap-2">
               <span className="text-xl font-black tracking-tight text-foreground">El Mayordomo</span>
-              <span className="text-sm text-muted-foreground">— Vidale</span>
+              <span className="text-sm text-muted-foreground">— V</span>
             </div>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Desarrollo de software y seguridad digital, con atención personal.
@@ -21,9 +22,6 @@ const Footer = () => {
               <a href="https://github.com/th3-butl3r" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="GitHub">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="https://www.instagram.com/bastionlab.mx" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Instagram">
-                <Instagram className="w-5 h-5" />
-              </a>
             </div>
           </div>
 
@@ -31,9 +29,9 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-foreground mb-4">Servicios</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#contact" className="hover:text-primary transition-colors">Seguridad Digital</a></li>
-              <li><a href="#contact" className="hover:text-primary transition-colors">Soporte Técnico</a></li>
-              <li><a href="#contact" className="hover:text-primary transition-colors">Consultoría</a></li>
+              <li><Link to="/#contact" className="hover:text-primary transition-colors">Seguridad Digital</Link></li>
+              <li><Link to="/#contact" className="hover:text-primary transition-colors">Soporte Técnico</Link></li>
+              <li><Link to="/#contact" className="hover:text-primary transition-colors">Consultoría</Link></li>
             </ul>
           </div>
 
@@ -43,14 +41,14 @@ const Footer = () => {
             <ul className="space-y-2 text-muted-foreground">
               <li><a href="/certificaciones" className="hover:text-primary transition-colors">Certificaciones</a></li>
               <li><a href="/about" className="hover:text-primary transition-colors">Historia</a></li>
-              <li><a href="#contact" className="hover:text-primary transition-colors">Contacto</a></li>
+              <li><Link to="/#contact" className="hover:text-primary transition-colors">Contacto</Link></li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-border mt-6 sm:mt-8 pt-6 sm:pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
-            © El Mayordomo · Vidale C. Todos los derechos reservados.
+            © El Mayordomo · V. Todos los derechos reservados.
           </p>
           <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-muted-foreground text-center sm:text-left">
             {/*<a href="#" className="hover:text-cyber-blue transition-colors">Política de Privacidad</a>

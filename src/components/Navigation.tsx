@@ -45,19 +45,19 @@ const Navigation = () => {
               El Mayordomo
             </span>
             <span className="hidden sm:inline text-xs font-medium text-muted-foreground">
-              — Vidale
-            </span>
+              — V
+            </span> 
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <button onClick={() => goToSection("#experience")} className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200">TRAYECTORIA</button>
+            <button onClick={() => goToSection("#experience")} className="font-mono text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200">~/trayectoria</button>
 
             {/* Services dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <button
-                  className="flex items-center text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none"
+                  className="flex items-center font-mono text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none"
                   onClick={(e) => {
                     if (e.detail === 0) return;
                   }}
@@ -68,7 +68,7 @@ const Navigation = () => {
                       goToSection("#services");
                     }}
                   >
-                    SERVICIOS
+                    ~/servicios
                   </span>
                   <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
@@ -95,10 +95,10 @@ const Navigation = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <button onClick={() => goToSection("/certificaciones")} className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200">CERTIFICACIONES</button>
-            <button onClick={() => goToSection("#contact")} className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200">CONTACTO</button>
-            <button onClick={() => goToSection("#blog")} className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200">BLOG</button>
-            <button onClick={() => goToSection("/about")} className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200">ABOUT</button>
+            <button onClick={() => goToSection("/certificaciones")} className="font-mono text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200">~/certificaciones</button>
+            <button onClick={() => goToSection("#contact")} className="font-mono text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200">~/contacto</button>
+            <button onClick={() => goToSection("#blog")} className="font-mono text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200">~/blog</button>
+            <button onClick={() => goToSection("/about")} className="font-mono text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200">~/about</button>
 
             <ThemeToggle />
           </div>
@@ -120,19 +120,19 @@ const Navigation = () => {
         {isOpen && (
           <div className="md:hidden animate-in fade-in slide-in-from-top-2 duration-200">
             <div className="px-2 pt-2 pb-3 space-y-1 border-t border-border">
-              <button onClick={() => { goToSection("#experience"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-primary transition-colors">Trayectoria</button>
+              <button onClick={() => { goToSection("#experience"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 font-mono text-base font-medium text-muted-foreground hover:text-primary transition-colors">~/trayectoria</button>
 
               {/* Services collapsible */}
               <div>
                 <div className="flex items-center justify-between">
                   <button
-                    className="flex-1 text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-primary transition-colors"
+                    className="flex-1 text-left px-3 py-2 font-mono text-base font-medium text-muted-foreground hover:text-primary transition-colors"
                     onClick={() => {
                       goToSection("#services");
                       setIsOpen(false);
                     }}
                   >
-                    Servicios
+                    ~/servicios
                   </button>
 
                   <button
@@ -167,10 +167,10 @@ const Navigation = () => {
                 )}
               </div>
 
-              <button onClick={() => { goToSection("/certificaciones"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-primary transition-colors">Certificaciones</button>
-              <button onClick={() => { goToSection("#contact"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-primary transition-colors">Contacto</button>
-              <button onClick={() => { goToSection("#blog"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-primary transition-colors">Blog</button>
-              <button onClick={() => { goToSection("/about"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-primary transition-colors">About</button>
+              <button onClick={() => { goToSection("/certificaciones"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 font-mono text-base font-medium text-muted-foreground hover:text-primary transition-colors">~/certificaciones</button>
+              <button onClick={() => { goToSection("#contact"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 font-mono text-base font-medium text-muted-foreground hover:text-primary transition-colors">~/contacto</button>
+              <button onClick={() => { goToSection("#blog"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 font-mono text-base font-medium text-muted-foreground hover:text-primary transition-colors">~/blog</button>
+              <button onClick={() => { goToSection("/about"); setIsOpen(false); }} className="block w-full text-left px-3 py-2 font-mono text-base font-medium text-muted-foreground hover:text-primary transition-colors">~/about</button>
             </div>
           </div>
         )}

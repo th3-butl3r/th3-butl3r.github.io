@@ -187,7 +187,7 @@ ${formData.description}
                   </div>
                   <div>
                     <div className="font-semibold text-foreground">Disponibilidad</div>
-                    <div className="text-muted-foreground">10 AM - 6 PM de lunes a viernes</div>
+                    <div className="text-muted-foreground">9 AM - 6 PM de lunes a viernes</div>
                   </div>
                 </div>
               </CardContent>

@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import { Linkedin, Github, Award, HandHeart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import CircuitBackground from "@/components/CircuitBackground";
+import TerminalGreeting from "@/components/TerminalGreeting";
+import CountUp from "@/components/CountUp";
+import { socialIcons, totalFollowersApprox } from "@/data/socialStats";
 import heroCyberImage from "@/assets/banner.webp";
 import heroPhoto from "@/assets/clients/LinkedIn_Closed.jpg";
 import heroPhotoHover from "@/assets/clients/LinkedIn.jpg";
@@ -56,9 +59,6 @@ const Hero = () => {
               <p className="text-xs sm:text-sm font-semibold tracking-[0.2em] text-muted-foreground uppercase">
                 El Mayordomo
               </p>
-              <p className="text-xs text-muted-foreground/60 italic">
-                cuidar bien lo que se me confía
-              </p>
               <Link
                 to="/about"
                 aria-label="Por qué El Mayordomo"
@@ -67,26 +67,23 @@ const Hero = () => {
               >
                 <HandHeart className="w-4 h-4 motion-safe:animate-pulse-glow" />
               </Link>
-              <h1 className="font-black tracking-tight leading-[0.95] text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-foreground pt-1">
-                Vidale
-              </h1>
+              <TerminalGreeting />
             </div>
 
             {/* Description */}
             <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-md leading-relaxed">
-              <span className="text-cyber-green font-semibold">Desarrollo de Software</span> y{" "}
-              <span className="text-cyber-blue font-semibold">Seguridad Digital</span>
+              <span className="text-cyber-green font-semibold">Desarrollador de Software</span> &{" "}
+              <span className="text-cyber-blue font-semibold">Divulgador de seguridad digital</span>
             </p>
 
             {/* Bio */}
           <div className="max-w-md space-y-3 text-justify">
             <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-              Soy Vidale, ingeniero backend con 4+ años de experiencia en desarrollo web y seguridad digital.
-              Me especializo en construir sistemas robustos y en ayudar a individuos y pequeñas empresas
-              a proteger su infraestructura tecnológica.
+              Soy Vidale, ingeniero backend con 4+ años de experiencia en desarrollo web.
+              Me especializo en construir sistemas robustos y escalables.
             </p>
             <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-              Actualmente profundizo en <strong>DevSecOps</strong>, integrando esas prácticas con mi experiencia en backend,
+              Actualmente profundizo en <strong>DevSecOps</strong>, integrando esas prácticas con mi experiencia en desarrollo web,
               soporte y sistemas de videovigilancia.
             </p>
             <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
@@ -188,7 +185,7 @@ const Hero = () => {
 
               {/* Card — hover en desktop, tap en móvil */}
               <div
-                className="relative w-52 sm:w-64 lg:w-80 xl:w-96 cursor-pointer"
+                className="relative w-44 sm:w-52 lg:w-64 xl:w-72 cursor-pointer"
                 style={{ aspectRatio: "3/4" }}
                 onPointerEnter={(e) => { if (e.pointerType !== "touch") setRevealed(true); }}
                 onPointerLeave={(e) => { if (e.pointerType !== "touch") setRevealed(false); }}
@@ -225,6 +222,32 @@ const Hero = () => {
                   </span>
                 )}
               </p>
+
+              {/* Comunidad */}
+              <div className="flex flex-col items-center gap-2 pt-2">
+                <p className="max-w-[13rem] sm:max-w-[16rem] lg:max-w-xs text-center text-[11px] sm:text-xs text-muted-foreground/60 leading-relaxed">
+                  Alcance en divulgación independiente: seguridad digital y pensamiento crítico tecnológico.
+                </p>
+                <div
+                  className="flex items-center justify-center gap-3"
+                  aria-label="Presente en TikTok, Instagram, YouTube y Substack"
+                >
+                  {socialIcons.map(({ icon: Icon, colorClass }, idx) => (
+                    <Icon
+                      key={idx}
+                      aria-hidden="true"
+                      className={`w-4 h-4 sm:w-5 sm:h-5 ${colorClass} opacity-80`}
+                    />
+                  ))}
+                </div>
+                <CountUp
+                  value={totalFollowersApprox}
+                  format
+                  suffix="+"
+                  duration={1600}
+                  className="text-lg sm:text-xl font-black text-foreground tabular-nums"
+                />
+              </div>
 
             </div>
           </div>

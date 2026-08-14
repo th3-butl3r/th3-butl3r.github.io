@@ -6,11 +6,12 @@ interface CountUpProps {
   suffix?: string;
   duration?: number;
   className?: string;
+  format?: boolean;
 }
 
 const easeOutCubic = (t: number) => 1 - Math.pow(1 - t, 3);
 
-const CountUp = ({ value, suffix = "", duration = 1200, className }: CountUpProps) => {
+const CountUp = ({ value, suffix = "", duration = 1200, className, format = false }: CountUpProps) => {
   const { ref, isVisible } = useReveal<HTMLDivElement>();
   const [display, setDisplay] = useState(0);
   const started = useRef(false);
@@ -34,7 +35,7 @@ const CountUp = ({ value, suffix = "", duration = 1200, className }: CountUpProp
 
   return (
     <div ref={ref} className={className}>
-      {display}
+      {format ? display.toLocaleString("es-MX") : display}
       {suffix}
     </div>
   );

@@ -12,7 +12,7 @@ const Stewardship = () => {
           </h2>
 
           <p className="text-xl sm:text-2xl font-bold text-foreground leading-snug mb-6 text-center">
-            Un mayordomo administra lo que se le confía — no es dueño, pero responde por cómo lo cuida.
+            Un mayordomo administra lo que se le confía, no es dueño, pero responde por cómo lo cuida.
           </p>
 
           <div className="space-y-4 text-base sm:text-lg text-muted-foreground leading-relaxed text-justify">
@@ -20,12 +20,6 @@ const Stewardship = () => {
               Elegí ese nombre porque así entiendo mi trabajo: los datos de un cliente, la infraestructura de
               un sistema, la confianza de alguien que me contrata para protegerlo. Nada de eso es mío, pero
               soy responsable de cuidarlo bien y de rendir cuentas si algo falla.
-            </p>
-            <p>
-              Esa idea viene de mis convicciones personales, y es el estándar que trato de aplicar en cada
-              proyecto: en seguridad digital, protegiendo lo que no me pertenece; en desarrollo de software,
-              construyendo con cuidado en vez de solo cumplir; en soporte técnico, resolviendo el problema de
-              alguien más como si fuera propio.
             </p>
           </div>
         </div>

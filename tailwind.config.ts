@@ -110,12 +110,17 @@ export default {
           "0%, 100%": { transform: "scale(1)", opacity: "0.75" },
           "50%": { transform: "scale(1.15)", opacity: "1" },
         },
+        "blink": {
+          "0%, 49%": { opacity: "1" },
+          "50%, 100%": { opacity: "0" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "client-marquee": "client-marquee 40s linear infinite",
         "pulse-glow": "pulse-glow 2.4s ease-in-out infinite",
+        "blink": "blink 1s step-end infinite",
       },
     },
   },
