@@ -52,7 +52,7 @@ const MIN_FOR_SCROLL = 4;
 type Tab = "marcas" | "clientes";
 
 const TAB_LABEL: Record<Tab, string> = {
-  marcas: "MARCAS CON LAS QUE HE TRABAJADO",
+  marcas: "MARCAS QUE HE MANEJADO ",
   clientes: "CLIENTES QUE HAN CONFIADO EN MI TRABAJO",
 };
 
