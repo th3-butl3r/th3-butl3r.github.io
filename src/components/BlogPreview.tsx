@@ -12,6 +12,7 @@ import {
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
 import { useMediumFeed } from "@/hooks/useMediumFeed";
+import { useReveal, revealClass } from "@/hooks/useReveal";
 
 const POSTS_LIMIT = 3;
 const MEDIUM_URL = "https://medium.com/@th3-butl3r";
@@ -19,6 +20,8 @@ const MEDIUM_URL = "https://medium.com/@th3-butl3r";
 const BlogPreview = () => {
   const { posts, loading, error } = useMediumFeed(POSTS_LIMIT);
   const [pendingUrl, setPendingUrl] = useState<string | null>(null);
+  const { ref: headerRef, isVisible: headerVisible } = useReveal<HTMLDivElement>();
+  const { ref: gridRef, isVisible: gridVisible } = useReveal<HTMLDivElement>();
 
   if (!loading && (error || posts.length === 0)) return null;
 
@@ -33,18 +36,18 @@ const BlogPreview = () => {
         <div className="container mx-auto px-4 sm:px-6">
 
           {/* Title */}
-          <div className="text-center mb-12 sm:mb-16">
+          <div ref={headerRef} className={`text-center mb-12 sm:mb-16 ${revealClass(headerVisible)}`}>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-4 sm:mb-6">
-              BITÁCORA <span className="text-cyber-blue">PERSONAL</span>
+              BITÁCORA PERSONAL
             </h2>
             <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
               Entradas en las que detallo mis ejercicios y proyectos, compartiendo tanto las soluciones
-              aplicadas como el camino mental que tomé para llegar a ellas. 
+              aplicadas como el camino mental que tomé para llegar a ellas.
             </p>
           </div>
 
           {/* Cards */}
-          <div className="flex flex-wrap justify-center gap-6">
+          <div ref={gridRef} className="flex flex-wrap justify-center gap-6">
             {loading
               ? Array.from({ length: POSTS_LIMIT }).map((_, i) => (
                   <div
@@ -52,13 +55,14 @@ const BlogPreview = () => {
                     className="w-full sm:w-80 h-72 rounded-lg border border-border/50 bg-card/40 animate-pulse"
                   />
                 ))
-              : posts.map((post) => (
+              : posts.map((post, idx) => (
                   <div
                     key={post.link}
                     onClick={() => setPendingUrl(post.link)}
-                    className="w-full sm:w-80 group cursor-pointer"
+                    style={{ transitionDelay: gridVisible ? `${idx * 90}ms` : "0ms" }}
+                    className={`w-full sm:w-80 group cursor-pointer ${revealClass(gridVisible)}`}
                   >
-                    <div className="h-full rounded-lg border border-border/50 bg-card/40 hover:border-cyber-blue/40 hover:shadow-cyber transition-all duration-300 overflow-hidden flex flex-col">
+                    <div className="h-full rounded-lg border border-border/50 bg-card/40 hover:border-primary/40 hover:shadow-glow transition-all duration-300 overflow-hidden flex flex-col">
 
                       {/* Thumbnail */}
                       {post.thumbnail && (
@@ -123,7 +127,7 @@ const BlogPreview = () => {
               </p>
               <Button
                 variant="outline"
-                className="border-cyber-blue/50 text-cyber-blue hover:bg-cyber-blue/10 transition-all duration-300"
+                className="border-primary/50 text-primary hover:bg-primary/10 hover:shadow-glow transition-all duration-300"
                 onClick={() => setPendingUrl(MEDIUM_URL)}
               >
                 <BookOpen className="w-4 h-4 mr-2" />
@@ -140,7 +144,7 @@ const BlogPreview = () => {
           <AlertDialogHeader>
             <AlertDialogTitle>Confirmar navegación</AlertDialogTitle>
             <AlertDialogDescription>
-              Saldrás de Bastion Lab y serás redirigido al blog del analista Vidale C. en Medium.
+              Saldrás de este sitio y serás redirigido a mi blog personal en Medium.
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>

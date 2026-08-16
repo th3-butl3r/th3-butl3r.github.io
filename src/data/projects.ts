@@ -11,10 +11,10 @@ export interface ProjectData {
 
 export const projects: ProjectData[] = [
   {
-    id: "bastionlab-website",
-    title: "Bastion Lab Website",
+    id: "el-mayordomo-website",
+    title: "El Mayordomo — Sitio personal",
     description:
-      "Sitio web personal y de servicios. Construido con React, TypeScript y Tailwind CSS. Desplegado en GitHub Pages.",
+      "Este mismo sitio: portafolio personal y de servicios. Construido con React, TypeScript y Tailwind CSS. Desplegado en GitHub Pages.",
     image: undefined,
     githubUrl: undefined,
     blogUrl: undefined,

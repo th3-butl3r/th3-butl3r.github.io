@@ -2,14 +2,13 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
+import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
 import Services from "@/components/Services";
 // import CertificationsCTA from "@/components/CertificationsCTA";
-import BrandCarousel from "@/components/BrandCarousel";
+import TrustSection from "@/components/TrustSection";
 // import Team from "@/components/Team";
 // import Timeline from "@/components/Timeline";
-import ClientCarousel from "@/components/ClientCarousel";
-import Projects from "@/components/Projects";
-import Experience from "@/components/Experience";
 import BlogPreview from "@/components/BlogPreview";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -30,14 +29,13 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       <Hero />
+      <Experience />
+      <Projects />
       <Services />
-      <BrandCarousel />
+      <TrustSection />
       {/* <CertificationsCTA /> */}
-      <ClientCarousel />
       {/* <Team /> */}
       {/* <Timeline /> */}
-      <Projects />
-      <Experience />
       <BlogPreview />
       <Contact />
       <Footer />

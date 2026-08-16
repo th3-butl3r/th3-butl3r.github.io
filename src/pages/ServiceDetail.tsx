@@ -30,19 +30,19 @@ const ServiceDetail = () => {
           {/* Back link */}
           <Link
             to="/#services"
-            className="inline-flex items-center text-sm text-muted-foreground hover:text-cyber-blue transition-colors mb-8"
+            className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Volver a servicios
           </Link>
 
           {/* Hero */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 animate-in fade-in slide-in-from-bottom-2 duration-500">
             <Badge
               variant="secondary"
               className="bg-background/50 text-foreground border border-border/50 font-medium mb-6"
             >
-              <Icon className="w-3.5 h-3.5 mr-1.5 text-cyber-blue" />
+              <Icon className="w-3.5 h-3.5 mr-1.5 text-primary" />
               {service.badge}
             </Badge>
             <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-accent flex items-center justify-center">
@@ -51,7 +51,7 @@ const ServiceDetail = () => {
             <h1 className="text-4xl sm:text-5xl font-black mb-4">
               {service.title}
             </h1>
-            <p className="text-cyber-blue text-lg font-medium mb-6">
+            <p className="text-primary text-lg font-medium mb-6">
               {service.subtitle}
             </p>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -64,7 +64,8 @@ const ServiceDetail = () => {
             {service.detail.sections.map((section, idx) => (
               <Card
                 key={idx}
-                className="bg-gradient-card border-border/50"
+                style={{ animationDelay: `${150 + idx * 100}ms` }}
+                className="bg-gradient-card border-border/50 animate-in fade-in slide-in-from-bottom-2 fill-mode-both duration-500"
               >
                 <CardContent className="p-6">
                   <h2 className="text-xl font-bold text-foreground mb-3">
@@ -80,7 +81,7 @@ const ServiceDetail = () => {
                           key={i}
                           className="flex items-start text-sm text-muted-foreground"
                         >
-                          <CheckCircle2 className="w-4 h-4 mr-2 text-cyber-blue flex-shrink-0 mt-0.5" />
+                          <CheckCircle2 className="w-4 h-4 mr-2 text-primary flex-shrink-0 mt-0.5" />
                           {b}
                         </li>
                       ))}
@@ -98,7 +99,7 @@ const ServiceDetail = () => {
                 ¿Listo para empezar?
               </h3>
               <p className="text-muted-foreground mb-6">
-                Describe tu caso y te respondemos por WhatsApp.
+                Describe tu caso y te respondo por WhatsApp.
               </p>
               <Button
                 asChild
