@@ -89,9 +89,9 @@ const Certifications = () => {
             href="https://www.linkedin.com/in/cvidale/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
+            className="inline-flex flex-col items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
           >
-            El listado completo de mis certificaciones está en mi LinkedIn
+            <span>El listado completo de mis certificaciones está en mi LinkedIn</span>
             <Linkedin className="w-4 h-4" />
           </a>
         </div>
