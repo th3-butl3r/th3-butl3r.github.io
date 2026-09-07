@@ -232,12 +232,20 @@ const Hero = () => {
                   className="flex items-center justify-center gap-3"
                   aria-label="Presente en TikTok, Instagram, YouTube y Substack"
                 >
-                  {socialIcons.map(({ icon: Icon, colorClass }, idx) => (
-                    <Icon
+                  {socialIcons.map(({ icon: Icon, colorClass, label, href }, idx) => (
+                    <a
                       key={idx}
-                      aria-hidden="true"
-                      className={`w-4 h-4 sm:w-5 sm:h-5 ${colorClass} opacity-80`}
-                    />
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${label}: enlaces`}
+                      className="transition-opacity hover:opacity-100"
+                    >
+                      <Icon
+                        aria-hidden="true"
+                        className={`w-4 h-4 sm:w-5 sm:h-5 ${colorClass} opacity-80`}
+                      />
+                    </a>
                   ))}
                 </div>
                 <CountUp
