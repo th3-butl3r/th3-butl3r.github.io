@@ -15,7 +15,7 @@ import { useBlogFeed } from "@/hooks/useBlogFeed";
 import { useReveal, revealClass } from "@/hooks/useReveal";
 
 const POSTS_LIMIT = 3;
-const SUBSTACK_URL = "https://srwatchman.substack.com/profile/posts";
+const SUBSTACK_URL = "https://srwatchman.substack.com";
 
 const BlogPreview = () => {
   const { posts, loading, error } = useBlogFeed(POSTS_LIMIT);
