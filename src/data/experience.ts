@@ -22,7 +22,7 @@ export const experience: ExperienceCategory[] = [
         role: "Consultor Independiente",
         context: "Autónomo",
         period: "ago. 2025 - Actualidad",
-        did: "Investigué y documenté fraudes digitales. Configuré una red LAN para la operativa de un restaurante, instalé un sistema CCTV de 4 cámaras y di mantenimiento a un sistema de 16 cámaras.",
+        did: "Investigué y documenté fraudes digitales. Configuré una red LAN para la operativa de un restaurante, realicé el mantenimiento de un sistema CCTV de 16 cámaras.",
         offered: "Reporte una estafa financiera a Megacable que se aprovechaba del nombre de la empresa. Mejoré los tiempos de toma de órdenes y emisión de cuentas en el restaurante. Mejoré la seguridad con la videovigilancia.",
         learned: "Investigación a partir de fuentes abiertas, generación de documentación y seguimiento de la información. Planear una topología de red para la operación de un negocio.  Instalación, configuración y mantenimiento de equipos Dahua.",
       },

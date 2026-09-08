@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { SiWhatsapp } from "react-icons/si";
+import type { IconType } from "react-icons";
 import { useReveal, revealClass } from "@/hooks/useReveal";
 import { useDragMarquee } from "@/hooks/useDragMarquee";
 import dahua_icon from "@/assets/tools/dahua-logo.webp";
@@ -12,6 +14,10 @@ import restaurant_las_higueras from "@/assets/clients/icon-las-higueras.webp";
 interface Brand {
   name: string;
   logo?: string;
+  /** Icono vectorial (react-icons) para marcas sin logo en assets. */
+  icon?: IconType;
+  /** Color del icono vectorial. */
+  iconColor?: string;
   showText?: boolean;
 }
 
@@ -21,7 +27,7 @@ const brands: Brand[] = [
   { name: "Steren", showText: true, logo: steren_icon },
   { name: "Soft Restaurant", showText: true, logo: softrestaurant_icon },
   { name: "MyBusiness POS", showText: true, logo: mybusiness_pos_icon },
-  { name: "WhatsApp Business", showText: true },
+  { name: "WhatsApp Business", showText: true, icon: SiWhatsapp, iconColor: "#25D366" },
 ];
 
 interface Client {
@@ -97,23 +103,33 @@ const TrustSection = () => {
             ref={scrollRef}
             className="flex gap-10 overflow-hidden whitespace-nowrap cursor-grab select-none"
           >
-            {brandItems.map((brand, i) => (
-              <div
-                key={i}
-                className="flex-shrink-0 flex flex-col items-center justify-center gap-3 px-8 py-6 rounded-lg border border-white/80 bg-white min-w-[180px] hover:shadow-cyber transition-shadow duration-300"
-              >
-                {brand.logo && (
-                  <img
-                    src={brand.logo}
-                    alt={brand.name}
-                    className="h-14 w-auto max-w-[260px] object-contain"
-                  />
-                )}
-                {(brand.showText || !brand.logo) && (
-                  <span className="text-lg font-bold text-slate-500">{brand.name}</span>
-                )}
-              </div>
-            ))}
+            {brandItems.map((brand, i) => {
+              const BrandIcon = brand.icon;
+              return (
+                <div
+                  key={i}
+                  className="flex-shrink-0 flex flex-col items-center justify-center gap-3 px-8 py-6 rounded-lg border border-white/80 bg-white min-w-[180px] hover:shadow-cyber transition-shadow duration-300"
+                >
+                  {brand.logo && (
+                    <img
+                      src={brand.logo}
+                      alt={brand.name}
+                      className="h-14 w-auto max-w-[260px] object-contain"
+                    />
+                  )}
+                  {BrandIcon && (
+                    <BrandIcon
+                      className="h-14 w-14"
+                      style={{ color: brand.iconColor }}
+                      aria-hidden="true"
+                    />
+                  )}
+                  {(brand.showText || (!brand.logo && !BrandIcon)) && (
+                    <span className="text-lg font-bold text-slate-500">{brand.name}</span>
+                  )}
+                </div>
+              );
+            })}
           </div>
         ) : (
           <div

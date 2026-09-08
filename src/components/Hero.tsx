@@ -13,8 +13,7 @@ import heroPhotoHover from "@/assets/clients/LinkedIn.jpg";
 const badges = [
   { label: "Backend Engineer",   className: "border-cyber-green/50 text-cyber-green" },
   { label: "Soporte Técnico",   className: "border-border text-muted-foreground" },
-  { label: "Seguridad Digital", className: "border-border text-muted-foreground" },
-  { label: "CCTV",              className: "border-border text-muted-foreground" },
+  { label: "Seguridad Digital", className: "border-cyber-purple/50 text-cyber-purple" },
   { label: "OSINT",             className: "border-border text-muted-foreground" },
   { label: "DevSecOps", className: "border-cyber-blue/50 text-cyber-blue" },
 
@@ -78,15 +77,15 @@ const Hero = () => {
 
             {/* Bio */}
           <div className="max-w-md space-y-3 text-justify">
-            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-              Soy Vidale, ingeniero backend con 4+ años de experiencia en desarrollo web.
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+              Soy Vidale, ingeniero backend con 5+ años de experiencia en desarrollo web.
               Me especializo en construir sistemas robustos y escalables.
             </p>
-            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
               Actualmente profundizo en <strong>DevSecOps</strong>, integrando esas prácticas con mi experiencia en desarrollo web,
               soporte y sistemas de videovigilancia.
             </p>
-            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
               Fuera del trabajo, investigo y divulgo sobre seguridad digital e Internet, porque creo que
               entender la tecnología que usamos es tan importante como usarla bien.
             </p>

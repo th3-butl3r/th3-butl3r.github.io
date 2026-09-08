@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Plus, X } from "lucide-react";
+import { Plus, X, Linkedin } from "lucide-react";
 import { experience } from "@/data/experience";
 import { useReveal, revealClass } from "@/hooks/useReveal";
 
@@ -19,9 +19,18 @@ const Experience = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-4 sm:mb-6">
             EXPERIENCIA PROFESIONAL
           </h2>
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-4">
             Áreas en las que he trabajado y lo que he aportado en cada una.
           </p>
+          <a
+            href="https://www.linkedin.com/in/cvidale/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex flex-col items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
+          >
+            <span>Puedes ver a detalle toda mi experiencia profesional en LinkedIn</span>
+            <Linkedin className="w-4 h-4" />
+          </a>
         </div>
 
         {/* Accordion */}

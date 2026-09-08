@@ -20,7 +20,7 @@ jobs:
 
       - name: Fetch RSS feed
         run: |
-          ENCODED_URL=$(python3 -c "import urllib.parse; print(urllib.parse.quote('https://www.medium.com/feed/@th3-butl3r'))")
+          ENCODED_URL=$(python3 -c "import urllib.parse; print(urllib.parse.quote('https://srwatchman.substack.com/feed'))")
           curl -sf "https://api.rss2json.com/v1/api.json?rss_url=${ENCODED_URL}" -o /tmp/feed.json
 
           STATUS=$(python3 -c "import json; d=json.load(open('/tmp/feed.json')); print(d.get('status','error'))")

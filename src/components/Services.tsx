@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MessageCircle, ChevronRight } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -27,54 +27,39 @@ const Services = () => {
             SERVICIOS
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-            Soluciones en soporte técnico y seguridad digital.
+            Desarrollo web, vigilancia inteligente y soporte técnico.
           </p>
         </div>
 
-        <div
-          ref={panelRef}
-          className={`grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-4 lg:gap-6 max-w-5xl mx-auto ${revealClass(panelVisible)}`}
-        >
+        <div ref={panelRef} className={`max-w-3xl mx-auto ${revealClass(panelVisible)}`}>
           {/* Selector */}
-          <div className="flex lg:flex-col gap-3 overflow-x-auto lg:overflow-visible pb-1 lg:pb-0 -mx-1 px-1">
-            {services.map((service) => {
-              const Icon = service.icon;
-              const isActive = service.slug === activeSlug;
-              return (
-                <button
-                  key={service.slug}
-                  onClick={() => setActiveSlug(service.slug)}
-                  className={`flex-shrink-0 w-[240px] lg:w-auto flex items-center gap-3 text-left px-4 py-3.5 rounded-xl border transition-all duration-300 ${
-                    isActive
-                      ? "border-primary bg-primary/10 shadow-glow"
-                      : "border-border/60 hover:border-primary/40 hover:bg-primary/5"
-                  }`}
-                >
-                  <div
-                    className={`w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors duration-300 ${
-                      isActive ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"
+          <div className="flex justify-center mb-6 sm:mb-8">
+            <div className="inline-flex flex-wrap justify-center rounded-full border border-border p-1 bg-muted/40">
+              {services.map((service) => {
+                const Icon = service.icon;
+                const isActive = service.slug === activeSlug;
+                return (
+                  <button
+                    key={service.slug}
+                    onClick={() => setActiveSlug(service.slug)}
+                    className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 ${
+                      isActive
+                        ? "bg-primary text-primary-foreground shadow-glow"
+                        : "text-muted-foreground hover:text-foreground"
                     }`}
                   >
-                    <Icon className="w-5 h-5" />
-                  </div>
-                  <div className="min-w-0">
-                    <div className="text-sm font-bold text-foreground truncate">{service.title}</div>
-                    <div className="text-xs text-muted-foreground truncate">{service.shortPitch}</div>
-                  </div>
-                  <ChevronRight
-                    className={`w-4 h-4 ml-auto flex-shrink-0 hidden lg:block transition-all duration-300 ${
-                      isActive ? "text-primary translate-x-0.5" : "text-muted-foreground/30"
-                    }`}
-                  />
-                </button>
-              );
-            })}
+                    <Icon className="w-4 h-4 flex-shrink-0" />
+                    {service.tabLabel}
+                  </button>
+                );
+              })}
+            </div>
           </div>
 
           {/* Detail panel */}
           <div
             key={activeSlug}
-            className="animate-in fade-in slide-in-from-right-4 duration-300 bg-gradient-card border border-border/50 rounded-2xl p-6 sm:p-8"
+            className="animate-in fade-in slide-in-from-bottom-4 duration-300 bg-gradient-card border border-border/50 rounded-2xl p-6 sm:p-8"
           >
             <div className="w-14 h-14 rounded-xl bg-gradient-accent flex items-center justify-center mb-5">
               <ActiveIcon className="w-7 h-7 text-primary-foreground" />

@@ -7,6 +7,7 @@ import {
   SiGo,
   SiPostgresql,
   SiMysql,
+  SiSqlite,
   SiMongodb,
   SiRedis,
   SiDocker,
@@ -14,11 +15,16 @@ import {
   SiGooglecloud,
   SiSupabase,
   SiGithub,
+  SiGitlab,
+  SiGithubactions,
+  SiNewrelic,
+  SiSentry,
+  SiMake,
   SiClaudecode,
   SiBurpsuite,
 } from "react-icons/si";
 import { FaAws } from "react-icons/fa6";
-import { TbBrandAzure } from "react-icons/tb";
+import { TbBrandAzure, TbApi, TbBrandOpenai } from "react-icons/tb";
 
 export interface TechItem {
   name: string;
@@ -26,7 +32,8 @@ export interface TechItem {
 }
 
 // Tecnologías con las que he trabajado en proyectos y experiencia profesional.
-export const techStack: TechItem[] = [
+// Se muestran ordenadas alfabéticamente (ver `techStack` más abajo).
+const techStackItems: TechItem[] = [
   { name: "Python", icon: SiPython },
   { name: "Django", icon: SiDjango },
   { name: "Flask", icon: SiFlask },
@@ -34,6 +41,7 @@ export const techStack: TechItem[] = [
   { name: "Go", icon: SiGo },
   { name: "PostgreSQL", icon: SiPostgresql },
   { name: "MySQL", icon: SiMysql },
+  { name: "SQLite", icon: SiSqlite },
   { name: "MongoDB", icon: SiMongodb },
   { name: "Redis", icon: SiRedis },
   { name: "Docker", icon: SiDocker },
@@ -43,6 +51,17 @@ export const techStack: TechItem[] = [
   /*{ name: "Microsoft Azure", icon: TbBrandAzure },*/
   { name: "Supabase", icon: SiSupabase },
   { name: "GitHub", icon: SiGithub },
+  { name: "GitLab", icon: SiGitlab },
+  { name: "GitHub Actions (CI/CD)", icon: SiGithubactions },
+  { name: "New Relic", icon: SiNewrelic },
+  { name: "Sentry", icon: SiSentry },
+  { name: "Make", icon: SiMake },
+  { name: "APIs de terceros", icon: TbApi },
+  { name: "ChatGPT", icon: TbBrandOpenai },
   { name: "Claude Code", icon: SiClaudecode },
   { name: "Burp Suite", icon: SiBurpsuite },
 ];
+
+export const techStack: TechItem[] = [...techStackItems].sort((a, b) =>
+  a.name.localeCompare(b.name, "es", { sensitivity: "base" })
+);

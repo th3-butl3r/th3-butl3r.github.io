@@ -60,6 +60,12 @@ const Timeline = () => {
       milestone: "Crecimiento"
     },
     {
+      year: "Febrero 2025",
+      title: "11 mil seguidores en redes sociales",
+      description: "La comunidad de divulgación en seguridad digital alcanza los 11 mil seguidores en redes sociales, una señal de que el contenido estaba ayudando a más personas y un impulso para seguir divulgando de forma constante.",
+      milestone: "Crecimiento"
+    },
+    {
       year: "Junio 2025",
       title: "Primera certificación en ciberseguridad",
       description: "Graduado en la Hackers Academy de Hackmetrix, completando una formación intensiva de 6 meses en ciberseguridad ofensiva enfocada en páginas web.",
@@ -205,7 +211,7 @@ const Timeline = () => {
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed text-justify">
                 Continúo mi formación y actualización mientras consolido mi laboratorio de I+D, equipándolo con la
                 tecnología y las herramientas necesarias para ofrecer un servicio de excelencia en el desarrollo de software,
-                instalación de CCTV y seguridad digital, garantizando así una solución confiable y completa para mis clientes.
+                soporte técnico y vigilancia inteligente, garantizando así una solución confiable y completa para mis clientes.
                 <span className="inline-block w-[2px] h-[1em] bg-foreground/80 align-middle ml-1 animate-blink" />
               </p>
             </div>

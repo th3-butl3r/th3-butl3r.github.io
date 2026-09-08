@@ -91,7 +91,7 @@ const Certifications = () => {
             rel="noopener noreferrer"
             className="inline-flex flex-col items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
           >
-            <span>El listado completo de mis certificaciones está en mi LinkedIn</span>
+            <span>El listado completo de mis certificaciones está en LinkedIn</span>
             <Linkedin className="w-4 h-4" />
           </a>
         </div>

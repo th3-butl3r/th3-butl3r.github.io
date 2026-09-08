@@ -29,9 +29,9 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-foreground mb-4">Servicios</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li><Link to="/#contact" className="hover:text-primary transition-colors">Seguridad Digital</Link></li>
-              <li><Link to="/#contact" className="hover:text-primary transition-colors">Soporte Técnico</Link></li>
-              <li><Link to="/#contact" className="hover:text-primary transition-colors">Consultoría</Link></li>
+              <li><Link to="/servicios/desarrollo-web-software" className="hover:text-primary transition-colors">Desarrollo Web y Software a Medida</Link></li>
+              <li><Link to="/servicios/vigilancia-inteligente" className="hover:text-primary transition-colors">Vigilancia Inteligente</Link></li>
+              <li><Link to="/servicios/soporte-tecnico" className="hover:text-primary transition-colors">Soporte Técnico</Link></li>
             </ul>
           </div>
 

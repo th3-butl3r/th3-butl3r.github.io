@@ -11,14 +11,14 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
-import { useMediumFeed } from "@/hooks/useMediumFeed";
+import { useBlogFeed } from "@/hooks/useBlogFeed";
 import { useReveal, revealClass } from "@/hooks/useReveal";
 
 const POSTS_LIMIT = 3;
-const MEDIUM_URL = "https://medium.com/@th3-butl3r";
+const SUBSTACK_URL = "https://srwatchman.substack.com/profile/posts";
 
 const BlogPreview = () => {
-  const { posts, loading, error } = useMediumFeed(POSTS_LIMIT);
+  const { posts, loading, error } = useBlogFeed(POSTS_LIMIT);
   const [pendingUrl, setPendingUrl] = useState<string | null>(null);
   const { ref: headerRef, isVisible: headerVisible } = useReveal<HTMLDivElement>();
   const { ref: gridRef, isVisible: gridVisible } = useReveal<HTMLDivElement>();
@@ -41,8 +41,8 @@ const BlogPreview = () => {
               BITÁCORA PERSONAL
             </h2>
             <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Entradas en las que detallo mis ejercicios y proyectos, compartiendo tanto las soluciones
-              aplicadas como el camino mental que tomé para llegar a ellas.
+              Aquí detallo los ejercicios y proyectos que hago, compartiendo tanto las soluciones
+              aplicadas como el camino mental que tomé para llegar a ellas. También comparto mis reflexiones sobre tecnología.
             </p>
           </div>
 
@@ -128,7 +128,7 @@ const BlogPreview = () => {
               <Button
                 variant="outline"
                 className="border-primary/50 text-primary hover:bg-primary/10 hover:shadow-glow transition-all duration-300"
-                onClick={() => setPendingUrl(MEDIUM_URL)}
+                onClick={() => setPendingUrl(SUBSTACK_URL)}
               >
                 <BookOpen className="w-4 h-4 mr-2" />
                 Ver todas las publicaciones
@@ -144,7 +144,7 @@ const BlogPreview = () => {
           <AlertDialogHeader>
             <AlertDialogTitle>Confirmar navegación</AlertDialogTitle>
             <AlertDialogDescription>
-              Saldrás de este sitio y serás redirigido a mi blog personal en Medium.
+              Saldrás de este sitio y serás redirigido a mi blog personal en Substack.
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
