@@ -5,6 +5,10 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+  # Redeploy periódicamente para refrescar la bitácora (RSS de Substack).
+  schedule:
+    - cron: '0 */12 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -34,6 +38,23 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      # Regenera public/blog-feed.json con el RSS de Substack justo antes de compilar.
+      # Si el fetch falla, se conserva el blog-feed.json ya versionado como respaldo.
+      - name: Refresh blog feed (Substack)
+        run: |
+          ENCODED_URL=$(python3 -c "import urllib.parse; print(urllib.parse.quote('https://srwatchman.substack.com/feed'))")
+          if curl -sf "https://api.rss2json.com/v1/api.json?rss_url=${ENCODED_URL}" -o /tmp/feed.json; then
+            STATUS=$(python3 -c "import json; print(json.load(open('/tmp/feed.json')).get('status','error'))")
+            if [ "$STATUS" = "ok" ]; then
+              cp /tmp/feed.json public/blog-feed.json
+              echo "Blog feed actualizado desde Substack."
+            else
+              echo "Feed con status '$STATUS'; se conserva public/blog-feed.json versionado."
+            fi
+          else
+            echo "No se pudo obtener el feed; se conserva public/blog-feed.json versionado."
+          fi
 
       - name: Build
         run: npm run build

@@ -16,13 +16,20 @@ export interface BlogPost {
 const stripHtml = (html: string) =>
   html.replace(/<[^>]*>/g, "").replace(/&[a-z#0-9]+;/gi, " ").replace(/\s+/g, " ").trim();
 
+// rss2json entrega la fecha como "2026-08-19 19:00:34" (UTC, sin zona).
+// Safari devuelve Invalid Date con ese formato, así que lo pasamos a ISO.
+const toIsoDate = (raw: string) => {
+  const iso = raw.trim().replace(" ", "T");
+  return /[zZ]|[+-]\d{2}:?\d{2}$/.test(iso) ? iso : `${iso}Z`;
+};
+
 type FeedData = { status: string; items: Record<string, unknown>[] };
 
 const parseItems = (data: FeedData, limit: number): BlogPost[] | null => {
   if (data.status !== "ok") return null;
   return data.items.slice(0, limit).map((item) => ({
     title: item.title as string,
-    pubDate: item.pubDate as string,
+    pubDate: toIsoDate((item.pubDate as string) ?? ""),
     link: item.link as string,
     // Substack expone la portada en enclosure.link; rss2json a veces la deja en thumbnail.
     thumbnail:
