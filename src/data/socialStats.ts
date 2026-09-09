@@ -8,7 +8,7 @@ export interface SocialIcon {
   href: string;
 }
 
-const PRIVTREE_URL = "https://privtree.com/@srwatchman";
+const PRIVTREE_URL = "https://privtr.ee/@srwatchman";
 
 export const socialIcons: SocialIcon[] = [
   { icon: SiTiktok, colorClass: "text-foreground", label: "TikTok", href: PRIVTREE_URL },
