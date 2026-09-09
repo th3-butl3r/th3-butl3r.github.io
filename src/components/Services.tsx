@@ -109,7 +109,7 @@ const Services = () => {
         {/* Bottom CTA */}
         <div className="mt-16 pt-12 border-t border-border/50 text-center">
           <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-2">
-            ¿No sabes qué necesitas?
+            ¡Cotiza ahora!
           </h3>
           <p className="text-muted-foreground mb-6">Hablemos y revisemos tu caso.</p>
           <Button
