@@ -13,6 +13,7 @@ import {
   SiDocker,
   SiTerraform,
   SiGooglecloud,
+  SiVultr,
   SiSupabase,
   SiGithub,
   SiGitlab,
@@ -47,6 +48,7 @@ const techStackItems: TechItem[] = [
   { name: "Docker", icon: SiDocker },
   { name: "Terraform", icon: SiTerraform },
   { name: "Google Cloud", icon: SiGooglecloud },
+  { name: "Vultr", icon: SiVultr },
   { name: "AWS", icon: FaAws },
   /*{ name: "Microsoft Azure", icon: TbBrandAzure },*/
   { name: "Supabase", icon: SiSupabase },

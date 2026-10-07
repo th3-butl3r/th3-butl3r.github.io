@@ -8,6 +8,7 @@ import epcom_icon from "@/assets/tools/epcom-logo.webp";
 import steren_icon from "@/assets/tools/steren-logo.webp";
 import softrestaurant_icon from "@/assets/tools/softrestaurant-logo2.webp";
 import mybusiness_pos_icon from "@/assets/tools/mybusiness_pos-logo.webp";
+import eleventa_icon from "@/assets/tools/eleventa-logo.webp";
 import bodega_lactigurt from "@/assets/clients/icon-bodega-lactigurt.webp";
 import restaurant_las_higueras from "@/assets/clients/icon-las-higueras.webp";
 
@@ -27,6 +28,7 @@ const brands: Brand[] = [
   { name: "Steren", showText: true, logo: steren_icon },
   { name: "Soft Restaurant", showText: true, logo: softrestaurant_icon },
   { name: "MyBusiness POS", showText: true, logo: mybusiness_pos_icon },
+  { name: "Eleventa", showText: true, logo: eleventa_icon },
   { name: "WhatsApp Business", showText: true, icon: SiWhatsapp, iconColor: "#25D366" },
 ];
 
