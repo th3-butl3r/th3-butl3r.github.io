@@ -45,6 +45,17 @@ export const projects: ProjectData[] = [
     demoUrl: "https://nuestroentorno.mx",
     tags: ["Python", "Terraform", "Docker", "Supabase", "AWS"],
   },
+
+  {
+    id: "kataloo-website",
+    title: "Kataloo | Tu catálogo en Internet",
+    description: "Convierte tu menú impreso en una plataforma digital escalable. Actualiza tus productos en tiempo real, tus clientes ordenan mediante QR desde su teléfono y tú recibes un análisis de tus ventas en tiempo real. Escalable y simple a la vez.",
+    image: undefined,
+    githubUrl: undefined,
+    blogUrl: undefined,
+    demoUrl: "https://kataloo.com.mx/",
+    tags: ["Python", "Docker", "Supabase", "Github", "Vultr"],
+  },
   
 ];
 

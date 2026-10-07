@@ -19,6 +19,7 @@ import certCiberWhats from "@/assets/CertificadoCiberWhatsApp.webp";
 import certIntroInfoForense from "@/assets/CertificadoIntroInformaticaForense.webp";
 import certCiberPreventiva from "@/assets/CertificadoCiberPreventiva.webp";
 import certCCTV from "@/assets/cctv-2025.webp";
+import certDahua from "@/assets/Dahua_certification.webp"
 
 type CategoryId = "seguridad" | "soporte" | "recuperacion" | "osint";
 
@@ -58,6 +59,8 @@ const certItems: CertItem[] = [
   { name: "Atención al Cliente y Soporte a Usuarios", org: "Platzi", year: "2025", category: "soporte", image: certSupport },
   { name: "Redes Informáticas de Internet", org: "Platzi", year: "2025", category: "soporte", image: certRedes },
   { name: "Instalador Profesional de Cámaras de Seguridad", org: "Udemy", year: "2026", category: "soporte", image: certCCTV },
+  { name: "IP Video Surveillance System Certified Associate | DHCA - IPVSS", org: "Dahua", year: "2026", category: "soporte", image: certDahua },
+  
 
   { name: "Reparación de discos duros y recuperación de datos", org: "Udemy", year: "2025", category: "recuperacion", image: certUdemyDataRecovery },
   { name: "Introducción a Informática Forense", org: "Platzi", year: "2025", category: "recuperacion", image: certIntroInfoForense },
